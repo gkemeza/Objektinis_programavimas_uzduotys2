@@ -24,8 +24,8 @@ Debug\Darbas_su_studentais.exe
 
 # V1.1
 
-**CPU:** AMD Ryzen™ 5 PRO 7540U
-**SSD:** Micron_2400_MTFDKBA1T0QFM
+**CPU:** AMD Ryzen™ 5 PRO 7540U \
+**SSD:** Micron_2400_MTFDKBA1T0QFM \
 **RAM:** 16GB
 
 ### Palyginimas struct ir class naudojant vector ir 2 strategija
@@ -66,8 +66,8 @@ Pridetas spartos testavimas su skirtingais konteineriais, 3 strategijos, README.
 
 ### Testavimo sistemos parametrai
 
-**CPU:** Intel core i5-10210U
-**SSD:** WDC PC SN520
+**CPU:** Intel core i5-10210U \
+**SSD:** WDC PC SN520 \
 **RAM:** 8GB
 
 ### Spartos testavimas su skirtingais konteineriais
