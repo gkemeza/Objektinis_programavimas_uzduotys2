@@ -1,5 +1,6 @@
-#include "../include/functions.h"
-#include "../include/timer.h"
+#include "Studentas.h"
+#include "functions.h"
+#include "timer.h"
 
 using std::cerr;
 using std::cout;
