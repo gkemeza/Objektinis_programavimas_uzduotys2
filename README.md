@@ -10,10 +10,10 @@
 
 # Įdiegimo instrukcija
 
-git clone --branch v1.1 https://github.com/gkemeza/Objektinis_programavimas_uzduotys2.git
-cd Objektinis_programavimas_uzduotys2
-mkdir build && cd build
-cmake ..
+git clone --branch v1.1 https://github.com/gkemeza/Objektinis_programavimas_uzduotys2.git \
+cd Objektinis_programavimas_uzduotys2 \
+mkdir build && cd build \
+cmake .. \
 cmake --build .
 
 **Windows paleidimas:**\
