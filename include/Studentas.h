@@ -6,16 +6,30 @@
 
 class Studentas {
 private:
-  std::string vardas_ = "A";
-  std::string pavarde_ = "B";
+  std::string vardas_ = "";
+  std::string pavarde_ = "";
   int namuDarbai_ = 0;
-  std::vector<int> pazymiai_;
+  std::vector<int> pazymiai_ = {};
   int egzaminoBalas_ = 0;
-  double galutinisVidurkis_ = 0;
-  double galutinisMediana_ = 0;
+  double galutinisVidurkis_ = 0.0;
+  double galutinisMediana_ = 0.0;
 
 public:
   Studentas();
+
+  Studentas(std::string vardas, std::string pavarde, int namuDarbai,
+            std::vector<int> pazymiai, int egzaminoBalas)
+      : vardas_(std::move(vardas)), pavarde_(std::move(pavarde)),
+        namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
+        egzaminoBalas_(egzaminoBalas) {};
+
+  Studentas(std::string vardas, std::string pavarde, int namuDarbai,
+            std::vector<int> pazymiai, int egzaminoBalas,
+            double galutinisVidurkis, double galutinisMediana)
+      : vardas_(std::move(vardas)), pavarde_(std::move(pavarde)),
+        namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
+        egzaminoBalas_(egzaminoBalas), galutinisVidurkis_(galutinisVidurkis),
+        galutinisMediana_(galutinisMediana) {};
 
   std::string getVardas() const { return vardas_; }
   std::string getPavarde() const { return pavarde_; }

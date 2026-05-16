@@ -14,17 +14,18 @@
 #include <string>
 #include <vector>
 
+Studentas ivestisRanka();
+Studentas generuotiPazymius();
+Studentas generuotiStudenta();
 void isvestis(const StudentuKonteineris &studentai, bool arMediana);
 void isvestisKonsole(const StudentuKonteineris &studentai);
 void isvestisFailas(const StudentuKonteineris &studentai,
                     std::string failoPavadinimas);
 std::string skaitytiZodi(const std::string &pranesimas);
-void nuskaitytiVardaIrPavarde(Studentas &studentas);
-void ivestisRanka(Studentas &studentas);
+std::string nuskaitytiVarda();
+std::string nuskaitytiPavarde();
 bool suskaiciuotiGalutini(StudentuKonteineris &studentai);
 void suskaiciuotiGalutinius(StudentuKonteineris &studentai);
-void generuotiStudenta(Studentas &studentas);
-void generuotiPazymius(Studentas &studentas);
 void nuskaitytiFaila(StudentuKonteineris &studentai,
                      const std::string &failoPavadinimas);
 bool rusiuotiPagalVarda(const Studentas &a, const Studentas &b);

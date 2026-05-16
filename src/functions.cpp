@@ -112,31 +112,33 @@ string skaitytiZodi(const string &pranesimas) {
   }
 }
 
-void nuskaitytiVardaIrPavarde(Studentas &studentas) {
-  studentas.setVardas(skaitytiZodi("Iveskite varda: "));
-  studentas.setPavarde(skaitytiZodi("Iveskite pavarde: "));
-}
+string nuskaitytiVarda() { return (skaitytiZodi("Iveskite varda: ")); }
 
-void ivestisRanka(Studentas &studentas) {
+string nuskaitytiPavarde() { return (skaitytiZodi("Iveskite pavarde: ")); }
+
+Studentas ivestisRanka() {
   try {
-    nuskaitytiVardaIrPavarde(studentas);
+    string vardas = nuskaitytiVarda();
+    string pavarde = nuskaitytiPavarde();
 
     int namuDarbai =
         skaitytiSkaiciu("Iveskite semestro pazymiu skaiciu: ", 1, 10);
 
+    vector<int> pazymiai;
     for (int i = 0; i < namuDarbai; i++) {
       cout << "Iveskite " << i + 1 << " pazymi is " << namuDarbai << ": ";
       int pazymys = skaitytiSkaiciu("", 1, 10);
 
-      studentas.addPazymys(pazymys);
+      pazymiai.push_back(pazymys);
     }
 
-    int pazymys = skaitytiSkaiciu("Iveskite egzamino pazymi: ", 1, 10);
+    int randBalas = skaitytiSkaiciu("Iveskite egzamino pazymi: ", 1, 10);
 
-    studentas.setEgzaminoBalas(pazymys);
-    studentas.setNamuDarbai(namuDarbai);
+    return Studentas(vardas, pavarde, namuDarbai, pazymiai, randBalas);
+
   } catch (const runtime_error &ex) {
     cerr << ex.what() << endl;
+    throw;
   }
 }
 
@@ -194,106 +196,114 @@ int randomInt(int min, int max) {
   return dist(mt);
 }
 
-void generuotiStudenta(Studentas &studentas) {
+Studentas generuotiStudenta() {
+  string vardas;
   switch (randomInt(0, 9)) {
   case 0:
-    studentas.setVardas("Irma");
+    vardas = "Irma";
     break;
   case 1:
-    studentas.setVardas("Alma");
+    vardas = "Alma";
     break;
   case 2:
-    studentas.setVardas("Irena");
+    vardas = "Irena";
     break;
   case 3:
-    studentas.setVardas("Egle");
+    vardas = "Egle";
     break;
   case 4:
-    studentas.setVardas("Jolanta");
+    vardas = "Jolanta";
     break;
   case 5:
-    studentas.setVardas("Petras");
+    vardas = "Petras";
     break;
   case 6:
-    studentas.setVardas("Jonas");
+    vardas = "Jonas";
     break;
   case 7:
-    studentas.setVardas("Ignas");
+    vardas = "Ignas";
     break;
   case 8:
-    studentas.setVardas("Darius");
+    vardas = "Darius";
     break;
   case 9:
-    studentas.setVardas("Simas");
+    vardas = "Simas";
     break;
   }
-  switch (*studentas.getVardas().rbegin()) {
+
+  string pavarde;
+  switch (*vardas.rbegin()) {
   case 's':
     switch (randomInt(0, 4)) {
     case 0:
-      studentas.setPavarde("Pavardenis1");
+      pavarde = "Pavardenis1";
       break;
     case 1:
-      studentas.setPavarde("Pavardenis2");
+      pavarde = "Pavardenis2";
       break;
     case 2:
-      studentas.setPavarde("Pavardenis3");
+      pavarde = "Pavardenis3";
       break;
     case 3:
-      studentas.setPavarde("Pavardenis4");
+      pavarde = "Pavardenis4";
       break;
     case 4:
-      studentas.setPavarde("Pavardenis5");
+      pavarde = "Pavardenis5";
       break;
     }
     break;
   default:
     switch (randomInt(0, 4)) {
     case 0:
-      studentas.setPavarde("Pavardaite1");
+      pavarde = "Pavardaite1";
       break;
     case 1:
-      studentas.setPavarde("Pavardaite2");
+      pavarde = "Pavardaite2";
       break;
     case 2:
-      studentas.setPavarde("Pavardaite3");
+      pavarde = "Pavardaite3";
       break;
     case 3:
-      studentas.setPavarde("Pavardaite4");
+      pavarde = "Pavardaite4";
       break;
     case 4:
-      studentas.setPavarde("Pavardaite5");
+      pavarde = "Pavardaite5";
       break;
     }
     break;
   };
 
   int namuDarbai = 5;
-  studentas.setNamuDarbai(namuDarbai);
+  vector<int> pazymiai;
   for (int i = 0; i < namuDarbai; i++) {
     int randPazymys = randomInt(1, 10);
-    studentas.addPazymys(randPazymys);
+    pazymiai.push_back(randPazymys);
   }
 
   int randBalas = randomInt(1, 10);
-  studentas.setEgzaminoBalas(randBalas);
+
+  return Studentas(vardas, pavarde, namuDarbai, pazymiai, randBalas);
 }
 
-void generuotiPazymius(Studentas &studentas) {
+Studentas generuotiPazymius() {
   try {
-    nuskaitytiVardaIrPavarde(studentas);
+    string vardas = nuskaitytiVarda();
+    string pavarde = nuskaitytiPavarde();
 
     int namuDarbai = 5;
-    studentas.setNamuDarbai(namuDarbai);
+    vector<int> pazymiai;
     for (int i = 0; i < namuDarbai; i++) {
       int randPazymys = randomInt(1, 10);
-      studentas.addPazymys(randPazymys);
+      pazymiai.push_back(randPazymys);
     }
 
-    int randBalas = randomInt(1, 10);
-    studentas.setEgzaminoBalas(randBalas);
+    int egzaminoPazymys = randomInt(1, 10);
+
+    return Studentas(vardas, pavarde, namuDarbai, pazymiai, egzaminoPazymys);
+
   } catch (const runtime_error &ex) {
     cerr << ex.what() << endl;
+    throw;
   }
 }
 
