@@ -1,8 +1,10 @@
 #include "functions.h"
 #include "Studentas.h"
 #include "timer.h"
+#include <array>
 #include <iostream>
 
+using std::array;
 using std::cerr;
 using std::cin;
 using std::cout;
@@ -198,87 +200,33 @@ int randomInt(int min, int max) {
 }
 
 Studentas generuotiStudenta() {
-  string vardas;
-  switch (randomInt(0, 9)) {
-  case 0:
-    vardas = "Irma";
-    break;
-  case 1:
-    vardas = "Alma";
-    break;
-  case 2:
-    vardas = "Irena";
-    break;
-  case 3:
-    vardas = "Egle";
-    break;
-  case 4:
-    vardas = "Jolanta";
-    break;
-  case 5:
-    vardas = "Petras";
-    break;
-  case 6:
-    vardas = "Jonas";
-    break;
-  case 7:
-    vardas = "Ignas";
-    break;
-  case 8:
-    vardas = "Darius";
-    break;
-  case 9:
-    vardas = "Simas";
-    break;
-  }
+  static const array<string, 10> vardai = {
+      "Irma",   "Alma",  "Irena", "Egle",   "Jolanta",
+      "Petras", "Jonas", "Ignas", "Darius", "Simas"};
+
+  static const array<string, 5> vyruPavardes = {"Pavardenis1", "Pavardenis2",
+                                                "Pavardenis3", "Pavardenis4",
+                                                "Pavardenis5"};
+
+  static const array<string, 5> moteruPavardes = {"Pavardaite1", "Pavardaite2",
+                                                  "Pavardaite3", "Pavardaite4",
+                                                  "Pavardaite5"};
+
+  string vardas = vardai[randomInt(0, vardai.size() - 1)];
 
   string pavarde;
-  switch (*vardas.rbegin()) {
-  case 's':
-    switch (randomInt(0, 4)) {
-    case 0:
-      pavarde = "Pavardenis1";
-      break;
-    case 1:
-      pavarde = "Pavardenis2";
-      break;
-    case 2:
-      pavarde = "Pavardenis3";
-      break;
-    case 3:
-      pavarde = "Pavardenis4";
-      break;
-    case 4:
-      pavarde = "Pavardenis5";
-      break;
-    }
-    break;
-  default:
-    switch (randomInt(0, 4)) {
-    case 0:
-      pavarde = "Pavardaite1";
-      break;
-    case 1:
-      pavarde = "Pavardaite2";
-      break;
-    case 2:
-      pavarde = "Pavardaite3";
-      break;
-    case 3:
-      pavarde = "Pavardaite4";
-      break;
-    case 4:
-      pavarde = "Pavardaite5";
-      break;
-    }
-    break;
-  };
+  if (!vardas.empty() && vardas.back() == 's') {
+    pavarde = vyruPavardes[randomInt(0, vyruPavardes.size() - 1)];
+  } else {
+    pavarde = moteruPavardes[randomInt(0, moteruPavardes.size() - 1)];
+  }
 
   int namuDarbai = 5;
   vector<int> pazymiai;
+  pazymiai.reserve(namuDarbai);
+
   for (int i = 0; i < namuDarbai; i++) {
-    int randPazymys = randomInt(1, 10);
-    pazymiai.push_back(randPazymys);
+    pazymiai.push_back(randomInt(1, 10));
   }
 
   int randBalas = randomInt(1, 10);
