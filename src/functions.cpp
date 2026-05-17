@@ -9,6 +9,7 @@ using std::cout;
 using std::endl;
 using std::fixed;
 using std::ifstream;
+using std::istream;
 using std::istringstream;
 using std::left;
 using std::mt19937;
@@ -307,6 +308,23 @@ Studentas generuotiPazymius() {
   }
 }
 
+vector<int> nuskaitytiPazymius(istream &is, int namuDarbai) {
+  vector<int> pazymiai;
+
+  for (int i = 0; i < namuDarbai; i++) {
+
+    int pazymys;
+    if (!(is >> pazymys)) {
+      throw runtime_error("Sugadintas failas");
+      break;
+    }
+
+    pazymiai.push_back(pazymys);
+  }
+
+  return pazymiai;
+}
+
 void nuskaitytiFaila(StudentuKonteineris &studentai,
                      const string &failoPavadinimas) {
   ifstream failas(failoPavadinimas);
@@ -328,12 +346,19 @@ void nuskaitytiFaila(StudentuKonteineris &studentai,
     throw runtime_error("Neteisinga antraste: " + failoPavadinimas);
 
   int namuDarbai = zodziuSkaicius - 3;
+  string vardas, pavarde;
+  vector<int> pazymiai;
+  int egzaminoBalas;
 
-  Studentas studentas;
-  studentas.setNamuDarbai(namuDarbai);
-  while (studentas.readStudent(failas, namuDarbai)) {
-    studentai.push_back(studentas);
+  while (failas >> vardas >> pavarde) {
+    pazymiai = (nuskaitytiPazymius(failas, namuDarbai));
+
+    if (!failas >> egzaminoBalas)
+      throw runtime_error("Sugadintas failas");
   }
+
+  studentai.push_back(
+      Studentas(vardas, pavarde, namuDarbai, pazymiai, egzaminoBalas));
 
   suskaiciuotiGalutinius(studentai);
 }
@@ -589,9 +614,9 @@ void duomenuApdorojimoTestavimas() {
 }
 
 void testuotiGreiti() {
-  int input = skaitytiSkaiciu(
-      "Pasirinkite (1 - failo kurimo testas, 2 - duomenu apdorojimo testas):\n",
-      1, 2);
+  int input = skaitytiSkaiciu("Pasirinkite (1 - failo kurimo testas, 2 - "
+                              "duomenu apdorojimo testas):\n",
+                              1, 2);
 
   switch (input) {
   case 1:

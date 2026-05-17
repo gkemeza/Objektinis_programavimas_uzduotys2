@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 #include <list>
 #include <string>
 #include <vector>
@@ -15,21 +14,19 @@ private:
   double galutinisMediana_ = 0.0;
 
 public:
-  Studentas();
-
   Studentas(std::string vardas, std::string pavarde, int namuDarbai,
             std::vector<int> pazymiai, int egzaminoBalas)
       : vardas_(std::move(vardas)), pavarde_(std::move(pavarde)),
         namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
         egzaminoBalas_(egzaminoBalas) {};
 
-  Studentas(std::string vardas, std::string pavarde, int namuDarbai,
-            std::vector<int> pazymiai, int egzaminoBalas,
-            double galutinisVidurkis, double galutinisMediana)
-      : vardas_(std::move(vardas)), pavarde_(std::move(pavarde)),
-        namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
-        egzaminoBalas_(egzaminoBalas), galutinisVidurkis_(galutinisVidurkis),
-        galutinisMediana_(galutinisMediana) {};
+  // Studentas(std::string vardas, std::string pavarde, int namuDarbai,
+  //           std::vector<int> pazymiai, int egzaminoBalas,
+  //           double galutinisVidurkis, double galutinisMediana)
+  //     : vardas_(std::move(vardas)), pavarde_(std::move(pavarde)),
+  //       namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
+  //       egzaminoBalas_(egzaminoBalas), galutinisVidurkis_(galutinisVidurkis),
+  //       galutinisMediana_(galutinisMediana) {};
 
   std::string getVardas() const { return vardas_; }
   std::string getPavarde() const { return pavarde_; }
@@ -38,9 +35,6 @@ public:
   double getGalutinisVidurkis() const { return galutinisVidurkis_; }
   double getGalutinisMediana() const { return galutinisMediana_; }
   const std::vector<int> &getPazymiai() const { return pazymiai_; }
-
-  // double galutinisBalas(double (*)(std::vector<double>) = mediana) const;
-  std::istream &readStudent(std::istream &is, int namuDarbai);
 
   void setVardas(const std::string &vardas) { vardas_ = vardas; }
   void setPavarde(const std::string &pavarde) { pavarde_ = pavarde; }

@@ -2,32 +2,7 @@
 #include <algorithm>
 #include <numeric>
 using std::istream;
-using std::runtime_error;
 using std::sort;
-
-Studentas::Studentas() {}
-
-istream &Studentas::readStudent(istream &is, int namuDarbai) {
-  if (!(is >> vardas_ >> pavarde_))
-    return is;
-
-  pazymiai_.clear();
-  bool skaitymasPavyko = true;
-
-  for (int i = 0; i < namuDarbai; i++) {
-    int pazymys;
-    if (!(is >> pazymys)) {
-      skaitymasPavyko = false;
-      break;
-    }
-    pazymiai_.push_back(pazymys);
-  }
-
-  if (!skaitymasPavyko || !(is >> egzaminoBalas_))
-    throw runtime_error("Sugadintas failas");
-
-  return is;
-};
 
 void Studentas::surusiuotiPazymius() {
   sort(pazymiai_.begin(), pazymiai_.end());
