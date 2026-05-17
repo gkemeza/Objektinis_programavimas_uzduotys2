@@ -315,7 +315,7 @@ vector<int> nuskaitytiPazymius(istream &is, int namuDarbai) {
 
     int pazymys;
     if (!(is >> pazymys)) {
-      throw runtime_error("Sugadintas failas");
+      throw runtime_error("Sugadintas failas (pazymiai)");
       break;
     }
 
@@ -353,12 +353,12 @@ void nuskaitytiFaila(StudentuKonteineris &studentai,
   while (failas >> vardas >> pavarde) {
     pazymiai = (nuskaitytiPazymius(failas, namuDarbai));
 
-    if (!failas >> egzaminoBalas)
-      throw runtime_error("Sugadintas failas");
-  }
+    if (!(failas >> egzaminoBalas))
+      throw runtime_error("Sugadintas failas (egzaminoBalas)");
 
-  studentai.push_back(
-      Studentas(vardas, pavarde, namuDarbai, pazymiai, egzaminoBalas));
+    studentai.push_back(
+        Studentas(vardas, pavarde, namuDarbai, pazymiai, egzaminoBalas));
+  }
 
   suskaiciuotiGalutinius(studentai);
 }
