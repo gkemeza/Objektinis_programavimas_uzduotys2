@@ -20,14 +20,6 @@ public:
         namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
         egzaminoBalas_(egzaminoBalas) {};
 
-  // Studentas(std::string vardas, std::string pavarde, int namuDarbai,
-  //           std::vector<int> pazymiai, int egzaminoBalas,
-  //           double galutinisVidurkis, double galutinisMediana)
-  //     : vardas_(std::move(vardas)), pavarde_(std::move(pavarde)),
-  //       namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
-  //       egzaminoBalas_(egzaminoBalas), galutinisVidurkis_(galutinisVidurkis),
-  //       galutinisMediana_(galutinisMediana) {};
-
   std::string getVardas() const { return vardas_; }
   std::string getPavarde() const { return pavarde_; }
   int getNamuDarbai() const { return namuDarbai_; }
