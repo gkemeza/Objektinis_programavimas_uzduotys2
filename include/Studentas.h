@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include <list>
 #include <string>
 #include <vector>
@@ -87,6 +88,11 @@ public:
 
     return *this;
   }
+
+  // Perdengtas išvedimo operatorius
+  friend std::ostream &operator<<(std::ostream &out, const Studentas &s);
+  // Perdengtas įvedimo operatorius
+  friend std::istream &operator>>(std::istream &in, Studentas &s);
 
   std::string getVardas() const { return vardas_; }
   std::string getPavarde() const { return pavarde_; }
