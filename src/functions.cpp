@@ -3,7 +3,6 @@
 #include "timer.h"
 #include <array>
 #include <iostream>
-#include <utility>
 
 using std::array;
 using std::cerr;
@@ -15,7 +14,6 @@ using std::ifstream;
 using std::istream;
 using std::istringstream;
 using std::left;
-using std::move;
 using std::mt19937;
 using std::ofstream;
 using std::random_device;
@@ -572,6 +570,7 @@ void tikrinti(bool condition) {
 void ruleOfFiveTestas() {
 
   // Default konstruktorius
+  cout << "Default konstruktorius" << endl;
   Studentas s1;
   tikrinti(s1.getVardas() == "");
   tikrinti(s1.getPavarde() == "");
@@ -582,6 +581,7 @@ void ruleOfFiveTestas() {
   tikrinti(s1.getGalutinisMediana() == 0.0);
 
   // Parameterizuotas konstruktorius
+  cout << "Parameterizuotas konstruktorius" << endl;
   Studentas s2("Jonas", "Jonaitis", 3, {8, 9, 7}, 10);
   tikrinti(s2.getVardas() == "Jonas");
   tikrinti(s2.getPavarde() == "Jonaitis");
@@ -592,6 +592,7 @@ void ruleOfFiveTestas() {
   tikrinti(s2.getEgzaminoBalas() == 10);
 
   // Kopijavimo konstruktorius
+  cout << "Kopijavimo konstruktorius" << endl;
   Studentas s3(s2);
   tikrinti(s3.getVardas() == "Jonas");
   tikrinti(s3.getPavarde() == "Jonaitis");
@@ -604,6 +605,7 @@ void ruleOfFiveTestas() {
   tikrinti(s3.getVardas() == "Petras");
 
   // Kopijavimo priskyrimo operatorius
+  cout << "Kopijavimo priskyrimo operatorius" << endl;
   Studentas s4;
   s4 = s2;
   tikrinti(s4.getVardas() == "Jonas");
@@ -617,7 +619,8 @@ void ruleOfFiveTestas() {
   tikrinti(s4.getVardas() == "Jonas");
 
   // Perkelimo konstruktorius
-  Studentas s5(move(s2));
+  cout << "Perkelimo konstruktorius" << endl;
+  Studentas s5(std::move(s2));
   tikrinti(s5.getVardas() == "Jonas");
   tikrinti(s5.getPavarde() == "Jonaitis");
   tikrinti(s5.getNamuDarbai() == 3);
@@ -627,9 +630,10 @@ void ruleOfFiveTestas() {
   tikrinti(s5.getEgzaminoBalas() == 10);
 
   // Perkelimo priskyrimo operatorius
+  cout << "Perkelimo priskyrimo operatorius" << endl;
   Studentas s6("Tomas", "Tomaitis", 2, {6, 7}, 8);
   Studentas s7;
-  s7 = move(s6);
+  s7 = std::move(s6);
   tikrinti(s7.getVardas() == "Tomas");
   tikrinti(s7.getPavarde() == "Tomaitis");
   tikrinti(s7.getNamuDarbai() == 2);
@@ -642,13 +646,25 @@ void ruleOfFiveTestas() {
   tikrinti(s6.getNamuDarbai() == 0);
   tikrinti(s6.getPazymiai().empty());
   tikrinti(s6.getEgzaminoBalas() == 0);
+
+  // operator>>
+  cout << "operator>>" << endl;
+  istringstream iss("Petras Petraitis 6 8 9");
+  Studentas s8;
+  iss >> s8;
+  s8.setNamuDarbai(2);
+  tikrinti(s8.getVardas() == "Petras");
+  tikrinti(s8.getPavarde() == "Petraitis");
+  tikrinti(s8.getPazymiai()[0] == 6);
+  tikrinti(s8.getPazymiai()[1] == 8);
+  tikrinti(s8.getEgzaminoBalas() == 9);
 }
 
 void testuotiGreiti() {
   int input = skaitytiSkaiciu(
       "Pasirinkite (1 - failo kurimo testas, 2 - "
       "duomenu apdorojimo testas, 3 - \"Rule of five\" testas):\n",
-      1, 2);
+      1, 3);
 
   switch (input) {
   case 1:
