@@ -48,6 +48,8 @@ void skaidytiStudentus3(StudentuKonteineris &studentai,
 void failuGeneravimas();
 void failoKurimoTestavimas();
 void duomenuApdorojimoTestavimas();
+void tikrinti(bool condition);
+void ruleOfFiveTestas();
 void testuotiGreiti();
 void failoNuskaitymas(StudentuKonteineris &studentai);
 void failoDuomenuApdorojimas(StudentuKonteineris &studentai);

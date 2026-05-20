@@ -3,6 +3,7 @@
 #include "timer.h"
 #include <array>
 #include <iostream>
+#include <utility>
 
 using std::array;
 using std::cerr;
@@ -14,6 +15,7 @@ using std::ifstream;
 using std::istream;
 using std::istringstream;
 using std::left;
+using std::move;
 using std::mt19937;
 using std::ofstream;
 using std::random_device;
@@ -562,11 +564,90 @@ void duomenuApdorojimoTestavimas() {
   // isvestisFailas(vargsiukai, "../outputData/testas_vargsiukai.txt");
   // isvestisFailas(kietiakai, "../outputData/testas_kietiakai.txt");
 }
+void tikrinti(bool condition) {
+  std::cout << (condition ? "[PASS] " : "[FAIL] ") << "\n";
+}
+
+void ruleOfFiveTestas() {
+
+  // Default konstruktorius
+  Studentas s1;
+  tikrinti(s1.getVardas() == "");
+  tikrinti(s1.getPavarde() == "");
+  tikrinti(s1.getNamuDarbai() == 0);
+  tikrinti(s1.getPazymiai().empty());
+  tikrinti(s1.getEgzaminoBalas() == 0);
+  tikrinti(s1.getGalutinisVidurkis() == 0.0);
+  tikrinti(s1.getGalutinisMediana() == 0.0);
+
+  // Parameterizuotas konstruktorius
+  Studentas s2("Jonas", "Jonaitis", 3, {8, 9, 7}, 10);
+  tikrinti(s2.getVardas() == "Jonas");
+  tikrinti(s2.getPavarde() == "Jonaitis");
+  tikrinti(s2.getNamuDarbai() == 3);
+  tikrinti(s2.getPazymiai()[0] == 8);
+  tikrinti(s2.getPazymiai()[1] == 9);
+  tikrinti(s2.getPazymiai()[2] == 7);
+  tikrinti(s2.getEgzaminoBalas() == 10);
+
+  // Kopijavimo konstruktorius
+  Studentas s3(s2);
+  tikrinti(s3.getVardas() == "Jonas");
+  tikrinti(s3.getPavarde() == "Jonaitis");
+  tikrinti(s3.getNamuDarbai() == 3);
+  tikrinti(s3.getPazymiai()[0] == 8);
+  tikrinti(s3.getPazymiai()[1] == 9);
+  tikrinti(s3.getPazymiai()[2] == 7);
+  tikrinti(s3.getEgzaminoBalas() == 10);
+  s3.setVardas("Petras");
+  tikrinti(s3.getVardas() == "Petras");
+
+  // Kopijavimo priskyrimo operatorius
+  Studentas s4;
+  s4 = s2;
+  tikrinti(s4.getVardas() == "Jonas");
+  tikrinti(s4.getPavarde() == "Jonaitis");
+  tikrinti(s4.getNamuDarbai() == 3);
+  tikrinti(s4.getPazymiai()[0] == 8);
+  tikrinti(s4.getPazymiai()[1] == 9);
+  tikrinti(s4.getPazymiai()[2] == 7);
+  tikrinti(s4.getEgzaminoBalas() == 10);
+  s4 = s4;
+  tikrinti(s4.getVardas() == "Jonas");
+
+  // Perkelimo konstruktorius
+  Studentas s5(move(s2));
+  tikrinti(s5.getVardas() == "Jonas");
+  tikrinti(s5.getPavarde() == "Jonaitis");
+  tikrinti(s5.getNamuDarbai() == 3);
+  tikrinti(s5.getPazymiai()[0] == 8);
+  tikrinti(s5.getPazymiai()[1] == 9);
+  tikrinti(s5.getPazymiai()[2] == 7);
+  tikrinti(s5.getEgzaminoBalas() == 10);
+
+  // Perkelimo priskyrimo operatorius
+  Studentas s6("Tomas", "Tomaitis", 2, {6, 7}, 8);
+  Studentas s7;
+  s7 = move(s6);
+  tikrinti(s7.getVardas() == "Tomas");
+  tikrinti(s7.getPavarde() == "Tomaitis");
+  tikrinti(s7.getNamuDarbai() == 2);
+  tikrinti(s7.getPazymiai()[0] == 6);
+  tikrinti(s7.getPazymiai()[1] == 7);
+  tikrinti(s7.getEgzaminoBalas() == 8);
+
+  tikrinti(s6.getVardas() == "");
+  tikrinti(s6.getPavarde() == "");
+  tikrinti(s6.getNamuDarbai() == 0);
+  tikrinti(s6.getPazymiai().empty());
+  tikrinti(s6.getEgzaminoBalas() == 0);
+}
 
 void testuotiGreiti() {
-  int input = skaitytiSkaiciu("Pasirinkite (1 - failo kurimo testas, 2 - "
-                              "duomenu apdorojimo testas):\n",
-                              1, 2);
+  int input = skaitytiSkaiciu(
+      "Pasirinkite (1 - failo kurimo testas, 2 - "
+      "duomenu apdorojimo testas, 3 - \"Rule of five\" testas):\n",
+      1, 2);
 
   switch (input) {
   case 1:
@@ -574,6 +655,9 @@ void testuotiGreiti() {
     break;
   case 2:
     duomenuApdorojimoTestavimas();
+    break;
+  case 3:
+    ruleOfFiveTestas();
     break;
   default:
     cout << "Neteisingas pasirinkimas!\n";

@@ -14,16 +14,20 @@ private:
   double galutinisMediana_ = 0.0;
 
 public:
-  Studentas();
+  // Default konstruktorius
+  Studentas() = default;
 
-  ~Studentas() {}
+  // Default destruktorius
+  ~Studentas() = default;
 
+  // Parameterizuotas konstruktorius
   Studentas(std::string vardas, std::string pavarde, int namuDarbai,
             std::vector<int> pazymiai, int egzaminoBalas)
       : vardas_(std::move(vardas)), pavarde_(std::move(pavarde)),
         namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
         egzaminoBalas_(egzaminoBalas) {};
 
+  // Kopijavimo konstruktorius
   Studentas(const Studentas &other)
       : vardas_(other.vardas_), pavarde_(other.pavarde_),
         namuDarbai_(other.namuDarbai_), pazymiai_(other.pazymiai_),
@@ -31,6 +35,7 @@ public:
         galutinisVidurkis_(other.galutinisVidurkis_),
         galutinisMediana_(other.galutinisMediana_) {}
 
+  // Kopijavimo priskyrimo operatorius
   Studentas &operator=(const Studentas &other) {
     if (this == &other) {
       return *this;
@@ -47,13 +52,21 @@ public:
     return *this;
   }
 
+  // Perkelimo konstruktorius
   Studentas(Studentas &&other)
       : vardas_(std::move(other.vardas_)), pavarde_(std::move(other.pavarde_)),
         namuDarbai_(other.namuDarbai_), pazymiai_(std::move(other.pazymiai_)),
         egzaminoBalas_(other.egzaminoBalas_),
         galutinisVidurkis_(other.galutinisVidurkis_),
-        galutinisMediana_(other.galutinisMediana_) {}
+        galutinisMediana_(other.galutinisMediana_) {
 
+    other.namuDarbai_ = 0;
+    other.egzaminoBalas_ = 0;
+    other.galutinisVidurkis_ = 0.0;
+    other.galutinisMediana_ = 0.0;
+  }
+
+  // Perkelimo priskyrimo operatorius
   Studentas &operator=(Studentas &&other) {
     if (this == &other) {
       return *this;
@@ -66,6 +79,11 @@ public:
     egzaminoBalas_ = other.egzaminoBalas_;
     galutinisVidurkis_ = other.galutinisVidurkis_;
     galutinisMediana_ = other.galutinisMediana_;
+
+    other.namuDarbai_ = 0;
+    other.egzaminoBalas_ = 0;
+    other.galutinisVidurkis_ = 0.0;
+    other.galutinisMediana_ = 0.0;
 
     return *this;
   }
