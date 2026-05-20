@@ -24,41 +24,61 @@ Debug\Darbas_su_studentais.exe
 
 # V1.1
 
+### Testavimo sistemos parametrai
+
 **CPU:** AMD Ryzen™ 5 PRO 7540U \
 **SSD:** Micron_2400_MTFDKBA1T0QFM \
 **RAM:** 16GB
 
 ### Palyginimas struct ir class naudojant vector ir 2 strategija
 
-### struct
+### struct, be flag, exe dydis: 148kb
 
 | Operacija      | 100 000 | 1 000 000 |
 | :------------- | ------: | --------: |
-| Veikimo laikas | 1.181 s |  15.721 s |
+| Veikimo laikas | 0.055 s |   0.705 s |
 
-### class
-
-| Operacija      | 100 000 | 1 000 000 |
-| :------------- | ------: | --------: |
-| Veikimo laikas | 1.181 s |  15.721 s |
-
-### O1 flag, exe dydis:
+### struct, -O1 flag, exe dydis: 110kb
 
 | Operacija      | 100 000 | 1 000 000 |
 | :------------- | ------: | --------: |
-| Veikimo laikas | 1.181 s |  15.721 s |
+| Veikimo laikas | 0.047 s |   0.648 s |
 
-### O2 flag
-
-| Operacija      | 100 000 | 1 000 000 |
-| :------------- | ------: | --------: |
-| Veikimo laikas | 1.181 s |  15.721 s |
-
-### O3 flag
+### struct, -O2 flag, exe dydis: 95kb
 
 | Operacija      | 100 000 | 1 000 000 |
 | :------------- | ------: | --------: |
-| Veikimo laikas | 1.181 s |  15.721 s |
+| Veikimo laikas | 0.054 s |   0.705 s |
+
+### struct, -O3 flag, exe dydis: 148kb
+
+| Operacija      | 100 000 | 1 000 000 |
+| :------------- | ------: | --------: |
+| Veikimo laikas | 0.046 s |   0.660 s |
+
+### class, be flag, exe dydis: 131 kb
+
+| Operacija      | 100 000 | 1 000 000 |
+| :------------- | ------: | --------: |
+| Veikimo laikas | 0.064 s |   0.884 s |
+
+### Class, -O1 flag, exe dydis: 100 kb
+
+| Operacija      | 100 000 | 1 000 000 |
+| :------------- | ------: | --------: |
+| Veikimo laikas | 0.065 s |   0.954 s |
+
+### Class, -O2 flag, exe dydis: 101 kb
+
+| Operacija      | 100 000 | 1 000 000 |
+| :------------- | ------: | --------: |
+| Veikimo laikas | 0.065 s |   0.923 s |
+
+### Class, -O3 flag, exe dydis: 131 kb
+
+| Operacija      | 100 000 | 1 000 000 |
+| :------------- | ------: | --------: |
+| Veikimo laikas | 0.065 s |   0.871 s |
 
 # V1.0
 
