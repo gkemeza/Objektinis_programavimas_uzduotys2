@@ -564,6 +564,7 @@ void duomenuApdorojimoTestavimas() {
   // isvestisFailas(vargsiukai, "../outputData/testas_vargsiukai.txt");
   // isvestisFailas(kietiakai, "../outputData/testas_kietiakai.txt");
 }
+
 void tikrinti(bool condition) {
   std::cout << (condition ? "[PASS] " : "[FAIL] ") << "\n";
 }
