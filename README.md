@@ -42,7 +42,7 @@ Debug\Darbas_su_studentais.exe
 | :------------- | ------: | --------: |
 | Veikimo laikas | 1.181 s |  15.721 s |
 
-### O1 flag
+### O1 flag, exe dydis:
 
 | Operacija      | 100 000 | 1 000 000 |
 | :------------- | ------: | --------: |

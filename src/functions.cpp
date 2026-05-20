@@ -556,6 +556,8 @@ void duomenuApdorojimoTestavimas() {
   cout << "Studentu rusiavimo i dvi grupes laikas: " << taskTimer.elapsed()
        << " s\n";
 
+  cout << "Pilnas veikimo laikas: " << totalTimer.elapsed() << " s\n";
+
   // studentai.clear();
   // isvestisFailas(vargsiukai, "../outputData/testas_vargsiukai.txt");
   // isvestisFailas(kietiakai, "../outputData/testas_kietiakai.txt");
