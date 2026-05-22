@@ -1,16 +1,16 @@
 # Naudojimosi instrukcija
 
-1 - pilnas studento ivedimas (vardas, pavarde, pazymiai)\
-2 - pusiau automatinis studento ivedimas (pazymiai susigeneruoja)\
-3 - pilnai automatinis studento generavimas\
-4 - failo nuskaitymas, duomenu rusiavimas ir isvedimas\
-5 - sugeneruoti pasirinkto dydzio faila\
-6 - testuoti failo sparta\
+1 - pilnas studento ivedimas (vardas, pavarde, pazymiai), išvestis į ekraną.\
+2 - pusiau automatinis studento ivedimas (pazymiai susigeneruoja), išvestis į ekraną.\
+3 - pilnai automatinis studento generavimas, išvestis į ekraną.\
+4 - failo nuskaitymas, duomenu rusiavimas, išvestis į ekraną arba failą.\
+5 - sugeneruoti pasirinkto dydzio faila, išvestis į failą.\
+6 - testuoti failo sparta (failo kurimo testas - išvestis į failą, duomenu apdorojimo testas - išvestis į failą, "Rule of five" testas išvestis į ekraną)\
 7 - isjungti programa
 
 # Įdiegimo instrukcija
 
-git clone --branch v1.1 https://github.com/gkemeza/Objektinis_programavimas_uzduotys2.git \
+git clone --branch v1.2 https://github.com/gkemeza/Objektinis_programavimas_uzduotys2.git \
 cd Objektinis_programavimas_uzduotys2 \
 mkdir build && cd build \
 cmake .. \
@@ -24,9 +24,25 @@ Debug\Darbas_su_studentais.exe
 
 # V1.2
 
+Prideti "Rule of five" metodai ir įvesties/išvesties operatoriai.
+
+### Testai
+
 ![alt text](images/testai1.png)
 
 ![alt text](images/testai2.png)
+
+### Testavimo sistemos parametrai
+
+**CPU:** AMD Ryzen™ 5 PRO 7540U \
+**SSD:** Micron_2400_MTFDKBA1T0QFM \
+**RAM:** 16GB
+
+### Class (vector) veikimo laikai
+
+| Operacija      |   1 000 |  10 000 | 100 000 | 1 000 000 | 10 000 000 |
+| :------------- | ------: | ------: | ------: | --------: | ---------: |
+| Veikimo laikas | 0.001 s | 0.010 s | 0.077 s |   1.008 s |   12.678 s |
 
 # V1.1
 
