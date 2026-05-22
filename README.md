@@ -22,6 +22,12 @@ Debug\Darbas_su_studentais.exe
 **Linux/Mac paleidimas:**\
 ./Darbas_su_studentais
 
+# V1.2
+
+![alt text](images/testai1.png)
+
+![alt text](images/testai2.png)
+
 # V1.1
 
 ### Testavimo sistemos parametrai
