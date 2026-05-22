@@ -68,10 +68,10 @@ void isvestisKonsole(const StudentuKonteineris &studentai) {
 void isvestisFailas(const StudentuKonteineris &studentai,
                     string failoPavadinimas) {
   try {
-    const string dirPath = "../outputData/";
+    const string dirPath = "outputData/";
     create_directories(dirPath);
 
-    ofstream failas("../outputData/" + failoPavadinimas);
+    ofstream failas(dirPath + failoPavadinimas);
 
     if (!failas.is_open())
       throw runtime_error("Klaida: nepavyko atidaryti failo irasymui.");
@@ -83,7 +83,10 @@ void isvestisFailas(const StudentuKonteineris &studentai,
 
     failas << left << fixed << setprecision(2);
     for (const Studentas &studentas : studentai) {
-      cout << studentas << "\n";
+      failas << setw(20) << studentas.getVardas() << setw(20)
+             << studentas.getPavarde() << setw(20)
+             << studentas.getGalutinisVidurkis() << setw(20)
+             << studentas.getGalutinisMediana() << "\n";
     }
   } catch (const runtime_error &ex) {
     cerr << ex.what() << "\n";
@@ -505,9 +508,9 @@ void failoKurimoTestavimas() {
 
 void duomenuApdorojimoTestavimas() {
   const vector<string> failai = {
-      "../archive/studentai1000.txt", "../archive/studentai10000.txt",
-      "../archive/studentai100000.txt", "../archive/studentai1000000.txt",
-      "../archive/studentai10000000.txt"};
+      "archive/studentai1000.txt", "archive/studentai10000.txt",
+      "archive/studentai100000.txt", "archive/studentai1000000.txt",
+      "archive/studentai10000000.txt"};
 
   int input =
       skaitytiSkaiciu("Pasirinkite 1 - studentai1000.txt, 2 - "
@@ -549,9 +552,9 @@ void duomenuApdorojimoTestavimas() {
 
   cout << "Pilnas veikimo laikas: " << totalTimer.elapsed() << " s\n";
 
-  // studentai.clear();
-  // isvestisFailas(vargsiukai, "../outputData/testas_vargsiukai.txt");
-  // isvestisFailas(kietiakai, "../outputData/testas_kietiakai.txt");
+  isvestisFailas(studentai, "testas_vargsiukai.txt");
+  isvestisFailas(kietiakai, "testas_kietiakai.txt");
+  studentai.clear();
 }
 
 void tikrinti(bool condition) {
