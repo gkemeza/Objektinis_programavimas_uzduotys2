@@ -83,10 +83,7 @@ void isvestisFailas(const StudentuKonteineris &studentai,
 
     failas << left << fixed << setprecision(2);
     for (const Studentas &studentas : studentai) {
-      failas << setw(20) << studentas.getVardas() << setw(20)
-             << studentas.getPavarde() << setw(20)
-             << studentas.getGalutinisVidurkis() << setw(20)
-             << studentas.getGalutinisMediana() << "\n";
+      cout << studentas << "\n";
     }
   } catch (const runtime_error &ex) {
     cerr << ex.what() << "\n";
@@ -177,17 +174,22 @@ bool suskaiciuotiGalutini(StudentuKonteineris &studentai) {
   return false;
 }
 
+void suskaiciuotiStudentoGalutinius(Studentas &studentas) {
+
+  double vidurkis = studentas.gautiVidurkiVidutini();
+  studentas.setGalutinisVidurkis(vidurkis * 0.4 +
+                                 studentas.getEgzaminoBalas() * 0.6);
+
+  studentas.surusiuotiPazymius();
+  double mediana = studentas.gautiVidurkiMediana();
+  studentas.setGalutinisMediana(mediana * 0.4 +
+                                studentas.getEgzaminoBalas() * 0.6);
+}
+
 void suskaiciuotiGalutinius(StudentuKonteineris &studentai) {
+
   for (Studentas &studentas : studentai) {
-
-    double vidurkis = studentas.gautiVidurkiVidutini();
-    studentas.setGalutinisVidurkis(vidurkis * 0.4 +
-                                   studentas.getEgzaminoBalas() * 0.6);
-
-    studentas.surusiuotiPazymius();
-    double mediana = studentas.gautiVidurkiMediana();
-    studentas.setGalutinisMediana(mediana * 0.4 +
-                                  studentas.getEgzaminoBalas() * 0.6);
+    suskaiciuotiStudentoGalutinius(studentas);
   }
 }
 
@@ -569,7 +571,6 @@ void tikrinti(bool condition) {
 
 void ruleOfFiveTestas() {
 
-  // Default konstruktorius
   cout << "Default konstruktorius" << endl;
   Studentas s1;
   tikrinti(s1.getVardas() == "");
@@ -580,7 +581,6 @@ void ruleOfFiveTestas() {
   tikrinti(s1.getGalutinisVidurkis() == 0.0);
   tikrinti(s1.getGalutinisMediana() == 0.0);
 
-  // Parameterizuotas konstruktorius
   cout << "Parameterizuotas konstruktorius" << endl;
   Studentas s2("Jonas", "Jonaitis", 3, {8, 9, 7}, 10);
   tikrinti(s2.getVardas() == "Jonas");
@@ -591,7 +591,6 @@ void ruleOfFiveTestas() {
   tikrinti(s2.getPazymiai()[2] == 7);
   tikrinti(s2.getEgzaminoBalas() == 10);
 
-  // Kopijavimo konstruktorius
   cout << "Kopijavimo konstruktorius" << endl;
   Studentas s3(s2);
   tikrinti(s3.getVardas() == "Jonas");
@@ -604,7 +603,6 @@ void ruleOfFiveTestas() {
   s3.setVardas("Petras");
   tikrinti(s3.getVardas() == "Petras");
 
-  // Kopijavimo priskyrimo operatorius
   cout << "Kopijavimo priskyrimo operatorius" << endl;
   Studentas s4;
   s4 = s2;
@@ -618,7 +616,6 @@ void ruleOfFiveTestas() {
   s4 = s4;
   tikrinti(s4.getVardas() == "Jonas");
 
-  // Perkelimo konstruktorius
   cout << "Perkelimo konstruktorius" << endl;
   Studentas s5(std::move(s2));
   tikrinti(s5.getVardas() == "Jonas");
@@ -629,7 +626,6 @@ void ruleOfFiveTestas() {
   tikrinti(s5.getPazymiai()[2] == 7);
   tikrinti(s5.getEgzaminoBalas() == 10);
 
-  // Perkelimo priskyrimo operatorius
   cout << "Perkelimo priskyrimo operatorius" << endl;
   Studentas s6("Tomas", "Tomaitis", 2, {6, 7}, 8);
   Studentas s7;
@@ -647,7 +643,6 @@ void ruleOfFiveTestas() {
   tikrinti(s6.getPazymiai().empty());
   tikrinti(s6.getEgzaminoBalas() == 0);
 
-  // operator>>
   cout << "operator>>" << endl;
   istringstream iss("Petras Petraitis 6 8 9");
   Studentas s8;
@@ -658,6 +653,10 @@ void ruleOfFiveTestas() {
   tikrinti(s8.getPazymiai()[0] == 6);
   tikrinti(s8.getPazymiai()[1] == 8);
   tikrinti(s8.getEgzaminoBalas() == 9);
+
+  cout << "operator<<" << endl;
+  suskaiciuotiStudentoGalutinius(s8);
+  cout << s8 << endl;
 }
 
 void testuotiGreiti() {

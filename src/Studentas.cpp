@@ -4,20 +4,22 @@
 #include <numeric>
 #include <string>
 
+using std::cout;
+using std::fixed;
 using std::istream;
 using std::left;
 using std::ostream;
+using std::setprecision;
 using std::setw;
 using std::sort;
 using std::string;
 using std::vector;
 
-ostream &operator<<(std::ostream &out, const Studentas &s) {
-  out << left << setw(20) << "Vardas" << left << setw(20) << "Pavarde" << left
-      << setw(20) << "Galutinis (Vid.)" << left << setw(20)
-      << "Galutinis (Med.)" << "\n";
-
-  out << string(100, '-') << "\n";
+ostream &operator<<(ostream &out, const Studentas &studentas) {
+  cout << left << fixed << setprecision(2);
+  cout << setw(20) << studentas.getVardas() << setw(20)
+       << studentas.getPavarde() << setw(20) << studentas.getGalutinisVidurkis()
+       << setw(20) << studentas.getGalutinisMediana();
 
   return out;
 }

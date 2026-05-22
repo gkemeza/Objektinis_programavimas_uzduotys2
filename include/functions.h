@@ -25,6 +25,7 @@ std::string skaitytiZodi(const std::string &pranesimas);
 std::string nuskaitytiVarda();
 std::string nuskaitytiPavarde();
 bool suskaiciuotiGalutini(StudentuKonteineris &studentai);
+void suskaiciuotiStudentoGalutinius(Studentas &studentas);
 void suskaiciuotiGalutinius(StudentuKonteineris &studentai);
 std::vector<int> nuskaitytiPazymius(std::istream &is, int namuDarbai);
 void nuskaitytiFaila(StudentuKonteineris &studentai,
