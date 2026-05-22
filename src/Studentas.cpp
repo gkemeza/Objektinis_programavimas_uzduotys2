@@ -2,11 +2,14 @@
 #include <algorithm>
 #include <iomanip>
 #include <numeric>
+#include <ostream>
+#include <sstream>
 #include <string>
 
 using std::cout;
 using std::fixed;
 using std::istream;
+using std::istringstream;
 using std::left;
 using std::ostream;
 using std::setprecision;
@@ -25,30 +28,31 @@ ostream &operator<<(ostream &out, const Studentas &studentas) {
 }
 
 istream &operator>>(std::istream &in, Studentas &s) {
+  string eilute;
+  if (!getline(in, eilute)) {
+    return in;
+  }
+
+  istringstream ss(eilute);
   string vardas, pavarde;
-  in >> vardas >> pavarde;
+  ss >> vardas >> pavarde;
   s.setVardas(vardas);
   s.setPavarde(pavarde);
 
   int temp;
   vector<int> pazymiai;
-  while (in >> temp) {
 
+  while (ss >> temp) {
     pazymiai.push_back(temp);
   }
-  if (!pazymiai.empty()) {
 
+  if (!pazymiai.empty()) {
     int egz = pazymiai.back();
     pazymiai.pop_back();
     s.setEgzaminoBalas(egz);
-
-    for (int i : pazymiai) {
-      s.addPazymys(i);
-    }
-
-    s.gautiVidurkiVidutini();
-    s.gautiVidurkiMediana();
+    s.setPazymiai(pazymiai);
   }
+
   return in;
 }
 
@@ -62,7 +66,7 @@ double Studentas::gautiVidurkiVidutini() const {
   }
 
   int pazymiuSuma = std::accumulate(pazymiai_.begin(), pazymiai_.end(), 0);
-  double vidurkisVidutinis = (pazymiuSuma * 1.0) / (namuDarbai_ * 1.0);
+  double vidurkisVidutinis = (pazymiuSuma * 1.0) / (pazymiai_.size() * 1.0);
 
   return vidurkisVidutinis;
 }

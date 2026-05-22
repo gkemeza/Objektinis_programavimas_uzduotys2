@@ -295,22 +295,11 @@ void nuskaitytiFaila(StudentuKonteineris &studentai,
   if (zodziuSkaicius < 4)
     throw runtime_error("Neteisinga antraste: " + failoPavadinimas);
 
-  int namuDarbai = zodziuSkaicius - 3;
-  string vardas, pavarde;
-  vector<int> pazymiai;
-  int egzaminoBalas;
-
-  while (failas >> vardas >> pavarde) {
-    pazymiai = (nuskaitytiPazymius(failas, namuDarbai));
-
-    if (!(failas >> egzaminoBalas))
-      throw runtime_error("Sugadintas failas (egzaminoBalas)");
-
-    studentai.push_back(
-        Studentas(vardas, pavarde, namuDarbai, pazymiai, egzaminoBalas));
+  Studentas studentas;
+  while (failas >> studentas) {
+    suskaiciuotiStudentoGalutinius(studentas);
+    studentai.push_back(studentas);
   }
-
-  suskaiciuotiGalutinius(studentai);
 }
 
 bool rusiuotiPagalVarda(const Studentas &a, const Studentas &b) {
@@ -656,7 +645,7 @@ void ruleOfFiveTestas() {
 
   cout << "operator<<" << endl;
   suskaiciuotiStudentoGalutinius(s8);
-  cout << s8 << endl;
+  cout << s8 << "\n\n";
 }
 
 void testuotiGreiti() {

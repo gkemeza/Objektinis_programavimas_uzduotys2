@@ -112,6 +112,9 @@ public:
   void setGalutinisMediana(const double mediana) {
     galutinisMediana_ = mediana;
   }
+  void setPazymiai(std::vector<int> pazymiai) {
+    pazymiai_ = std::move(pazymiai);
+  }
   void addPazymys(int pazymys) { pazymiai_.push_back(pazymys); }
 
   void surusiuotiPazymius();
