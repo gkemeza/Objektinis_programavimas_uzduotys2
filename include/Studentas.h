@@ -1,38 +1,41 @@
 #pragma once
+#include "Zmogus.h"
 #include <iostream>
 #include <list>
 #include <string>
 #include <vector>
 
-class Studentas {
+class Studentas : public Zmogus {
 private:
-  std::string vardas_ = "";
-  std::string pavarde_ = "";
-  int namuDarbai_ = 0;
   std::vector<int> pazymiai_ = {};
+  int namuDarbai_ = 0;
   int egzaminoBalas_ = 0;
   double galutinisVidurkis_ = 0.0;
   double galutinisMediana_ = 0.0;
 
 public:
-  // Default konstruktorius
-  Studentas() = default;
+  Studentas()
+      : Zmogus(), namuDarbai_(0), egzaminoBalas_(0), galutinisMediana_(0.0),
+        galutinisVidurkis_(0.0) {}
 
-  // Default destruktorius
-  ~Studentas() = default;
-
-  // Parameterizuotas konstruktorius
   Studentas(std::string vardas, std::string pavarde, int namuDarbai,
             std::vector<int> pazymiai, int egzaminoBalas)
-      : vardas_(std::move(vardas)), pavarde_(std::move(pavarde)),
-        namuDarbai_(namuDarbai), pazymiai_(std::move(pazymiai)),
-        egzaminoBalas_(egzaminoBalas) {};
+      : Zmogus(vardas, pavarde), namuDarbai_(namuDarbai),
+        pazymiai_(std::move(pazymiai)), egzaminoBalas_(egzaminoBalas) {}
+
+  ~Studentas() {
+    pazymiai_.clear();
+    pazymiai_.shrink_to_fit();
+    namuDarbai_ = 0;
+    egzaminoBalas_ = 0;
+    galutinisVidurkis_ = 0.0;
+    galutinisMediana_ = 0.0;
+  }
 
   // Kopijavimo konstruktorius
   Studentas(const Studentas &other)
-      : vardas_(other.vardas_), pavarde_(other.pavarde_),
-        namuDarbai_(other.namuDarbai_), pazymiai_(other.pazymiai_),
-        egzaminoBalas_(other.egzaminoBalas_),
+      : Zmogus(other.vardas_, other.pavarde_), namuDarbai_(other.namuDarbai_),
+        pazymiai_(other.pazymiai_), egzaminoBalas_(other.egzaminoBalas_),
         galutinisVidurkis_(other.galutinisVidurkis_),
         galutinisMediana_(other.galutinisMediana_) {}
 
@@ -55,7 +58,7 @@ public:
 
   // Perkelimo konstruktorius
   Studentas(Studentas &&other)
-      : vardas_(std::move(other.vardas_)), pavarde_(std::move(other.pavarde_)),
+      : Zmogus(std::move(other.vardas_), std::move(other.pavarde_)),
         namuDarbai_(other.namuDarbai_), pazymiai_(std::move(other.pazymiai_)),
         egzaminoBalas_(other.egzaminoBalas_),
         galutinisVidurkis_(other.galutinisVidurkis_),
@@ -88,6 +91,9 @@ public:
 
     return *this;
   }
+
+  void print(std::ostream &os) const override;
+  void read(std::istream &is) override;
 
   // Perdengtas išvedimo operatorius
   friend std::ostream &operator<<(std::ostream &out, const Studentas &s);
