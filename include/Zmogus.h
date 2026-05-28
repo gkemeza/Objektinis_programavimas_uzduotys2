@@ -1,6 +1,5 @@
 // Zmogus.h
 #pragma once
-#include <iostream>
 #include <string>
 
 class Zmogus {
@@ -16,9 +15,7 @@ public:
 
   virtual ~Zmogus() = default;
 
-  // Virtual methods
-  virtual void print(std::ostream &os) const = 0;
-  virtual void read(std::istream &is) = 0;
+  virtual void WhoamI() const = 0;
 
   std::string getVardas() const { return vardas_; }
   std::string getPavarde() const { return pavarde_; }
