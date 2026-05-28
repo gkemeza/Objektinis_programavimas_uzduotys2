@@ -92,8 +92,9 @@ public:
     return *this;
   }
 
-  void print(std::ostream &os) const override;
-  void read(std::istream &is) override;
+  void WhoamI() const override {
+    std::cout << vardas_ << " " << pavarde_ << std::endl;
+  }
 
   // Perdengtas išvedimo operatorius
   friend std::ostream &operator<<(std::ostream &out, const Studentas &s);
