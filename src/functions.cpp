@@ -605,6 +605,14 @@ void ruleOfFiveTestas() {
   tikrinti(s4.getPazymiai()[1] == 9);
   tikrinti(s4.getPazymiai()[2] == 7);
   tikrinti(s4.getEgzaminoBalas() == 10);
+
+  tikrinti(s2.getVardas() == "Jonas");
+  tikrinti(s2.getPavarde() == "Jonaitis");
+  tikrinti(s2.getNamuDarbai() == 3);
+  tikrinti(s2.getPazymiai()[0] == 8);
+  tikrinti(s2.getPazymiai()[1] == 9);
+  tikrinti(s2.getPazymiai()[2] == 7);
+  tikrinti(s2.getEgzaminoBalas() == 10);
   s4 = s4;
   tikrinti(s4.getVardas() == "Jonas");
 
@@ -617,6 +625,12 @@ void ruleOfFiveTestas() {
   tikrinti(s5.getPazymiai()[1] == 9);
   tikrinti(s5.getPazymiai()[2] == 7);
   tikrinti(s5.getEgzaminoBalas() == 10);
+
+  tikrinti(s2.getVardas() == "");
+  tikrinti(s2.getPavarde() == "");
+  tikrinti(s2.getNamuDarbai() == 0);
+  tikrinti(s2.getPazymiai().empty());
+  tikrinti(s2.getEgzaminoBalas() == 0);
 
   cout << "Perkelimo priskyrimo operatorius" << endl;
   Studentas s6("Tomas", "Tomaitis", 2, {6, 7}, 8);

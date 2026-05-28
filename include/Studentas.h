@@ -64,6 +64,8 @@ public:
         galutinisVidurkis_(other.galutinisVidurkis_),
         galutinisMediana_(other.galutinisMediana_) {
 
+    other.vardas_.clear();
+    other.pavarde_.clear();
     other.namuDarbai_ = 0;
     other.egzaminoBalas_ = 0;
     other.galutinisVidurkis_ = 0.0;
@@ -84,6 +86,8 @@ public:
     galutinisVidurkis_ = other.galutinisVidurkis_;
     galutinisMediana_ = other.galutinisMediana_;
 
+    other.vardas_.clear();
+    other.pavarde_.clear();
     other.namuDarbai_ = 0;
     other.egzaminoBalas_ = 0;
     other.galutinisVidurkis_ = 0.0;
