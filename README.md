@@ -22,6 +22,29 @@ Debug\Darbas_su_studentais.exe
 **Linux/Mac paleidimas:**\
 ./Darbas_su_studentais
 
+# V2.0
+
+## Unit testai
+
+![alt text](images/unit-tests.png)
+
+### Class (vector) veikimo laikai
+
+| Operacija      |   1 000 |  10 000 | 100 000 | 1 000 000 | 10 000 000 |
+| :------------- | ------: | ------: | ------: | --------: | ---------: |
+| Veikimo laikas | 0.002 s | 0.010 s | 0.083 s |   1.047 s |   19.873 s |
+
+### Testai
+
+```bash
+cd build && ctest --output-on-failure
+```
+
+## Dokumentacija
+
+Dokumentacija prieinama `docs/html/index.html`.  
+PDF versija: `docs/latex/refman.pdf`
+
 # V1.5
 
 Prideta abstrakti klase Zmogus ir pakeista Studentas klase i isvestine.
