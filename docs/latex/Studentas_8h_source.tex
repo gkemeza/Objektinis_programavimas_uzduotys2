@@ -1,0 +1,158 @@
+\doxysection{Studentas.\+h}
+\hypertarget{Studentas_8h_source}{}\label{Studentas_8h_source}\index{include/Studentas.h@{include/Studentas.h}}
+\doxymbox{\hyperlink{Studentas_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{Zmogus_8h}{Zmogus.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classZmogus_aa7a8ba4d3c4778f9b35d59eef3e72574}{Zmogus}}\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ std::vector<int>\ pazymiai\_\ =\ \{\};}
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{int}\ namuDarbai\_\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{int}\ egzaminoBalas\_\ =\ 0;}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{double}\ galutinisVidurkis\_\ =\ 0.0;}
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{double}\ galutinisMediana\_\ =\ 0.0;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}()}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{classZmogus_aa7a8ba4d3c4778f9b35d59eef3e72574}{Zmogus}}(),\ namuDarbai\_(0),\ egzaminoBalas\_(0),\ galutinisMediana\_(0.0),}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ galutinisVidurkis\_(0.0)\ \{\}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \doxymbox{\hyperlink{classStudentas_acb1574e715ece5800ff3e6633da7799e}{Studentas}}(std::string\ vardas,\ std::string\ pavarde,\ \textcolor{keywordtype}{int}\ namuDarbai,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<int>\ pazymiai,\ \textcolor{keywordtype}{int}\ egzaminoBalas)}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{classZmogus_aa7a8ba4d3c4778f9b35d59eef3e72574}{Zmogus}}(vardas,\ pavarde),\ namuDarbai\_(namuDarbai),}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ pazymiai\_(std::move(pazymiai)),\ egzaminoBalas\_(egzaminoBalas)\ \{\}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \doxymbox{\hyperlink{classStudentas_a63e449e0f51a0b14340d02ee71b4be23}{\string~Studentas}}()\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ pazymiai\_.clear();}
+\DoxyCodeLine{00046\ \ \ \ \ namuDarbai\_\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ egzaminoBalas\_\ =\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ galutinisVidurkis\_\ =\ 0.0;}
+\DoxyCodeLine{00049\ \ \ \ \ galutinisMediana\_\ =\ 0.0;}
+\DoxyCodeLine{00050\ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \textcolor{comment}{//\ Kopijavimo\ konstruktorius}}
+\DoxyCodeLine{00053\ \ \ \doxymbox{\hyperlink{classStudentas_aef0484fe46cf05746f8ffc0d083fcf3e}{Studentas}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ \&other)}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{classZmogus_aa7a8ba4d3c4778f9b35d59eef3e72574}{Zmogus}}(other.\doxymbox{\hyperlink{classZmogus_a80e72cd553492344884a264a72ce33d2}{vardas\_}},\ other.\doxymbox{\hyperlink{classZmogus_a85cd6103a5f887059263d15413a3f081}{pavarde\_}}),\ namuDarbai\_(other.namuDarbai\_),}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ pazymiai\_(other.pazymiai\_),\ egzaminoBalas\_(other.egzaminoBalas\_),}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ galutinisVidurkis\_(other.galutinisVidurkis\_),}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ galutinisMediana\_(other.galutinisMediana\_)\ \{\}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{comment}{//\ Kopijavimo\ priskyrimo\ operatorius}}
+\DoxyCodeLine{00060\ \ \ \doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ \&\doxymbox{\hyperlink{classStudentas_a25bcc531503d3bc490dab4a656e3b8e9}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ \&other)\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ ==\ \&other)\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \doxymbox{\hyperlink{classZmogus_a80e72cd553492344884a264a72ce33d2}{vardas\_}}\ =\ other.\doxymbox{\hyperlink{classZmogus_a80e72cd553492344884a264a72ce33d2}{vardas\_}};}
+\DoxyCodeLine{00066\ \ \ \ \ \doxymbox{\hyperlink{classZmogus_a85cd6103a5f887059263d15413a3f081}{pavarde\_}}\ =\ other.\doxymbox{\hyperlink{classZmogus_a85cd6103a5f887059263d15413a3f081}{pavarde\_}};}
+\DoxyCodeLine{00067\ \ \ \ \ namuDarbai\_\ =\ other.namuDarbai\_;}
+\DoxyCodeLine{00068\ \ \ \ \ pazymiai\_\ =\ other.pazymiai\_;}
+\DoxyCodeLine{00069\ \ \ \ \ egzaminoBalas\_\ =\ other.egzaminoBalas\_;}
+\DoxyCodeLine{00070\ \ \ \ \ galutinisVidurkis\_\ =\ other.galutinisVidurkis\_;}
+\DoxyCodeLine{00071\ \ \ \ \ galutinisMediana\_\ =\ other.galutinisMediana\_;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00074\ \ \ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{comment}{//\ Perkelimo\ konstruktorius}}
+\DoxyCodeLine{00077\ \ \ \doxymbox{\hyperlink{classStudentas_a358e756ef202249cd52492edb060fdf5}{Studentas}}(\doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ \&\&other)}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{classZmogus_aa7a8ba4d3c4778f9b35d59eef3e72574}{Zmogus}}(std::move(other.\doxymbox{\hyperlink{classZmogus_a80e72cd553492344884a264a72ce33d2}{vardas\_}}),\ std::move(other.\doxymbox{\hyperlink{classZmogus_a85cd6103a5f887059263d15413a3f081}{pavarde\_}})),}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ namuDarbai\_(other.namuDarbai\_),\ pazymiai\_(std::move(other.pazymiai\_)),}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ egzaminoBalas\_(other.egzaminoBalas\_),}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ galutinisVidurkis\_(other.galutinisVidurkis\_),}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ galutinisMediana\_(other.galutinisMediana\_)\ \{}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ other.vardas\_.clear();}
+\DoxyCodeLine{00085\ \ \ \ \ other.pavarde\_.clear();}
+\DoxyCodeLine{00086\ \ \ \ \ other.namuDarbai\_\ =\ 0;}
+\DoxyCodeLine{00087\ \ \ \ \ other.egzaminoBalas\_\ =\ 0;}
+\DoxyCodeLine{00088\ \ \ \ \ other.galutinisVidurkis\_\ =\ 0.0;}
+\DoxyCodeLine{00089\ \ \ \ \ other.galutinisMediana\_\ =\ 0.0;}
+\DoxyCodeLine{00090\ \ \ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \textcolor{comment}{//\ Perkelimo\ priskyrimo\ operatorius}}
+\DoxyCodeLine{00093\ \ \ \doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ \&\doxymbox{\hyperlink{classStudentas_a2362f28d29a4d2f80c39a04333c15ad4}{operator=}}(\doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ \&\&other)\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ ==\ \&other)\ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \doxymbox{\hyperlink{classZmogus_a80e72cd553492344884a264a72ce33d2}{vardas\_}}\ =\ std::move(other.vardas\_);}
+\DoxyCodeLine{00099\ \ \ \ \ \doxymbox{\hyperlink{classZmogus_a85cd6103a5f887059263d15413a3f081}{pavarde\_}}\ =\ std::move(other.pavarde\_);}
+\DoxyCodeLine{00100\ \ \ \ \ namuDarbai\_\ =\ other.namuDarbai\_;}
+\DoxyCodeLine{00101\ \ \ \ \ pazymiai\_\ =\ std::move(other.pazymiai\_);}
+\DoxyCodeLine{00102\ \ \ \ \ egzaminoBalas\_\ =\ other.egzaminoBalas\_;}
+\DoxyCodeLine{00103\ \ \ \ \ galutinisVidurkis\_\ =\ other.galutinisVidurkis\_;}
+\DoxyCodeLine{00104\ \ \ \ \ galutinisMediana\_\ =\ other.galutinisMediana\_;}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ other.vardas\_.clear();}
+\DoxyCodeLine{00107\ \ \ \ \ other.pavarde\_.clear();}
+\DoxyCodeLine{00108\ \ \ \ \ other.namuDarbai\_\ =\ 0;}
+\DoxyCodeLine{00109\ \ \ \ \ other.egzaminoBalas\_\ =\ 0;}
+\DoxyCodeLine{00110\ \ \ \ \ other.galutinisVidurkis\_\ =\ 0.0;}
+\DoxyCodeLine{00111\ \ \ \ \ other.galutinisMediana\_\ =\ 0.0;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00114\ \ \ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_a7d4d266af36437e1451597d19bab6a0e}{WhoamI}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00117\ \ \ \ \ std::cout\ <<\ \doxymbox{\hyperlink{classZmogus_a80e72cd553492344884a264a72ce33d2}{vardas\_}}\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ \doxymbox{\hyperlink{classZmogus_a85cd6103a5f887059263d15413a3f081}{pavarde\_}}\ <<\ std::endl;}
+\DoxyCodeLine{00118\ \ \ \}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \textcolor{comment}{//\ Perdengtas\ išvedimo\ operatorius}}
+\DoxyCodeLine{00121\ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\doxymbox{\hyperlink{classStudentas_a8ef0139ac1bd9eb75f994ab35393cdad}{operator<<}}(std::ostream\ \&out,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ \&s);}
+\DoxyCodeLine{00122\ \ \ \textcolor{comment}{//\ Perdengtas\ įvedimo\ operatorius}}
+\DoxyCodeLine{00123\ \ \ \textcolor{keyword}{friend}\ std::istream\ \&\doxymbox{\hyperlink{classStudentas_af8f35a3ee68335b1adb35ac85edf1c03}{operator>>}}(std::istream\ \&in,\ \doxymbox{\hyperlink{classStudentas_ab459e995e8c9b24cdc9aec5b09a66539}{Studentas}}\ \&s);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ std::string\ \doxymbox{\hyperlink{classStudentas_a4471c08cbf44faf5fe5f4c192922bf1b}{getVardas}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classZmogus_a80e72cd553492344884a264a72ce33d2}{vardas\_}};\ \}}
+\DoxyCodeLine{00126\ \ \ std::string\ \doxymbox{\hyperlink{classStudentas_afc1c025f58544eed43273afa98445853}{getPavarde}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classZmogus_a85cd6103a5f887059263d15413a3f081}{pavarde\_}};\ \}}
+\DoxyCodeLine{00127\ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classStudentas_ad374a609c8670addf8cfab8ca4b5d5f9}{getNamuDarbai}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ namuDarbai\_;\ \}}
+\DoxyCodeLine{00128\ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classStudentas_a52d6e64cb661ab843b38bd8850d5ef61}{getEgzaminoBalas}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ egzaminoBalas\_;\ \}}
+\DoxyCodeLine{00129\ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classStudentas_a1b6c6821bb44540e762d0561a4d1e859}{getGalutinisVidurkis}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ galutinisVidurkis\_;\ \}}
+\DoxyCodeLine{00130\ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classStudentas_ae90de68cf382234281c42f849e24f796}{getGalutinisMediana}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ galutinisMediana\_;\ \}}
+\DoxyCodeLine{00131\ \ \ \textcolor{keyword}{const}\ std::vector<int>\ \&\doxymbox{\hyperlink{classStudentas_a0f4347b5d93a0aea1f8428f2d86fbf2a}{getPazymiai}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ pazymiai\_;\ \}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_ada6e133cee4347851493cc4b55219838}{setVardas}}(\textcolor{keyword}{const}\ std::string\ \&vardas)\ \{\ \doxymbox{\hyperlink{classZmogus_a80e72cd553492344884a264a72ce33d2}{vardas\_}}\ =\ vardas;\ \}}
+\DoxyCodeLine{00134\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_a7f34ab90810686b13945d56c8c29b2be}{setPavarde}}(\textcolor{keyword}{const}\ std::string\ \&pavarde)\ \{\ \doxymbox{\hyperlink{classZmogus_a85cd6103a5f887059263d15413a3f081}{pavarde\_}}\ =\ pavarde;\ \}}
+\DoxyCodeLine{00135\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_ae6de1b9bc61e34fe520ad43506e339df}{setEgzaminoBalas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ balas)\ \{\ egzaminoBalas\_\ =\ balas;\ \}}
+\DoxyCodeLine{00136\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_a2c2bfde1d0a01a36723fec70fecbba09}{setNamuDarbai}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ nd)\ \{\ namuDarbai\_\ =\ nd;\ \}}
+\DoxyCodeLine{00137\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_a54af53fecf5f4806cddfb27230dbe069}{setGalutinisVidurkis}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ vidurkis)\ \{}
+\DoxyCodeLine{00138\ \ \ \ \ galutinisVidurkis\_\ =\ vidurkis;}
+\DoxyCodeLine{00139\ \ \ \}}
+\DoxyCodeLine{00140\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_ae8a896f8072a6a0b8fc4ab16f0853bf4}{setGalutinisMediana}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ mediana)\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ galutinisMediana\_\ =\ mediana;}
+\DoxyCodeLine{00142\ \ \ \}}
+\DoxyCodeLine{00143\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_a5623e719c31f386cd5a0e0c8009d1668}{setPazymiai}}(std::vector<int>\ pazymiai)\ \{}
+\DoxyCodeLine{00144\ \ \ \ \ pazymiai\_\ =\ std::move(pazymiai);}
+\DoxyCodeLine{00145\ \ \ \}}
+\DoxyCodeLine{00146\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_ac64090134601173b29cf0bc7df6c4cc6}{addPazymys}}(\textcolor{keywordtype}{int}\ pazymys)\ \{\ pazymiai\_.push\_back(pazymys);\ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classStudentas_aab9599764f8a16a000a776db1f1fcf03}{surusiuotiPazymius}}();}
+\DoxyCodeLine{00149\ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classStudentas_aa76bf3d4e2864c9437b61c9b4abe285a}{gautiVidurkiVidutini}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00150\ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classStudentas_a5e95830b4e018412168bb8003e7352ef}{gautiVidurkiMediana}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00151\ \};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2}{StudentuKonteineris}}\ =\ std::vector<Studentas>;}
+\DoxyCodeLine{00154\ \textcolor{comment}{//\ using\ StudentuKonteineris\ =\ std::list<Studentas>;}}
+\DoxyCodeLine{00155\ \textcolor{comment}{//\ using\ StudentuKonteineris\ =\ std::deque<Studentas>;}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{comment}{//\ Rodykle\ i\ bet\ kokia\ funkcija,\ kuri\ priima\ du\ Studentas\ objektus\ ir\ grazina}}
+\DoxyCodeLine{00158\ \textcolor{comment}{//\ bool\ reiksme}}
+\DoxyCodeLine{00159\ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}}\ =\ bool\ (*)(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{classStudentas}{Studentas}}\ \&,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{classStudentas}{Studentas}}\ \&);}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Konteineris>}
+\DoxyCodeLine{00162\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{Studentas_8h_ad6a6318b7675b9aa68d78e56e908256d}{surusiuotiStudentus}}(Konteineris\ \&studentai,\ \doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}}\ comparator)\ \{}
+\DoxyCodeLine{00163\ \ \ sort(studentai.begin(),\ studentai.end(),\ comparator);}
+\DoxyCodeLine{00164\ \}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00167\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{Studentas_8h_ad6a6318b7675b9aa68d78e56e908256d}{surusiuotiStudentus}}(std::list<Studentas>\ \&studentai,}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}}\ comparator)\ \{}
+\DoxyCodeLine{00169\ \ \ studentai.sort(comparator);}
+\DoxyCodeLine{00170\ \}}
+
+\end{DoxyCode}

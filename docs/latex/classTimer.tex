@@ -1,0 +1,60 @@
+\doxysection{Timer Class Reference}
+\hypertarget{classTimer}{}\label{classTimer}\index{Timer@{Timer}}
+
+
+\doxylink{classTimer}{Timer} klasė, skirta matuoti laiką tarp operacijų.  
+
+
+
+
+{\ttfamily \+\#include $<$timer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classTimer_a5f16e8da27d2a5a5242dead46de05d97}{Timer}} ()
+\item 
+void \doxymbox{\hyperlink{classTimer_a9020542d73357a4eef512eefaf57524b}{reset}} ()
+\item 
+double \doxymbox{\hyperlink{classTimer_a6a89a613c2af9b0d1e5f7e4ba9e46c54}{elapsed}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classTimer}{Timer} klasė, skirta matuoti laiką tarp operacijų. 
+
+Ši klasė naudoja C++11 chrono biblioteką, kad galėtų tiksliai matuoti laiką. Ji turi metodus laikui pradėti, iš naujo nustatyti ir gauti praėjusį laiką sekundėmis.
+
+\doxylink{classTimer}{Timer} klasė yra naudinga greičio testavimui ir optimizavimui, leidžiant lengvai matuoti, kiek laiko užtrunka tam tikros operacijos ar funkcijos vykdymas. 
+
+\label{doc-constructors}
+\Hypertarget{classTimer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTimer_a5f16e8da27d2a5a5242dead46de05d97}\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily \label{classTimer_a5f16e8da27d2a5a5242dead46de05d97} 
+Timer::\+\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classTimer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTimer_a6a89a613c2af9b0d1e5f7e4ba9e46c54}\index{Timer@{Timer}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{elapsed()}{elapsed()}}
+{\footnotesize\ttfamily \label{classTimer_a6a89a613c2af9b0d1e5f7e4ba9e46c54} 
+double Timer::\+elapsed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classTimer_a9020542d73357a4eef512eefaf57524b}\index{Timer@{Timer}!reset@{reset}}
+\index{reset@{reset}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classTimer_a9020542d73357a4eef512eefaf57524b} 
+void Timer::\+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+include/\+\doxymbox{\hyperlink{timer_8h}{timer.\+h}}\end{DoxyCompactItemize}

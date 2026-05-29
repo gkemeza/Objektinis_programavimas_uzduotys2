@@ -1,0 +1,43 @@
+\doxysection{src/\+\+Studentas.cpp File Reference}
+\hypertarget{Studentas_8cpp}{}\label{Studentas_8cpp}\index{src/Studentas.cpp@{src/Studentas.cpp}}
+{\ttfamily \+\#include "{}Studentas.\+h"{}}\newline
+{\ttfamily \+\#include $<$algorithm$>$}\newline
+{\ttfamily \+\#include $<$iomanip$>$}\newline
+{\ttfamily \+\#include $<$numeric$>$}\newline
+{\ttfamily \+\#include $<$ostream$>$}\newline
+{\ttfamily \+\#include $<$sstream$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \doxymbox{\hyperlink{Studentas_8cpp_a13fc1b0de4667f3d1ee4a293c3e8baf5}{operator$<$$<$}} (ostream \&out, const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&studentas)
+\begin{DoxyCompactList}\small\item\em Šiame faile yra įgyvendinami \doxylink{classStudentas}{Studentas} klasės metodai, įskaitant konstruktorius, priskyrimo operatorius, destruktorių, bei perdengtus įvedimo ir išvedimo operatorius. Taip pat yra metodai pažymių tvarkymui ir galutinių rezultatų skaičiavimui. \end{DoxyCompactList}\item 
+istream \& \doxymbox{\hyperlink{Studentas_8cpp_a688823ac26c62a8e6f51fedd5eb489ad}{operator$>$$>$}} (std::\+istream \&in, \doxymbox{\hyperlink{classStudentas}{Studentas}} \&s)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{Studentas_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{Studentas_8cpp_a13fc1b0de4667f3d1ee4a293c3e8baf5}\index{Studentas.cpp@{Studentas.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Studentas.cpp@{Studentas.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{Studentas_8cpp_a13fc1b0de4667f3d1ee4a293c3e8baf5} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out}{, }\item[{const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&}]{studentas}{}\end{DoxyParamCaption})}
+
+
+
+Šiame faile yra įgyvendinami \doxylink{classStudentas}{Studentas} klasės metodai, įskaitant konstruktorius, priskyrimo operatorius, destruktorių, bei perdengtus įvedimo ir išvedimo operatorius. Taip pat yra metodai pažymių tvarkymui ir galutinių rezultatų skaičiavimui. 
+
+Ši klasė paveldi iš abstrakčios \doxylink{classZmogus}{Zmogus} klasės, todėl turi įgyvendinti WhoamI metodą. Klasė taip pat turi savo specifinius duomenis, tokius kaip namų darbų skaičius, pažymiai, egzamino balas, galutinis vidurkis ir mediana.
+
+Konstruktoriai ir priskyrimo operatoriai užtikrina tinkamą resursų valdymą, o destruktorius užtikrina, kad visi resursai būtų tinkamai atlaisvinti.
+
+Perdengti įvedimo ir išvedimo operatoriai leidžia lengvai skaityti ir rašyti \doxylink{classStudentas}{Studentas} objektus naudojant standartinius srautus.
+
+Ši klasė yra testuojama naudojant Google Test framework\textquotesingle{}ą, siekiant užtikrinti, kad visi metodai veiktų teisingai įvairiais scenarijais. \Hypertarget{Studentas_8cpp_a688823ac26c62a8e6f51fedd5eb489ad}\index{Studentas.cpp@{Studentas.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Studentas.cpp@{Studentas.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily \label{Studentas_8cpp_a688823ac26c62a8e6f51fedd5eb489ad} 
+istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std::\+istream \&}]{in}{, }\item[{\doxymbox{\hyperlink{classStudentas}{Studentas}} \&}]{s}{}\end{DoxyParamCaption})}
+

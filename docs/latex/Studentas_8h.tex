@@ -1,0 +1,74 @@
+\doxysection{include/\+\+Studentas.h File Reference}
+\hypertarget{Studentas_8h}{}\label{Studentas_8h}\index{include/Studentas.h@{include/Studentas.h}}
+
+
+Šiame faile yra aprašoma \doxylink{classStudentas}{Studentas} klasė, kuri paveldi iš abstrakčios \doxylink{classZmogus}{Zmogus} klasės. \doxylink{classStudentas}{Studentas} klasė turi papildomų laukų, tokių kaip pažymiai, namų darbai, egzamino balas, galutinis vidurkis ir mediana. Taip pat yra aprašomi penki taisyklių (Rule of Five) metodai:\+ konstruktoriumi, kopijavimo konstruktorius, kopijavimo priskyrimo operatorius, perkėlimo konstruktorius ir perkėlimo priskyrimo operatorius. Be to, yra aprašomi perdengti įvedimo ir išvedimo operatoriai.  
+
+
+{\ttfamily \+\#include "{}Zmogus.\+h"{}}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$list$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classStudentas}{Studentas}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \doxymbox{\hyperlink{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2}{Studentu\+Konteineris}} = std::\+vector$<$\doxymbox{\hyperlink{classStudentas}{Studentas}}$>$
+\item 
+using \doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}} = bool (\texorpdfstring{$\ast$}{*})(const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&, const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Konteineris$>$ }\\void \doxymbox{\hyperlink{Studentas_8h_ad6a6318b7675b9aa68d78e56e908256d}{surusiuoti\+Studentus}} (Konteineris \&studentai, \doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}} comparator)
+\item 
+template$<$$>$ void \doxymbox{\hyperlink{Studentas_8h_a52349316223934b4e684a6ca661bd795}{surusiuoti\+Studentus}} (std::\+list$<$ \doxymbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai, \doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}} comparator)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Šiame faile yra aprašoma \doxylink{classStudentas}{Studentas} klasė, kuri paveldi iš abstrakčios \doxylink{classZmogus}{Zmogus} klasės. \doxylink{classStudentas}{Studentas} klasė turi papildomų laukų, tokių kaip pažymiai, namų darbai, egzamino balas, galutinis vidurkis ir mediana. Taip pat yra aprašomi penki taisyklių (Rule of Five) metodai:\+ konstruktoriumi, kopijavimo konstruktorius, kopijavimo priskyrimo operatorius, perkėlimo konstruktorius ir perkėlimo priskyrimo operatorius. Be to, yra aprašomi perdengti įvedimo ir išvedimo operatoriai. 
+
+\doxylink{classStudentas}{Studentas} klasė taip pat turi metodus galutiniam vidurkiui ir medianai apskaičiuoti, bei metodą surusiuoti\+Pazymius, kuris rūšiuoja pažymius.
+
+Ši klasė yra skirta naudoti su įvairiais konteineriais, tokiais kaip vector, list ar deque, ir gali būti lengvai išplėsta su papildomais metodais ar laukais pagal poreikį. 
+
+\label{doc-typedef-members}
+\Hypertarget{Studentas_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{Studentas_8h_a9cfc251cb8dde820d78183b679383948}\index{Studentas.h@{Studentas.h}!Comparator@{Comparator}}
+\index{Comparator@{Comparator}!Studentas.h@{Studentas.h}}
+\doxysubsubsection{\texorpdfstring{Comparator}{Comparator}}
+{\footnotesize\ttfamily \label{Studentas_8h_a9cfc251cb8dde820d78183b679383948} 
+using \doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}} = bool (\texorpdfstring{$\ast$}{*})(const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&, const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&)}
+
+\Hypertarget{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2}\index{Studentas.h@{Studentas.h}!StudentuKonteineris@{StudentuKonteineris}}
+\index{StudentuKonteineris@{StudentuKonteineris}!Studentas.h@{Studentas.h}}
+\doxysubsubsection{\texorpdfstring{StudentuKonteineris}{StudentuKonteineris}}
+{\footnotesize\ttfamily \label{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2} 
+using \doxymbox{\hyperlink{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2}{Studentu\+Konteineris}} = std::\+vector$<$\doxymbox{\hyperlink{classStudentas}{Studentas}}$>$}
+
+
+
+\label{doc-func-members}
+\Hypertarget{Studentas_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{Studentas_8h_ad6a6318b7675b9aa68d78e56e908256d}\index{Studentas.h@{Studentas.h}!surusiuotiStudentus@{surusiuotiStudentus}}
+\index{surusiuotiStudentus@{surusiuotiStudentus}!Studentas.h@{Studentas.h}}
+\doxysubsubsection{\texorpdfstring{surusiuotiStudentus()}{surusiuotiStudentus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{Studentas_8h_ad6a6318b7675b9aa68d78e56e908256d} 
+template$<$typename Konteineris$>$ \\
+void surusiuoti\+Studentus (\begin{DoxyParamCaption}\item[{Konteineris \&}]{studentai}{, }\item[{\doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}}}]{comparator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{Studentas_8h_a52349316223934b4e684a6ca661bd795}\index{Studentas.h@{Studentas.h}!surusiuotiStudentus@{surusiuotiStudentus}}
+\index{surusiuotiStudentus@{surusiuotiStudentus}!Studentas.h@{Studentas.h}}
+\doxysubsubsection{\texorpdfstring{surusiuotiStudentus()}{surusiuotiStudentus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{Studentas_8h_a52349316223934b4e684a6ca661bd795} 
+template$<$$>$ \\
+void surusiuoti\+Studentus (\begin{DoxyParamCaption}\item[{std::\+list$<$ \doxymbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai}{, }\item[{\doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}}}]{comparator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

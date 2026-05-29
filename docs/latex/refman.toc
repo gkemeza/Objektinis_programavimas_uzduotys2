@@ -1,0 +1,164 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Directory Hierarchy}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Directories}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Directory Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}include Directory Reference}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}src Directory Reference}{9}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Studentas Class Reference}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Constructor \& Destructor Documentation}{12}{subsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.1}Studentas()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{12}{subsubsection.6.1.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.2}Studentas()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{12}{subsubsection.6.1.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.1.3}$\sim $Studentas()}{12}{subsubsection.6.1.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.1.4}Studentas()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{12}{subsubsection.6.1.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.1.5}Studentas()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{13}{subsubsection.6.1.1.5}%
+\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{13}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}addPazymys()}{13}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}gautiVidurkiMediana()}{13}{subsubsection.6.1.2.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.3}gautiVidurkiVidutini()}{13}{subsubsection.6.1.2.3}%
+\contentsline {subsubsection}{\numberline {6.1.2.4}getEgzaminoBalas()}{13}{subsubsection.6.1.2.4}%
+\contentsline {subsubsection}{\numberline {6.1.2.5}getGalutinisMediana()}{13}{subsubsection.6.1.2.5}%
+\contentsline {subsubsection}{\numberline {6.1.2.6}getGalutinisVidurkis()}{13}{subsubsection.6.1.2.6}%
+\contentsline {subsubsection}{\numberline {6.1.2.7}getNamuDarbai()}{13}{subsubsection.6.1.2.7}%
+\contentsline {subsubsection}{\numberline {6.1.2.8}getPavarde()}{13}{subsubsection.6.1.2.8}%
+\contentsline {subsubsection}{\numberline {6.1.2.9}getPazymiai()}{14}{subsubsection.6.1.2.9}%
+\contentsline {subsubsection}{\numberline {6.1.2.10}getVardas()}{14}{subsubsection.6.1.2.10}%
+\contentsline {subsubsection}{\numberline {6.1.2.11}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{14}{subsubsection.6.1.2.11}%
+\contentsline {subsubsection}{\numberline {6.1.2.12}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{14}{subsubsection.6.1.2.12}%
+\contentsline {subsubsection}{\numberline {6.1.2.13}setEgzaminoBalas()}{14}{subsubsection.6.1.2.13}%
+\contentsline {subsubsection}{\numberline {6.1.2.14}setGalutinisMediana()}{14}{subsubsection.6.1.2.14}%
+\contentsline {subsubsection}{\numberline {6.1.2.15}setGalutinisVidurkis()}{14}{subsubsection.6.1.2.15}%
+\contentsline {subsubsection}{\numberline {6.1.2.16}setNamuDarbai()}{14}{subsubsection.6.1.2.16}%
+\contentsline {subsubsection}{\numberline {6.1.2.17}setPavarde()}{14}{subsubsection.6.1.2.17}%
+\contentsline {subsubsection}{\numberline {6.1.2.18}setPazymiai()}{15}{subsubsection.6.1.2.18}%
+\contentsline {subsubsection}{\numberline {6.1.2.19}setVardas()}{15}{subsubsection.6.1.2.19}%
+\contentsline {subsubsection}{\numberline {6.1.2.20}surusiuotiPazymius()}{15}{subsubsection.6.1.2.20}%
+\contentsline {subsubsection}{\numberline {6.1.2.21}WhoamI()}{15}{subsubsection.6.1.2.21}%
+\contentsline {subsection}{\numberline {6.1.3}Friends And Related Symbol Documentation}{15}{subsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.3.1}operator$<$$<$}{15}{subsubsection.6.1.3.1}%
+\contentsline {subsubsection}{\numberline {6.1.3.2}operator$>$$>$}{15}{subsubsection.6.1.3.2}%
+\contentsline {section}{\numberline {6.2}Timer Class Reference}{15}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{16}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{16}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}Timer()}{16}{subsubsection.6.2.2.1}%
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{16}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}elapsed()}{16}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}reset()}{16}{subsubsection.6.2.3.2}%
+\contentsline {section}{\numberline {6.3}Zmogus Class Reference}{16}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{17}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Constructor \& Destructor Documentation}{17}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}Zmogus()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{17}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.2.2}Zmogus()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{17}{subsubsection.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}$\sim $Zmogus()}{17}{subsubsection.6.3.2.3}%
+\contentsline {subsection}{\numberline {6.3.3}Member Function Documentation}{17}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}getPavarde()}{17}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}getVardas()}{17}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}setPavarde()}{18}{subsubsection.6.3.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.4}setVardas()}{18}{subsubsection.6.3.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.3.5}WhoamI()}{18}{subsubsection.6.3.3.5}%
+\contentsline {subsection}{\numberline {6.3.4}Member Data Documentation}{18}{subsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.1}pavarde\_}{18}{subsubsection.6.3.4.1}%
+\contentsline {subsubsection}{\numberline {6.3.4.2}vardas\_}{18}{subsubsection.6.3.4.2}%
+\contentsline {chapter}{\numberline {7}File Documentation}{19}{chapter.7}%
+\contentsline {section}{\numberline {7.1}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.h File Reference}{19}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Function Documentation}{20}{subsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.1.1}duomenuApdorojimoTestavimas()}{20}{subsubsection.7.1.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.1.2}failoDuomenuApdorojimas()}{20}{subsubsection.7.1.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.1.3}failoKurimoTestavimas()}{20}{subsubsection.7.1.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.1.4}failoNuskaitymas()}{20}{subsubsection.7.1.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.1.5}failuGeneravimas()}{20}{subsubsection.7.1.1.5}%
+\contentsline {subsubsection}{\numberline {7.1.1.6}generuotiFaila()}{21}{subsubsection.7.1.1.6}%
+\contentsline {subsubsection}{\numberline {7.1.1.7}generuotiPazymius()}{21}{subsubsection.7.1.1.7}%
+\contentsline {subsubsection}{\numberline {7.1.1.8}generuotiStudenta()}{21}{subsubsection.7.1.1.8}%
+\contentsline {subsubsection}{\numberline {7.1.1.9}isvestis()}{21}{subsubsection.7.1.1.9}%
+\contentsline {subsubsection}{\numberline {7.1.1.10}isvestisFailas()}{21}{subsubsection.7.1.1.10}%
+\contentsline {subsubsection}{\numberline {7.1.1.11}isvestisKonsole()}{21}{subsubsection.7.1.1.11}%
+\contentsline {subsubsection}{\numberline {7.1.1.12}ivestisRanka()}{21}{subsubsection.7.1.1.12}%
+\contentsline {subsubsection}{\numberline {7.1.1.13}nuskaitytiFaila()}{21}{subsubsection.7.1.1.13}%
+\contentsline {subsubsection}{\numberline {7.1.1.14}nuskaitytiPavarde()}{21}{subsubsection.7.1.1.14}%
+\contentsline {subsubsection}{\numberline {7.1.1.15}nuskaitytiPazymius()}{22}{subsubsection.7.1.1.15}%
+\contentsline {subsubsection}{\numberline {7.1.1.16}nuskaitytiVarda()}{22}{subsubsection.7.1.1.16}%
+\contentsline {subsubsection}{\numberline {7.1.1.17}ruleOfFiveTestas()}{22}{subsubsection.7.1.1.17}%
+\contentsline {subsubsection}{\numberline {7.1.1.18}rusiuotiPagalMediana()}{22}{subsubsection.7.1.1.18}%
+\contentsline {subsubsection}{\numberline {7.1.1.19}rusiuotiPagalPavarde()}{22}{subsubsection.7.1.1.19}%
+\contentsline {subsubsection}{\numberline {7.1.1.20}rusiuotiPagalVarda()}{22}{subsubsection.7.1.1.20}%
+\contentsline {subsubsection}{\numberline {7.1.1.21}rusiuotiPagalVidurki()}{22}{subsubsection.7.1.1.21}%
+\contentsline {subsubsection}{\numberline {7.1.1.22}rusiuotiStudentus()}{22}{subsubsection.7.1.1.22}%
+\contentsline {subsubsection}{\numberline {7.1.1.23}skaidytiStudentus1()}{23}{subsubsection.7.1.1.23}%
+\contentsline {subsubsection}{\numberline {7.1.1.24}skaidytiStudentus2()}{23}{subsubsection.7.1.1.24}%
+\contentsline {subsubsection}{\numberline {7.1.1.25}skaidytiStudentus3()}{23}{subsubsection.7.1.1.25}%
+\contentsline {subsubsection}{\numberline {7.1.1.26}skaitytiSkaiciu()}{23}{subsubsection.7.1.1.26}%
+\contentsline {subsubsection}{\numberline {7.1.1.27}skaitytiZodi()}{23}{subsubsection.7.1.1.27}%
+\contentsline {subsubsection}{\numberline {7.1.1.28}studentuDuomenuApdorojimas()}{23}{subsubsection.7.1.1.28}%
+\contentsline {subsubsection}{\numberline {7.1.1.29}surusiuotiPagalPasirinkima()}{23}{subsubsection.7.1.1.29}%
+\contentsline {subsubsection}{\numberline {7.1.1.30}suskaiciuotiGalutini()}{23}{subsubsection.7.1.1.30}%
+\contentsline {subsubsection}{\numberline {7.1.1.31}suskaiciuotiGalutinius()}{24}{subsubsection.7.1.1.31}%
+\contentsline {subsubsection}{\numberline {7.1.1.32}suskaiciuotiStudentoGalutinius()}{24}{subsubsection.7.1.1.32}%
+\contentsline {subsubsection}{\numberline {7.1.1.33}testuotiGreiti()}{24}{subsubsection.7.1.1.33}%
+\contentsline {subsubsection}{\numberline {7.1.1.34}tikrinti()}{24}{subsubsection.7.1.1.34}%
+\contentsline {section}{\numberline {7.2}functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{24}{section.7.2}%
+\contentsline {section}{\numberline {7.3}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Studentas.h File Reference}{25}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{25}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Typedef Documentation}{26}{subsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.1}Comparator}{26}{subsubsection.7.3.2.1}%
+\contentsline {subsubsection}{\numberline {7.3.2.2}StudentuKonteineris}{26}{subsubsection.7.3.2.2}%
+\contentsline {subsection}{\numberline {7.3.3}Function Documentation}{26}{subsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.1}surusiuotiStudentus()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{26}{subsubsection.7.3.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.3.2}surusiuotiStudentus()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{26}{subsubsection.7.3.3.2}%
+\contentsline {section}{\numberline {7.4}Studentas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{26}{section.7.4}%
+\contentsline {section}{\numberline {7.5}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}timer.h File Reference}{28}{section.7.5}%
+\contentsline {section}{\numberline {7.6}timer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{28}{section.7.6}%
+\contentsline {section}{\numberline {7.7}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zmogus.h File Reference}{29}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Zmogus.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{29}{section.7.8}%
+\contentsline {section}{\numberline {7.9}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.cpp File Reference}{29}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Detailed Description}{30}{subsection.7.9.1}%
+\contentsline {subsection}{\numberline {7.9.2}Function Documentation}{31}{subsection.7.9.2}%
+\contentsline {subsubsection}{\numberline {7.9.2.1}duomenuApdorojimoTestavimas()}{31}{subsubsection.7.9.2.1}%
+\contentsline {subsubsection}{\numberline {7.9.2.2}failoDuomenuApdorojimas()}{31}{subsubsection.7.9.2.2}%
+\contentsline {subsubsection}{\numberline {7.9.2.3}failoKurimoTestavimas()}{31}{subsubsection.7.9.2.3}%
+\contentsline {subsubsection}{\numberline {7.9.2.4}failoNuskaitymas()}{31}{subsubsection.7.9.2.4}%
+\contentsline {subsubsection}{\numberline {7.9.2.5}failuGeneravimas()}{31}{subsubsection.7.9.2.5}%
+\contentsline {subsubsection}{\numberline {7.9.2.6}generuotiFaila()}{31}{subsubsection.7.9.2.6}%
+\contentsline {subsubsection}{\numberline {7.9.2.7}generuotiPazymius()}{31}{subsubsection.7.9.2.7}%
+\contentsline {subsubsection}{\numberline {7.9.2.8}generuotiStudenta()}{32}{subsubsection.7.9.2.8}%
+\contentsline {subsubsection}{\numberline {7.9.2.9}isvestis()}{32}{subsubsection.7.9.2.9}%
+\contentsline {subsubsection}{\numberline {7.9.2.10}isvestisFailas()}{32}{subsubsection.7.9.2.10}%
+\contentsline {subsubsection}{\numberline {7.9.2.11}isvestisKonsole()}{32}{subsubsection.7.9.2.11}%
+\contentsline {subsubsection}{\numberline {7.9.2.12}ivestisRanka()}{32}{subsubsection.7.9.2.12}%
+\contentsline {subsubsection}{\numberline {7.9.2.13}nuskaitytiFaila()}{32}{subsubsection.7.9.2.13}%
+\contentsline {subsubsection}{\numberline {7.9.2.14}nuskaitytiPavarde()}{32}{subsubsection.7.9.2.14}%
+\contentsline {subsubsection}{\numberline {7.9.2.15}nuskaitytiPazymius()}{32}{subsubsection.7.9.2.15}%
+\contentsline {subsubsection}{\numberline {7.9.2.16}nuskaitytiVarda()}{32}{subsubsection.7.9.2.16}%
+\contentsline {subsubsection}{\numberline {7.9.2.17}randomInt()}{33}{subsubsection.7.9.2.17}%
+\contentsline {subsubsection}{\numberline {7.9.2.18}ruleOfFiveTestas()}{33}{subsubsection.7.9.2.18}%
+\contentsline {subsubsection}{\numberline {7.9.2.19}rusiuotiPagalMediana()}{33}{subsubsection.7.9.2.19}%
+\contentsline {subsubsection}{\numberline {7.9.2.20}rusiuotiPagalPavarde()}{33}{subsubsection.7.9.2.20}%
+\contentsline {subsubsection}{\numberline {7.9.2.21}rusiuotiPagalVarda()}{33}{subsubsection.7.9.2.21}%
+\contentsline {subsubsection}{\numberline {7.9.2.22}rusiuotiPagalVidurki()}{33}{subsubsection.7.9.2.22}%
+\contentsline {subsubsection}{\numberline {7.9.2.23}rusiuotiStudentus()}{33}{subsubsection.7.9.2.23}%
+\contentsline {subsubsection}{\numberline {7.9.2.24}skaidytiStudentus1()}{33}{subsubsection.7.9.2.24}%
+\contentsline {subsubsection}{\numberline {7.9.2.25}skaidytiStudentus2()}{34}{subsubsection.7.9.2.25}%
+\contentsline {subsubsection}{\numberline {7.9.2.26}skaidytiStudentus3()}{34}{subsubsection.7.9.2.26}%
+\contentsline {subsubsection}{\numberline {7.9.2.27}skaitytiSkaiciu()}{34}{subsubsection.7.9.2.27}%
+\contentsline {subsubsection}{\numberline {7.9.2.28}skaitytiZodi()}{34}{subsubsection.7.9.2.28}%
+\contentsline {subsubsection}{\numberline {7.9.2.29}studentuDuomenuApdorojimas()}{34}{subsubsection.7.9.2.29}%
+\contentsline {subsubsection}{\numberline {7.9.2.30}surusiuotiPagalPasirinkima()}{34}{subsubsection.7.9.2.30}%
+\contentsline {subsubsection}{\numberline {7.9.2.31}suskaiciuotiGalutini()}{34}{subsubsection.7.9.2.31}%
+\contentsline {subsubsection}{\numberline {7.9.2.32}suskaiciuotiGalutinius()}{34}{subsubsection.7.9.2.32}%
+\contentsline {subsubsection}{\numberline {7.9.2.33}suskaiciuotiStudentoGalutinius()}{35}{subsubsection.7.9.2.33}%
+\contentsline {subsubsection}{\numberline {7.9.2.34}testuotiGreiti()}{35}{subsubsection.7.9.2.34}%
+\contentsline {subsubsection}{\numberline {7.9.2.35}tikrinti()}{35}{subsubsection.7.9.2.35}%
+\contentsline {section}{\numberline {7.10}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main.cpp File Reference}{35}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Function Documentation}{35}{subsection.7.10.1}%
+\contentsline {subsubsection}{\numberline {7.10.1.1}main()}{35}{subsubsection.7.10.1.1}%
+\contentsline {section}{\numberline {7.11}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Studentas.cpp File Reference}{36}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Function Documentation}{36}{subsection.7.11.1}%
+\contentsline {subsubsection}{\numberline {7.11.1.1}operator$<$$<$()}{36}{subsubsection.7.11.1.1}%
+\contentsline {subsubsection}{\numberline {7.11.1.2}operator$>$$>$()}{36}{subsubsection.7.11.1.2}%
+\contentsline {chapter}{Index}{37}{section*.22}%

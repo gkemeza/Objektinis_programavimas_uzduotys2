@@ -24,17 +24,24 @@
 */
 var NAVTREE =
 [
-  [ "Darbas su stidentais", "index.html", [
-    [ "Naudojimosi instrukcija", "md_README.html", [
-      [ "Įdiegimo instrukcija", "md_README.html#autotoc_md1", null ],
-      [ "V1.5", "md_README.html#autotoc_md2", null ],
-      [ "V1.2", "md_README.html#autotoc_md5", null ],
-      [ "V1.1", "md_README.html#autotoc_md9", null ],
-      [ "V1.0", "md_README.html#autotoc_md20", [
-        [ "V0.4", "md_README.html#autotoc_md35", null ],
-        [ "V0.3", "md_README.html#autotoc_md36", null ],
-        [ "V0.2", "md_README.html#autotoc_md37", null ],
-        [ "V0.1", "md_README.html#autotoc_md38", null ]
+  [ "Darbas su studentais", "index.html", [
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Symbols", "functions_rela.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Typedefs", "globals_type.html", null ]
       ] ]
     ] ]
   ] ]
@@ -42,7 +49,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"index.html"
+"Studentas_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,0 +1,24 @@
+\doxysection{timer.\+h}
+\hypertarget{timer_8h_source}{}\label{timer_8h_source}\index{include/timer.h@{include/timer.h}}
+\doxymbox{\hyperlink{timer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{using\ }std::chrono::duration;}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ }std::chrono::high\_resolution\_clock;}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ }std::chrono::time\_point;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classTimer_a5f16e8da27d2a5a5242dead46de05d97}{Timer}}\ \{}
+\DoxyCodeLine{00019\ \ \ \textcolor{keyword}{using\ }hrClock\ =\ high\_resolution\_clock;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ time\_point<hrClock>\ start;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \doxymbox{\hyperlink{classTimer_a5f16e8da27d2a5a5242dead46de05d97}{Timer}}()\ :\ start\{hrClock::now()\}\ \{\}}
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classTimer_a9020542d73357a4eef512eefaf57524b}{reset}}()\ \{\ start\ =\ hrClock::now();\ \}}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classTimer_a6a89a613c2af9b0d1e5f7e4ba9e46c54}{elapsed}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{return}\ duration<double>(hrClock::now()\ -\/\ start).count();}
+\DoxyCodeLine{00029\ \ \ \}}
+\DoxyCodeLine{00030\ \};}
+
+\end{DoxyCode}
