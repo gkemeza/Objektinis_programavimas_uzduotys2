@@ -1,5 +1,10 @@
 \doxysection{include/\+\+Vector.h File Reference}
 \hypertarget{Vector_8h}{}\label{Vector_8h}\index{include/Vector.h@{include/Vector.h}}
+
+
+Šiame faile yra įgyvendinta paprasta vektoriaus klasė, kuri imituoja std::\+vector funkcionalumą. Ši klasė naudoja dinaminę atmintį ir turi pagrindinius metodus, tokius kaip push\+\_\+back, pop\+\_\+back, clear, size, capacity, operator\+[]\+, ir kt.  
+
+
 {\ttfamily \+\#include $<$algorithm$>$}\newline
 {\ttfamily \+\#include $<$cstddef$>$}\newline
 {\ttfamily \+\#include $<$initializer\+\_\+list$>$}\newline
@@ -13,3 +18,11 @@
 \item 
 class \doxymbox{\hyperlink{classVector}{Vector$<$ T $>$}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Šiame faile yra įgyvendinta paprasta vektoriaus klasė, kuri imituoja std::\+vector funkcionalumą. Ši klasė naudoja dinaminę atmintį ir turi pagrindinius metodus, tokius kaip push\+\_\+back, pop\+\_\+back, clear, size, capacity, operator\+[]\+, ir kt. 
+
+\doxylink{classVector}{Vector} klasė yra naudinga mokymosi tikslais, siekiant suprasti, kaip veikia dinaminė atmintis ir kaip galima įgyvendinti konteinerius C++ kalba. Ji taip pat gali būti naudojama vietoj std::\+vector tam tikrose situacijose, kur reikia paprastesnio ar labiau pritaikyto sprendimo.
+
+Ši klasė yra testuojama naudojant Google Test framework\textquotesingle{}ą, siekiant užtikrinti, kad visi metodai veiktų teisingai įvairiais scenarijais. 

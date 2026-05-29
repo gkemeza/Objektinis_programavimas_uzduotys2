@@ -11,6 +11,6 @@ var searchData=
   ['getgalutinisvidurkis_8',['getGalutinisVidurkis',['../classStudentas.html#a1b6c6821bb44540e762d0561a4d1e859',1,'Studentas']]],
   ['getnamudarbai_9',['getNamuDarbai',['../classStudentas.html#ad374a609c8670addf8cfab8ca4b5d5f9',1,'Studentas']]],
   ['getpavarde_10',['getPavarde',['../classStudentas.html#afc1c025f58544eed43273afa98445853',1,'Studentas::getPavarde()'],['../classZmogus.html#ac50d1e325af387bb385eb88bb7ff42b7',1,'Zmogus::getPavarde()']]],
-  ['getpazymiai_11',['getPazymiai',['../classStudentas.html#a0f4347b5d93a0aea1f8428f2d86fbf2a',1,'Studentas']]],
+  ['getpazymiai_11',['getPazymiai',['../classStudentas.html#ae2d08cdfbc6d0f435110c09eaa2f9342',1,'Studentas']]],
   ['getvardas_12',['getVardas',['../classStudentas.html#a4471c08cbf44faf5fe5f4c192922bf1b',1,'Studentas::getVardas()'],['../classZmogus.html#a4a580af3507a2d27efe978d5be0075ab',1,'Zmogus::getVardas()']]]
 ];

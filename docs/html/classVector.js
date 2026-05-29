@@ -9,6 +9,7 @@ var classVector =
     [ "reverse_iterator", "classVector.html#a468800ce1838bd48c7b9c685a8777720", null ],
     [ "size_type", "classVector.html#abafb4cad9801440d5379d777088cf3ef", null ],
     [ "type", "classVector.html#a751a644e3d7386bd445be16ff3dfb80d", null ],
+    [ "value_type", "classVector.html#aa0d46e34338185ed330102229ecb4b0e", null ],
     [ "Vector", "classVector.html#a39d6069675db4ecfc1ab81d440da759a", null ],
     [ "Vector", "classVector.html#a59a099d06189fc2ee680b5c3aee4fa81", null ],
     [ "Vector", "classVector.html#aa7369e608e7d03fed1872689bbf1973a", null ],

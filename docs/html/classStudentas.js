@@ -1,7 +1,7 @@
 var classStudentas =
 [
     [ "Studentas", "classStudentas.html#ab459e995e8c9b24cdc9aec5b09a66539", null ],
-    [ "Studentas", "classStudentas.html#acb1574e715ece5800ff3e6633da7799e", null ],
+    [ "Studentas", "classStudentas.html#ab5ed2e488c4efa58f1f9649d5070f067", null ],
     [ "~Studentas", "classStudentas.html#a63e449e0f51a0b14340d02ee71b4be23", null ],
     [ "Studentas", "classStudentas.html#aef0484fe46cf05746f8ffc0d083fcf3e", null ],
     [ "Studentas", "classStudentas.html#a358e756ef202249cd52492edb060fdf5", null ],
@@ -13,7 +13,7 @@ var classStudentas =
     [ "getGalutinisVidurkis", "classStudentas.html#a1b6c6821bb44540e762d0561a4d1e859", null ],
     [ "getNamuDarbai", "classStudentas.html#ad374a609c8670addf8cfab8ca4b5d5f9", null ],
     [ "getPavarde", "classStudentas.html#afc1c025f58544eed43273afa98445853", null ],
-    [ "getPazymiai", "classStudentas.html#a0f4347b5d93a0aea1f8428f2d86fbf2a", null ],
+    [ "getPazymiai", "classStudentas.html#ae2d08cdfbc6d0f435110c09eaa2f9342", null ],
     [ "getVardas", "classStudentas.html#a4471c08cbf44faf5fe5f4c192922bf1b", null ],
     [ "operator=", "classStudentas.html#a25bcc531503d3bc490dab4a656e3b8e9", null ],
     [ "operator=", "classStudentas.html#a2362f28d29a4d2f80c39a04333c15ad4", null ],
@@ -22,7 +22,7 @@ var classStudentas =
     [ "setGalutinisVidurkis", "classStudentas.html#a54af53fecf5f4806cddfb27230dbe069", null ],
     [ "setNamuDarbai", "classStudentas.html#a2c2bfde1d0a01a36723fec70fecbba09", null ],
     [ "setPavarde", "classStudentas.html#a7f34ab90810686b13945d56c8c29b2be", null ],
-    [ "setPazymiai", "classStudentas.html#a5623e719c31f386cd5a0e0c8009d1668", null ],
+    [ "setPazymiai", "classStudentas.html#a5f98a2e5aef9c1a15e598e34f2e103f6", null ],
     [ "setVardas", "classStudentas.html#ada6e133cee4347851493cc4b55219838", null ],
     [ "surusiuotiPazymius", "classStudentas.html#aab9599764f8a16a000a776db1f1fcf03", null ],
     [ "WhoamI", "classStudentas.html#a7d4d266af36437e1451597d19bab6a0e", null ],

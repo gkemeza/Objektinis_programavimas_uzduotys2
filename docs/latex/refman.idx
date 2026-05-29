@@ -83,6 +83,8 @@
 \indexentry{size\_type@{size\_type}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{19}
 \indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!type@{type}|hyperpage}{19}
 \indexentry{type@{type}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{19}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!value\_type@{value\_type}|hyperpage}{19}
+\indexentry{value\_type@{value\_type}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{19}
 \indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}|hyperpage}{20}
 \indexentry{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{20}
 \indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}|hyperpage}{20}
@@ -332,15 +334,15 @@
 \indexentry{include/timer.h@{include/timer.h}|hyperpage}{43}
 \indexentry{include/Vector.h@{include/Vector.h}|hyperpage}{43}
 \indexentry{include/Vector.h@{include/Vector.h}|hyperpage}{44}
-\indexentry{include/Zmogus.h@{include/Zmogus.h}|hyperpage}{51}
-\indexentry{include/Zmogus.h@{include/Zmogus.h}|hyperpage}{51}
+\indexentry{include/Zmogus.h@{include/Zmogus.h}|hyperpage}{52}
+\indexentry{include/Zmogus.h@{include/Zmogus.h}|hyperpage}{52}
 \indexentry{src/functions.cpp@{src/functions.cpp}|hyperpage}{52}
-\indexentry{functions.cpp@{functions.cpp}!duomenuApdorojimoTestavimas@{duomenuApdorojimoTestavimas}|hyperpage}{53}
-\indexentry{duomenuApdorojimoTestavimas@{duomenuApdorojimoTestavimas}!functions.cpp@{functions.cpp}|hyperpage}{53}
-\indexentry{functions.cpp@{functions.cpp}!failoDuomenuApdorojimas@{failoDuomenuApdorojimas}|hyperpage}{53}
-\indexentry{failoDuomenuApdorojimas@{failoDuomenuApdorojimas}!functions.cpp@{functions.cpp}|hyperpage}{53}
-\indexentry{functions.cpp@{functions.cpp}!failoKurimoTestavimas@{failoKurimoTestavimas}|hyperpage}{53}
-\indexentry{failoKurimoTestavimas@{failoKurimoTestavimas}!functions.cpp@{functions.cpp}|hyperpage}{53}
+\indexentry{functions.cpp@{functions.cpp}!duomenuApdorojimoTestavimas@{duomenuApdorojimoTestavimas}|hyperpage}{54}
+\indexentry{duomenuApdorojimoTestavimas@{duomenuApdorojimoTestavimas}!functions.cpp@{functions.cpp}|hyperpage}{54}
+\indexentry{functions.cpp@{functions.cpp}!failoDuomenuApdorojimas@{failoDuomenuApdorojimas}|hyperpage}{54}
+\indexentry{failoDuomenuApdorojimas@{failoDuomenuApdorojimas}!functions.cpp@{functions.cpp}|hyperpage}{54}
+\indexentry{functions.cpp@{functions.cpp}!failoKurimoTestavimas@{failoKurimoTestavimas}|hyperpage}{54}
+\indexentry{failoKurimoTestavimas@{failoKurimoTestavimas}!functions.cpp@{functions.cpp}|hyperpage}{54}
 \indexentry{functions.cpp@{functions.cpp}!failoNuskaitymas@{failoNuskaitymas}|hyperpage}{54}
 \indexentry{failoNuskaitymas@{failoNuskaitymas}!functions.cpp@{functions.cpp}|hyperpage}{54}
 \indexentry{functions.cpp@{functions.cpp}!failuGeneravimas@{failuGeneravimas}|hyperpage}{54}
@@ -351,14 +353,14 @@
 \indexentry{generuotiPazymius@{generuotiPazymius}!functions.cpp@{functions.cpp}|hyperpage}{54}
 \indexentry{functions.cpp@{functions.cpp}!generuotiStudenta@{generuotiStudenta}|hyperpage}{54}
 \indexentry{generuotiStudenta@{generuotiStudenta}!functions.cpp@{functions.cpp}|hyperpage}{54}
-\indexentry{functions.cpp@{functions.cpp}!isvestis@{isvestis}|hyperpage}{54}
-\indexentry{isvestis@{isvestis}!functions.cpp@{functions.cpp}|hyperpage}{54}
-\indexentry{functions.cpp@{functions.cpp}!isvestisFailas@{isvestisFailas}|hyperpage}{54}
-\indexentry{isvestisFailas@{isvestisFailas}!functions.cpp@{functions.cpp}|hyperpage}{54}
-\indexentry{functions.cpp@{functions.cpp}!isvestisKonsole@{isvestisKonsole}|hyperpage}{54}
-\indexentry{isvestisKonsole@{isvestisKonsole}!functions.cpp@{functions.cpp}|hyperpage}{54}
-\indexentry{functions.cpp@{functions.cpp}!ivestisRanka@{ivestisRanka}|hyperpage}{54}
-\indexentry{ivestisRanka@{ivestisRanka}!functions.cpp@{functions.cpp}|hyperpage}{54}
+\indexentry{functions.cpp@{functions.cpp}!isvestis@{isvestis}|hyperpage}{55}
+\indexentry{isvestis@{isvestis}!functions.cpp@{functions.cpp}|hyperpage}{55}
+\indexentry{functions.cpp@{functions.cpp}!isvestisFailas@{isvestisFailas}|hyperpage}{55}
+\indexentry{isvestisFailas@{isvestisFailas}!functions.cpp@{functions.cpp}|hyperpage}{55}
+\indexentry{functions.cpp@{functions.cpp}!isvestisKonsole@{isvestisKonsole}|hyperpage}{55}
+\indexentry{isvestisKonsole@{isvestisKonsole}!functions.cpp@{functions.cpp}|hyperpage}{55}
+\indexentry{functions.cpp@{functions.cpp}!ivestisRanka@{ivestisRanka}|hyperpage}{55}
+\indexentry{ivestisRanka@{ivestisRanka}!functions.cpp@{functions.cpp}|hyperpage}{55}
 \indexentry{functions.cpp@{functions.cpp}!nuskaitytiFaila@{nuskaitytiFaila}|hyperpage}{55}
 \indexentry{nuskaitytiFaila@{nuskaitytiFaila}!functions.cpp@{functions.cpp}|hyperpage}{55}
 \indexentry{functions.cpp@{functions.cpp}!nuskaitytiPavarde@{nuskaitytiPavarde}|hyperpage}{55}
@@ -369,14 +371,14 @@
 \indexentry{nuskaitytiVarda@{nuskaitytiVarda}!functions.cpp@{functions.cpp}|hyperpage}{55}
 \indexentry{functions.cpp@{functions.cpp}!randomInt@{randomInt}|hyperpage}{55}
 \indexentry{randomInt@{randomInt}!functions.cpp@{functions.cpp}|hyperpage}{55}
-\indexentry{functions.cpp@{functions.cpp}!ruleOfFiveTestas@{ruleOfFiveTestas}|hyperpage}{55}
-\indexentry{ruleOfFiveTestas@{ruleOfFiveTestas}!functions.cpp@{functions.cpp}|hyperpage}{55}
-\indexentry{functions.cpp@{functions.cpp}!rusiuotiPagalMediana@{rusiuotiPagalMediana}|hyperpage}{55}
-\indexentry{rusiuotiPagalMediana@{rusiuotiPagalMediana}!functions.cpp@{functions.cpp}|hyperpage}{55}
-\indexentry{functions.cpp@{functions.cpp}!rusiuotiPagalPavarde@{rusiuotiPagalPavarde}|hyperpage}{55}
-\indexentry{rusiuotiPagalPavarde@{rusiuotiPagalPavarde}!functions.cpp@{functions.cpp}|hyperpage}{55}
-\indexentry{functions.cpp@{functions.cpp}!rusiuotiPagalVarda@{rusiuotiPagalVarda}|hyperpage}{55}
-\indexentry{rusiuotiPagalVarda@{rusiuotiPagalVarda}!functions.cpp@{functions.cpp}|hyperpage}{55}
+\indexentry{functions.cpp@{functions.cpp}!ruleOfFiveTestas@{ruleOfFiveTestas}|hyperpage}{56}
+\indexentry{ruleOfFiveTestas@{ruleOfFiveTestas}!functions.cpp@{functions.cpp}|hyperpage}{56}
+\indexentry{functions.cpp@{functions.cpp}!rusiuotiPagalMediana@{rusiuotiPagalMediana}|hyperpage}{56}
+\indexentry{rusiuotiPagalMediana@{rusiuotiPagalMediana}!functions.cpp@{functions.cpp}|hyperpage}{56}
+\indexentry{functions.cpp@{functions.cpp}!rusiuotiPagalPavarde@{rusiuotiPagalPavarde}|hyperpage}{56}
+\indexentry{rusiuotiPagalPavarde@{rusiuotiPagalPavarde}!functions.cpp@{functions.cpp}|hyperpage}{56}
+\indexentry{functions.cpp@{functions.cpp}!rusiuotiPagalVarda@{rusiuotiPagalVarda}|hyperpage}{56}
+\indexentry{rusiuotiPagalVarda@{rusiuotiPagalVarda}!functions.cpp@{functions.cpp}|hyperpage}{56}
 \indexentry{functions.cpp@{functions.cpp}!rusiuotiPagalVidurki@{rusiuotiPagalVidurki}|hyperpage}{56}
 \indexentry{rusiuotiPagalVidurki@{rusiuotiPagalVidurki}!functions.cpp@{functions.cpp}|hyperpage}{56}
 \indexentry{functions.cpp@{functions.cpp}!rusiuotiStudentus@{rusiuotiStudentus}|hyperpage}{56}
@@ -385,12 +387,12 @@
 \indexentry{skaidytiStudentus1@{skaidytiStudentus1}!functions.cpp@{functions.cpp}|hyperpage}{56}
 \indexentry{functions.cpp@{functions.cpp}!skaidytiStudentus2@{skaidytiStudentus2}|hyperpage}{56}
 \indexentry{skaidytiStudentus2@{skaidytiStudentus2}!functions.cpp@{functions.cpp}|hyperpage}{56}
-\indexentry{functions.cpp@{functions.cpp}!skaidytiStudentus3@{skaidytiStudentus3}|hyperpage}{56}
-\indexentry{skaidytiStudentus3@{skaidytiStudentus3}!functions.cpp@{functions.cpp}|hyperpage}{56}
-\indexentry{functions.cpp@{functions.cpp}!skaitytiSkaiciu@{skaitytiSkaiciu}|hyperpage}{56}
-\indexentry{skaitytiSkaiciu@{skaitytiSkaiciu}!functions.cpp@{functions.cpp}|hyperpage}{56}
-\indexentry{functions.cpp@{functions.cpp}!skaitytiZodi@{skaitytiZodi}|hyperpage}{56}
-\indexentry{skaitytiZodi@{skaitytiZodi}!functions.cpp@{functions.cpp}|hyperpage}{56}
+\indexentry{functions.cpp@{functions.cpp}!skaidytiStudentus3@{skaidytiStudentus3}|hyperpage}{57}
+\indexentry{skaidytiStudentus3@{skaidytiStudentus3}!functions.cpp@{functions.cpp}|hyperpage}{57}
+\indexentry{functions.cpp@{functions.cpp}!skaitytiSkaiciu@{skaitytiSkaiciu}|hyperpage}{57}
+\indexentry{skaitytiSkaiciu@{skaitytiSkaiciu}!functions.cpp@{functions.cpp}|hyperpage}{57}
+\indexentry{functions.cpp@{functions.cpp}!skaitytiZodi@{skaitytiZodi}|hyperpage}{57}
+\indexentry{skaitytiZodi@{skaitytiZodi}!functions.cpp@{functions.cpp}|hyperpage}{57}
 \indexentry{functions.cpp@{functions.cpp}!studentuDuomenuApdorojimas@{studentuDuomenuApdorojimas}|hyperpage}{57}
 \indexentry{studentuDuomenuApdorojimas@{studentuDuomenuApdorojimas}!functions.cpp@{functions.cpp}|hyperpage}{57}
 \indexentry{functions.cpp@{functions.cpp}!surusiuotiPagalPasirinkima@{surusiuotiPagalPasirinkima}|hyperpage}{57}
@@ -401,14 +403,14 @@
 \indexentry{suskaiciuotiGalutinius@{suskaiciuotiGalutinius}!functions.cpp@{functions.cpp}|hyperpage}{57}
 \indexentry{functions.cpp@{functions.cpp}!suskaiciuotiStudentoGalutinius@{suskaiciuotiStudentoGalutinius}|hyperpage}{57}
 \indexentry{suskaiciuotiStudentoGalutinius@{suskaiciuotiStudentoGalutinius}!functions.cpp@{functions.cpp}|hyperpage}{57}
-\indexentry{functions.cpp@{functions.cpp}!testuotiGreiti@{testuotiGreiti}|hyperpage}{57}
-\indexentry{testuotiGreiti@{testuotiGreiti}!functions.cpp@{functions.cpp}|hyperpage}{57}
-\indexentry{functions.cpp@{functions.cpp}!tikrinti@{tikrinti}|hyperpage}{57}
-\indexentry{tikrinti@{tikrinti}!functions.cpp@{functions.cpp}|hyperpage}{57}
-\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{57}
+\indexentry{functions.cpp@{functions.cpp}!testuotiGreiti@{testuotiGreiti}|hyperpage}{58}
+\indexentry{testuotiGreiti@{testuotiGreiti}!functions.cpp@{functions.cpp}|hyperpage}{58}
+\indexentry{functions.cpp@{functions.cpp}!tikrinti@{tikrinti}|hyperpage}{58}
+\indexentry{tikrinti@{tikrinti}!functions.cpp@{functions.cpp}|hyperpage}{58}
+\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{58}
 \indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{58}
 \indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{58}
-\indexentry{src/Studentas.cpp@{src/Studentas.cpp}|hyperpage}{58}
+\indexentry{src/Studentas.cpp@{src/Studentas.cpp}|hyperpage}{59}
 \indexentry{Studentas.cpp@{Studentas.cpp}!operator$<$$<$@{operator$<$$<$}|hyperpage}{59}
 \indexentry{operator$<$$<$@{operator$<$$<$}!Studentas.cpp@{Studentas.cpp}|hyperpage}{59}
 \indexentry{Studentas.cpp@{Studentas.cpp}!operator$>$$>$@{operator$>$$>$}|hyperpage}{59}

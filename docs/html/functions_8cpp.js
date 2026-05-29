@@ -14,7 +14,7 @@ var functions_8cpp =
     [ "ivestisRanka", "functions_8cpp.html#a1e6665174b6ef6ab6c39dc7444a4ca70", null ],
     [ "nuskaitytiFaila", "functions_8cpp.html#a615f0c3d22574f6b4a10acac9669118a", null ],
     [ "nuskaitytiPavarde", "functions_8cpp.html#aeb3fae6640c2090b0ecc8883a1ccddf6", null ],
-    [ "nuskaitytiPazymius", "functions_8cpp.html#abf52bb145feaa95ca871521aba249f48", null ],
+    [ "nuskaitytiPazymius", "functions_8cpp.html#affdcf77c0a0f1bf6dadc9a43d88e15a6", null ],
     [ "nuskaitytiVarda", "functions_8cpp.html#a41111c26c18a2603799d2d355d2efe02", null ],
     [ "randomInt", "functions_8cpp.html#a2bfdea9260301d9292a7ab002eeb4645", null ],
     [ "ruleOfFiveTestas", "functions_8cpp.html#a1eba64bc6e348b979a3c37cad72fde09", null ],

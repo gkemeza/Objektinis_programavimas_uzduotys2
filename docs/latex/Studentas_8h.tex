@@ -5,11 +5,11 @@
 Šiame faile yra aprašoma \doxylink{classStudentas}{Studentas} klasė, kuri paveldi iš abstrakčios \doxylink{classZmogus}{Zmogus} klasės. \doxylink{classStudentas}{Studentas} klasė turi papildomų laukų, tokių kaip pažymiai, namų darbai, egzamino balas, galutinis vidurkis ir mediana. Taip pat yra aprašomi penki taisyklių (Rule of Five) metodai:\+ konstruktoriumi, kopijavimo konstruktorius, kopijavimo priskyrimo operatorius, perkėlimo konstruktorius ir perkėlimo priskyrimo operatorius. Be to, yra aprašomi perdengti įvedimo ir išvedimo operatoriai.  
 
 
+{\ttfamily \+\#include "{}Vector.\+h"{}}\newline
 {\ttfamily \+\#include "{}Zmogus.\+h"{}}\newline
 {\ttfamily \+\#include $<$iostream$>$}\newline
 {\ttfamily \+\#include $<$list$>$}\newline
 {\ttfamily \+\#include $<$string$>$}\newline
-{\ttfamily \+\#include $<$vector$>$}\newline
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -18,7 +18,7 @@ class \doxymbox{\hyperlink{classStudentas}{Studentas}}
 \doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-using \doxymbox{\hyperlink{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2}{Studentu\+Konteineris}} = std::\+vector$<$\doxymbox{\hyperlink{classStudentas}{Studentas}}$>$
+using \doxymbox{\hyperlink{Studentas_8h_ae558233721eadd29abe3a49c39c12dba}{Studentu\+Konteineris}} = \doxymbox{\hyperlink{classVector}{Vector}}$<$\doxymbox{\hyperlink{classStudentas}{Studentas}}$>$
 \item 
 using \doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}} = bool (\texorpdfstring{$\ast$}{*})(const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&, const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&)
 \end{DoxyCompactItemize}
@@ -47,11 +47,11 @@ template$<$$>$ void \doxymbox{\hyperlink{Studentas_8h_a52349316223934b4e684a6ca6
 {\footnotesize\ttfamily \label{Studentas_8h_a9cfc251cb8dde820d78183b679383948} 
 using \doxymbox{\hyperlink{Studentas_8h_a9cfc251cb8dde820d78183b679383948}{Comparator}} = bool (\texorpdfstring{$\ast$}{*})(const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&, const \doxymbox{\hyperlink{classStudentas}{Studentas}} \&)}
 
-\Hypertarget{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2}\index{Studentas.h@{Studentas.h}!StudentuKonteineris@{StudentuKonteineris}}
+\Hypertarget{Studentas_8h_ae558233721eadd29abe3a49c39c12dba}\index{Studentas.h@{Studentas.h}!StudentuKonteineris@{StudentuKonteineris}}
 \index{StudentuKonteineris@{StudentuKonteineris}!Studentas.h@{Studentas.h}}
 \doxysubsubsection{\texorpdfstring{StudentuKonteineris}{StudentuKonteineris}}
-{\footnotesize\ttfamily \label{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2} 
-using \doxymbox{\hyperlink{Studentas_8h_abfabcbfdc481eb41b82cd9c4e9323df2}{Studentu\+Konteineris}} = std::\+vector$<$\doxymbox{\hyperlink{classStudentas}{Studentas}}$>$}
+{\footnotesize\ttfamily \label{Studentas_8h_ae558233721eadd29abe3a49c39c12dba} 
+using \doxymbox{\hyperlink{Studentas_8h_ae558233721eadd29abe3a49c39c12dba}{Studentu\+Konteineris}} = \doxymbox{\hyperlink{classVector}{Vector}}$<$\doxymbox{\hyperlink{classStudentas}{Studentas}}$>$}
 
 
 

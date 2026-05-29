@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  29 MAY 2026 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  29 MAY 2026 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1083,30 +1083,23 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 ]
 Chapter 6.
 (./classStudentas.tex <./classStudentas.pdf>
-<classStudentas.pdf, id=1449, 501.875pt x 535.33pt>
+<classStudentas.pdf, id=1459, 501.875pt x 535.33pt>
 File: classStudentas.pdf Graphic file (type pdf)
 <use classStudentas.pdf>
 Package pdftex.def Info: classStudentas.pdf  used on input line 10.
 (pdftex.def)             Requested size: 53.34552pt x 56.9055pt.
-
-Underfull \hbox (badness 1325) in paragraph at lines 18--20
-[][] \T1/phv/m/n/10 (std::[]string var-das, std::[]string pavarde, int namu[]Da
-rbai, std::[]vector$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 int $\OML/cmm/m/it/10 >$
- \T1/phv/m/n/10 pazymiai, int
- []
-
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 68.
-[11]
+ [11]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 107.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 115.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 115.
- [12] [13] [14]) (./classTimer.tex [15]) (./classVector.tex [16] [17]
-[18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 276--279
+ [12] [13] [14])
+(./classTimer.tex [15]) (./classVector.tex [16] [17] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 class Input[]It, typenam
 e = typename std::[]enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 !std::[]is[]
 _[]integral$\OML/cmm/m/it/8 <$[]\T1/pcr/m/n/8 Input[]It$\OML/cmm/m/it/8 >$\T1/p
@@ -1114,7 +1107,7 @@ cr/m/n/8 ::[]
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 class Input[]It, typenam
 e = typename std::[]enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 !std::[]is[]
 _[]integral$\OML/cmm/m/it/8 <$[]\T1/pcr/m/n/8 Input[]It$\OML/cmm/m/it/8 >$\T1/p
@@ -1122,7 +1115,7 @@ cr/m/n/8 ::[]
  []
 
 [21] [22] [23] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 553--556
+Underfull \hbox (badness 10000) in paragraph at lines 562--565
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 class Input[]It, typenam
 e = typename std::[]enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 !std::[]is[]
 _[]integral$\OML/cmm/m/it/8 <$[]\T1/pcr/m/n/8 Input[]It$\OML/cmm/m/it/8 >$\T1/p
@@ -1130,7 +1123,7 @@ cr/m/n/8 ::[]
  []
 
 [25] [26] [27] [28]) (./classZmogus.tex <./classZmogus.pdf>
-<classZmogus.pdf, id=2482, 501.875pt x 535.33pt>
+<classZmogus.pdf, id=2509, 501.875pt x 535.33pt>
 File: classZmogus.pdf Graphic file (type pdf)
 <use classZmogus.pdf>
 Package pdftex.def Info: classZmogus.pdf  used on input line 10.
@@ -1156,7 +1149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
  []
 
 [42]) (./timer_8h_source.tex) (./Vector_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--11
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
 
  []
 
@@ -1166,17 +1159,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./Zmogus_8h_source.tex [51]) (./functions_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
+[51]) (./Zmogus_8h_source.tex) (./functions_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
 
-[52] [53] [54] [55] [56]) (./main_8cpp.tex
+[52] [53] [54] [55] [56] [57]) (./main_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-[57]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 30.
 
@@ -1185,17 +1177,17 @@ Underfull \hbox (badness 10000) detected at line 30
  []
 
 ) (./Studentas_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
+Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
  []
 
-
-Underfull \hbox (badness 2065) in paragraph at lines 30--31
+[58]
+Underfull \hbox (badness 2065) in paragraph at lines 31--32
 []\T1/phv/m/n/10 ’iame faile yra []gyvendinami [] klas[]es meto-dai, []skaitant
  kon-struk-to-rius, prisky-rimo op-er-a-to-rius,
  []
 
-[58]) [59] [60
+) [59] [60
 
 ] (./refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -1215,16 +1207,16 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 87E31EC79E92A29885F11153D1DB8113;51269.
+(rerunfilecheck)             Checksum: E714D5C2DBE423C20D0BCE8CDE6513FD;51643.
  ) 
 Here is how much of TeX's memory you used:
- 21290 strings out of 467356
- 382666 string characters out of 5418691
- 871212 words of memory out of 6000000
- 49409 multiletter control sequences out of 15000+600000
+ 21296 strings out of 467356
+ 382838 string characters out of 5418691
+ 871681 words of memory out of 6000000
+ 49412 multiletter control sequences out of 15000+600000
  684221 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,16n,117p,1499b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,16n,117p,1499b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
@@ -1238,10 +1230,10 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (75 pages, 325115 bytes).
+Output written on refman.pdf (75 pages, 328258 bytes).
 PDF statistics:
- 4648 PDF objects out of 5155 (max. 8388607)
- 3400 compressed objects within 34 object streams
- 579 named destinations out of 1000 (max. 500000)
- 2027 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4710 PDF objects out of 5155 (max. 8388607)
+ 3437 compressed objects within 35 object streams
+ 582 named destinations out of 1000 (max. 500000)
+ 2043 words of extra memory for PDF output out of 10000 (max. 10000000)
 

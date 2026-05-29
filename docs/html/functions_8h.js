@@ -14,7 +14,7 @@ var functions_8h =
     [ "ivestisRanka", "functions_8h.html#a1e6665174b6ef6ab6c39dc7444a4ca70", null ],
     [ "nuskaitytiFaila", "functions_8h.html#a323bfa07cbbc733eea2ac4f8d89003e7", null ],
     [ "nuskaitytiPavarde", "functions_8h.html#a91d8f546bbe0143478620816611ddafd", null ],
-    [ "nuskaitytiPazymius", "functions_8h.html#a980719bb56b3348659905c23f70a37cb", null ],
+    [ "nuskaitytiPazymius", "functions_8h.html#adf2338bdfbbd6ecef338392d34c835cf", null ],
     [ "nuskaitytiVarda", "functions_8h.html#a936baf8f8ff17c7cae71269c9d5fb45d", null ],
     [ "ruleOfFiveTestas", "functions_8h.html#a1eba64bc6e348b979a3c37cad72fde09", null ],
     [ "rusiuotiPagalMediana", "functions_8h.html#a6ffa4482de219925881790716ce1c39f", null ],
