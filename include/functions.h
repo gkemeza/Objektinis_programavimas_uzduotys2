@@ -14,6 +14,27 @@
 #include <string>
 #include <vector>
 
+/**
+ * @file functions.h
+ * @brief Šiame faile yra deklaruojamos įvairios funkcijos, skirtos studentų
+ * duomenų apdorojimui, įskaitant duomenų įvedimą, generavimą, failų skaitymą
+ * ir rašymą, bei greičio testavimą.
+ *
+ * Šios funkcijos apima:
+ * - Duomenų įvedimą ranka,
+ * - Atsitiktinių pažymių generavimą,
+ * - Studentų vardų, pavardžių ir pažymių generavimą,
+ * - Failų nuskaitymą ir duomenų apdorojimą,
+ * - Duomenų išvedimą į konsolę ir failus,
+ * - Studentų rūšiavimą pagal įvairius kriterijus,
+ * - Greičio testavimą naudojant Timer klasę.
+ *
+ * Šios funkcijos yra pagrindinės programos dalys, leidžiančios vartotojui
+ * efektyviai dirbti su studentų duomenimis ir atlikti įvairias operacijas su
+ * jais.
+ *
+ */
+
 Studentas ivestisRanka();
 Studentas generuotiPazymius();
 Studentas generuotiStudenta();

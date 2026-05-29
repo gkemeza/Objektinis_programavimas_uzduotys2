@@ -33,81 +33,81 @@
     \subitem {functions.h}, \hyperpage{20}
   \item {failoKurimoTestavimas}
     \subitem {functions.cpp}, \hyperpage{31}
-    \subitem {functions.h}, \hyperpage{20}
+    \subitem {functions.h}, \hyperpage{21}
   \item {failoNuskaitymas}
     \subitem {functions.cpp}, \hyperpage{31}
-    \subitem {functions.h}, \hyperpage{20}
+    \subitem {functions.h}, \hyperpage{21}
   \item {failuGeneravimas}
-    \subitem {functions.cpp}, \hyperpage{31}
-    \subitem {functions.h}, \hyperpage{20}
+    \subitem {functions.cpp}, \hyperpage{32}
+    \subitem {functions.h}, \hyperpage{21}
   \item {functions.cpp}
     \subitem {duomenuApdorojimoTestavimas}, \hyperpage{31}
     \subitem {failoDuomenuApdorojimas}, \hyperpage{31}
     \subitem {failoKurimoTestavimas}, \hyperpage{31}
     \subitem {failoNuskaitymas}, \hyperpage{31}
-    \subitem {failuGeneravimas}, \hyperpage{31}
-    \subitem {generuotiFaila}, \hyperpage{31}
-    \subitem {generuotiPazymius}, \hyperpage{31}
-    \subitem {generuotiStudenta}, \hyperpage{31}
+    \subitem {failuGeneravimas}, \hyperpage{32}
+    \subitem {generuotiFaila}, \hyperpage{32}
+    \subitem {generuotiPazymius}, \hyperpage{32}
+    \subitem {generuotiStudenta}, \hyperpage{32}
     \subitem {isvestis}, \hyperpage{32}
     \subitem {isvestisFailas}, \hyperpage{32}
     \subitem {isvestisKonsole}, \hyperpage{32}
     \subitem {ivestisRanka}, \hyperpage{32}
     \subitem {nuskaitytiFaila}, \hyperpage{32}
-    \subitem {nuskaitytiPavarde}, \hyperpage{32}
-    \subitem {nuskaitytiPazymius}, \hyperpage{32}
-    \subitem {nuskaitytiVarda}, \hyperpage{32}
-    \subitem {randomInt}, \hyperpage{32}
+    \subitem {nuskaitytiPavarde}, \hyperpage{33}
+    \subitem {nuskaitytiPazymius}, \hyperpage{33}
+    \subitem {nuskaitytiVarda}, \hyperpage{33}
+    \subitem {randomInt}, \hyperpage{33}
     \subitem {ruleOfFiveTestas}, \hyperpage{33}
     \subitem {rusiuotiPagalMediana}, \hyperpage{33}
     \subitem {rusiuotiPagalPavarde}, \hyperpage{33}
     \subitem {rusiuotiPagalVarda}, \hyperpage{33}
-    \subitem {rusiuotiPagalVidurki}, \hyperpage{33}
-    \subitem {rusiuotiStudentus}, \hyperpage{33}
-    \subitem {skaidytiStudentus1}, \hyperpage{33}
-    \subitem {skaidytiStudentus2}, \hyperpage{33}
+    \subitem {rusiuotiPagalVidurki}, \hyperpage{34}
+    \subitem {rusiuotiStudentus}, \hyperpage{34}
+    \subitem {skaidytiStudentus1}, \hyperpage{34}
+    \subitem {skaidytiStudentus2}, \hyperpage{34}
     \subitem {skaidytiStudentus3}, \hyperpage{34}
     \subitem {skaitytiSkaiciu}, \hyperpage{34}
     \subitem {skaitytiZodi}, \hyperpage{34}
-    \subitem {studentuDuomenuApdorojimas}, \hyperpage{34}
-    \subitem {surusiuotiPagalPasirinkima}, \hyperpage{34}
-    \subitem {suskaiciuotiGalutini}, \hyperpage{34}
-    \subitem {suskaiciuotiGalutinius}, \hyperpage{34}
-    \subitem {suskaiciuotiStudentoGalutinius}, \hyperpage{34}
+    \subitem {studentuDuomenuApdorojimas}, \hyperpage{35}
+    \subitem {surusiuotiPagalPasirinkima}, \hyperpage{35}
+    \subitem {suskaiciuotiGalutini}, \hyperpage{35}
+    \subitem {suskaiciuotiGalutinius}, \hyperpage{35}
+    \subitem {suskaiciuotiStudentoGalutinius}, \hyperpage{35}
     \subitem {testuotiGreiti}, \hyperpage{35}
     \subitem {tikrinti}, \hyperpage{35}
   \item {functions.h}
     \subitem {duomenuApdorojimoTestavimas}, \hyperpage{20}
     \subitem {failoDuomenuApdorojimas}, \hyperpage{20}
-    \subitem {failoKurimoTestavimas}, \hyperpage{20}
-    \subitem {failoNuskaitymas}, \hyperpage{20}
-    \subitem {failuGeneravimas}, \hyperpage{20}
-    \subitem {generuotiFaila}, \hyperpage{20}
+    \subitem {failoKurimoTestavimas}, \hyperpage{21}
+    \subitem {failoNuskaitymas}, \hyperpage{21}
+    \subitem {failuGeneravimas}, \hyperpage{21}
+    \subitem {generuotiFaila}, \hyperpage{21}
     \subitem {generuotiPazymius}, \hyperpage{21}
     \subitem {generuotiStudenta}, \hyperpage{21}
     \subitem {isvestis}, \hyperpage{21}
     \subitem {isvestisFailas}, \hyperpage{21}
     \subitem {isvestisKonsole}, \hyperpage{21}
-    \subitem {ivestisRanka}, \hyperpage{21}
-    \subitem {nuskaitytiFaila}, \hyperpage{21}
-    \subitem {nuskaitytiPavarde}, \hyperpage{21}
-    \subitem {nuskaitytiPazymius}, \hyperpage{21}
+    \subitem {ivestisRanka}, \hyperpage{22}
+    \subitem {nuskaitytiFaila}, \hyperpage{22}
+    \subitem {nuskaitytiPavarde}, \hyperpage{22}
+    \subitem {nuskaitytiPazymius}, \hyperpage{22}
     \subitem {nuskaitytiVarda}, \hyperpage{22}
     \subitem {ruleOfFiveTestas}, \hyperpage{22}
     \subitem {rusiuotiPagalMediana}, \hyperpage{22}
     \subitem {rusiuotiPagalPavarde}, \hyperpage{22}
     \subitem {rusiuotiPagalVarda}, \hyperpage{22}
-    \subitem {rusiuotiPagalVidurki}, \hyperpage{22}
-    \subitem {rusiuotiStudentus}, \hyperpage{22}
-    \subitem {skaidytiStudentus1}, \hyperpage{22}
+    \subitem {rusiuotiPagalVidurki}, \hyperpage{23}
+    \subitem {rusiuotiStudentus}, \hyperpage{23}
+    \subitem {skaidytiStudentus1}, \hyperpage{23}
     \subitem {skaidytiStudentus2}, \hyperpage{23}
     \subitem {skaidytiStudentus3}, \hyperpage{23}
     \subitem {skaitytiSkaiciu}, \hyperpage{23}
     \subitem {skaitytiZodi}, \hyperpage{23}
-    \subitem {studentuDuomenuApdorojimas}, \hyperpage{23}
-    \subitem {surusiuotiPagalPasirinkima}, \hyperpage{23}
-    \subitem {suskaiciuotiGalutini}, \hyperpage{23}
-    \subitem {suskaiciuotiGalutinius}, \hyperpage{23}
+    \subitem {studentuDuomenuApdorojimas}, \hyperpage{24}
+    \subitem {surusiuotiPagalPasirinkima}, \hyperpage{24}
+    \subitem {suskaiciuotiGalutini}, \hyperpage{24}
+    \subitem {suskaiciuotiGalutinius}, \hyperpage{24}
     \subitem {suskaiciuotiStudentoGalutinius}, \hyperpage{24}
     \subitem {testuotiGreiti}, \hyperpage{24}
     \subitem {tikrinti}, \hyperpage{24}
@@ -119,13 +119,13 @@
   \item {gautiVidurkiVidutini}
     \subitem {Studentas}, \hyperpage{13}
   \item {generuotiFaila}
-    \subitem {functions.cpp}, \hyperpage{31}
-    \subitem {functions.h}, \hyperpage{20}
+    \subitem {functions.cpp}, \hyperpage{32}
+    \subitem {functions.h}, \hyperpage{21}
   \item {generuotiPazymius}
-    \subitem {functions.cpp}, \hyperpage{31}
+    \subitem {functions.cpp}, \hyperpage{32}
     \subitem {functions.h}, \hyperpage{21}
   \item {generuotiStudenta}
-    \subitem {functions.cpp}, \hyperpage{31}
+    \subitem {functions.cpp}, \hyperpage{32}
     \subitem {functions.h}, \hyperpage{21}
   \item {getEgzaminoBalas}
     \subitem {Studentas}, \hyperpage{13}
@@ -147,9 +147,9 @@
   \indexspace
 
   \item {include Directory Reference}, \hyperpage{9}
-  \item {include/functions.h}, \hyperpage{19}, \hyperpage{24}
-  \item {include/Studentas.h}, \hyperpage{25, 26}
-  \item {include/timer.h}, \hyperpage{28}
+  \item {include/functions.h}, \hyperpage{19}, \hyperpage{25}
+  \item {include/Studentas.h}, \hyperpage{25}, \hyperpage{27}
+  \item {include/timer.h}, \hyperpage{29}
   \item {include/Zmogus.h}, \hyperpage{29}
   \item {isvestis}
     \subitem {functions.cpp}, \hyperpage{32}
@@ -162,38 +162,38 @@
     \subitem {functions.h}, \hyperpage{21}
   \item {ivestisRanka}
     \subitem {functions.cpp}, \hyperpage{32}
-    \subitem {functions.h}, \hyperpage{21}
+    \subitem {functions.h}, \hyperpage{22}
 
   \indexspace
 
   \item {main}
-    \subitem {main.cpp}, \hyperpage{35}
+    \subitem {main.cpp}, \hyperpage{36}
   \item {main.cpp}
-    \subitem {main}, \hyperpage{35}
+    \subitem {main}, \hyperpage{36}
 
   \indexspace
 
   \item {nuskaitytiFaila}
     \subitem {functions.cpp}, \hyperpage{32}
-    \subitem {functions.h}, \hyperpage{21}
+    \subitem {functions.h}, \hyperpage{22}
   \item {nuskaitytiPavarde}
-    \subitem {functions.cpp}, \hyperpage{32}
-    \subitem {functions.h}, \hyperpage{21}
+    \subitem {functions.cpp}, \hyperpage{33}
+    \subitem {functions.h}, \hyperpage{22}
   \item {nuskaitytiPazymius}
-    \subitem {functions.cpp}, \hyperpage{32}
-    \subitem {functions.h}, \hyperpage{21}
+    \subitem {functions.cpp}, \hyperpage{33}
+    \subitem {functions.h}, \hyperpage{22}
   \item {nuskaitytiVarda}
-    \subitem {functions.cpp}, \hyperpage{32}
+    \subitem {functions.cpp}, \hyperpage{33}
     \subitem {functions.h}, \hyperpage{22}
 
   \indexspace
 
   \item {operator$<$$<$}
     \subitem {Studentas}, \hyperpage{15}
-    \subitem {Studentas.cpp}, \hyperpage{36}
+    \subitem {Studentas.cpp}, \hyperpage{37}
   \item {operator$>$$>$}
     \subitem {Studentas}, \hyperpage{15}
-    \subitem {Studentas.cpp}, \hyperpage{36}
+    \subitem {Studentas.cpp}, \hyperpage{37}
   \item {operator=}
     \subitem {Studentas}, \hyperpage{14}
 
@@ -205,7 +205,7 @@
   \indexspace
 
   \item {randomInt}
-    \subitem {functions.cpp}, \hyperpage{32}
+    \subitem {functions.cpp}, \hyperpage{33}
   \item {reset}
     \subitem {Timer}, \hyperpage{16}
   \item {ruleOfFiveTestas}
@@ -221,11 +221,11 @@
     \subitem {functions.cpp}, \hyperpage{33}
     \subitem {functions.h}, \hyperpage{22}
   \item {rusiuotiPagalVidurki}
-    \subitem {functions.cpp}, \hyperpage{33}
-    \subitem {functions.h}, \hyperpage{22}
+    \subitem {functions.cpp}, \hyperpage{34}
+    \subitem {functions.h}, \hyperpage{23}
   \item {rusiuotiStudentus}
-    \subitem {functions.cpp}, \hyperpage{33}
-    \subitem {functions.h}, \hyperpage{22}
+    \subitem {functions.cpp}, \hyperpage{34}
+    \subitem {functions.h}, \hyperpage{23}
 
   \indexspace
 
@@ -246,10 +246,10 @@
     \subitem {Studentas}, \hyperpage{15}
     \subitem {Zmogus}, \hyperpage{18}
   \item {skaidytiStudentus1}
-    \subitem {functions.cpp}, \hyperpage{33}
-    \subitem {functions.h}, \hyperpage{22}
+    \subitem {functions.cpp}, \hyperpage{34}
+    \subitem {functions.h}, \hyperpage{23}
   \item {skaidytiStudentus2}
-    \subitem {functions.cpp}, \hyperpage{33}
+    \subitem {functions.cpp}, \hyperpage{34}
     \subitem {functions.h}, \hyperpage{23}
   \item {skaidytiStudentus3}
     \subitem {functions.cpp}, \hyperpage{34}
@@ -261,7 +261,7 @@
     \subitem {functions.cpp}, \hyperpage{34}
     \subitem {functions.h}, \hyperpage{23}
   \item {src Directory Reference}, \hyperpage{9}
-  \item {src/functions.cpp}, \hyperpage{29}
+  \item {src/functions.cpp}, \hyperpage{30}
   \item {src/main.cpp}, \hyperpage{35}
   \item {src/Studentas.cpp}, \hyperpage{36}
   \item {Studentas}, \hyperpage{11}
@@ -291,32 +291,32 @@
     \subitem {surusiuotiPazymius}, \hyperpage{15}
     \subitem {WhoamI}, \hyperpage{15}
   \item {Studentas.cpp}
-    \subitem {operator$<$$<$}, \hyperpage{36}
-    \subitem {operator$>$$>$}, \hyperpage{36}
+    \subitem {operator$<$$<$}, \hyperpage{37}
+    \subitem {operator$>$$>$}, \hyperpage{37}
   \item {Studentas.h}
     \subitem {Comparator}, \hyperpage{26}
     \subitem {StudentuKonteineris}, \hyperpage{26}
     \subitem {surusiuotiStudentus}, \hyperpage{26}
   \item {studentuDuomenuApdorojimas}
-    \subitem {functions.cpp}, \hyperpage{34}
-    \subitem {functions.h}, \hyperpage{23}
+    \subitem {functions.cpp}, \hyperpage{35}
+    \subitem {functions.h}, \hyperpage{24}
   \item {StudentuKonteineris}
     \subitem {Studentas.h}, \hyperpage{26}
   \item {surusiuotiPagalPasirinkima}
-    \subitem {functions.cpp}, \hyperpage{34}
-    \subitem {functions.h}, \hyperpage{23}
+    \subitem {functions.cpp}, \hyperpage{35}
+    \subitem {functions.h}, \hyperpage{24}
   \item {surusiuotiPazymius}
     \subitem {Studentas}, \hyperpage{15}
   \item {surusiuotiStudentus}
     \subitem {Studentas.h}, \hyperpage{26}
   \item {suskaiciuotiGalutini}
-    \subitem {functions.cpp}, \hyperpage{34}
-    \subitem {functions.h}, \hyperpage{23}
+    \subitem {functions.cpp}, \hyperpage{35}
+    \subitem {functions.h}, \hyperpage{24}
   \item {suskaiciuotiGalutinius}
-    \subitem {functions.cpp}, \hyperpage{34}
-    \subitem {functions.h}, \hyperpage{23}
+    \subitem {functions.cpp}, \hyperpage{35}
+    \subitem {functions.h}, \hyperpage{24}
   \item {suskaiciuotiStudentoGalutinius}
-    \subitem {functions.cpp}, \hyperpage{34}
+    \subitem {functions.cpp}, \hyperpage{35}
     \subitem {functions.h}, \hyperpage{24}
 
   \indexspace

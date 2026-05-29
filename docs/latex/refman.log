@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  29 MAY 2026 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  29 MAY 2026 10:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,7 +1012,9 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 223.
 
-[1] [2] [3] [4]
+[1] [2] [3] [4] [5] [6
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 226.
 
 Chapter 1.
@@ -1026,7 +1028,6 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
-
 
 ] [2
 
@@ -1054,11 +1055,11 @@ File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 6.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 9.
+(Font)              scaled to size 8.09995pt on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 9.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 9.
+(Font)              scaled to size 8.09995pt on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 9.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
@@ -1069,7 +1070,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 ]
 Chapter 6.
 (./classStudentas.tex <./classStudentas.pdf>
-<classStudentas.pdf, id=976, 501.875pt x 535.33pt>
+<classStudentas.pdf, id=988, 501.875pt x 535.33pt>
 File: classStudentas.pdf Graphic file (type pdf)
 <use classStudentas.pdf>
 Package pdftex.def Info: classStudentas.pdf  used on input line 10.
@@ -1091,7 +1092,7 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 115.
  [12] [13] [14]) (./classTimer.tex [15]) (./classZmogus.tex <./classZmogus.pdf>
-<classZmogus.pdf, id=1187, 501.875pt x 535.33pt>
+<classZmogus.pdf, id=1198, 501.875pt x 535.33pt>
 File: classZmogus.pdf Graphic file (type pdf)
 <use classZmogus.pdf>
 Package pdftex.def Info: classZmogus.pdf  used on input line 10.
@@ -1099,7 +1100,7 @@ Package pdftex.def Info: classZmogus.pdf  used on input line 10.
  [16] [17]) [18]
 Chapter 7.
 (./functions_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--17
+Underfull \hbox (badness 10000) in paragraph at lines 8--22
 
  []
 
@@ -1115,21 +1116,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./timer_8h_source.tex) (./Zmogus_8h.tex
+[28]) (./timer_8h_source.tex) (./Zmogus_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[28]) (./Zmogus_8h_source.tex) (./functions_8cpp.tex
+) (./Zmogus_8h_source.tex [29]) (./functions_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-[29] [30] [31] [32] [33] [34]) (./main_8cpp.tex
+[30] [31] [32] [33] [34]) (./main_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
+[35]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 30.
 
@@ -1142,20 +1144,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--10
 
  []
 
-[35]
+
 Underfull \hbox (badness 2065) in paragraph at lines 30--31
 []\T1/phv/m/n/10 ’iame faile yra []gyvendinami [] klas[]es meto-dai, []skaitant
  kon-struk-to-rius, prisky-rimo op-er-a-to-rius,
  []
 
-) [36] (./refman.ind
+[36]) [37] [38
+
+] (./refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
- [37
+ [39
 
 
-
-] [38] [39]) (./refman.aux)
+] [40] [41]) (./refman.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -1165,13 +1168,13 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: A60A96266224E707E6852EA2ED27FBFE;33836.
+(rerunfilecheck)             Checksum: 9C025AD3E35A2D02C59D97FB6DD02BD8;34035.
  ) 
 Here is how much of TeX's memory you used:
- 20879 strings out of 467356
- 370209 string characters out of 5418691
- 841576 words of memory out of 6000000
- 49214 multiletter control sequences out of 15000+600000
+ 20883 strings out of 467356
+ 370257 string characters out of 5418691
+ 838771 words of memory out of 6000000
+ 49215 multiletter control sequences out of 15000+600000
  682457 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,16n,117p,1499b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1185,10 +1188,10 @@ rier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (45 pages, 223037 bytes).
+Output written on refman.pdf (49 pages, 226075 bytes).
 PDF statistics:
- 2596 PDF objects out of 2984 (max. 8388607)
- 2001 compressed objects within 21 object streams
- 372 named destinations out of 1000 (max. 500000)
- 1315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2619 PDF objects out of 2984 (max. 8388607)
+ 2019 compressed objects within 21 object streams
+ 375 named destinations out of 1000 (max. 500000)
+ 1323 words of extra memory for PDF output out of 10000 (max. 10000000)
 
