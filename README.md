@@ -24,6 +24,8 @@ Debug\Darbas_su_studentais.exe
 
 # V2.0
 
+Prideta Doxygen dokumentacija ir unit testai (Google Test)
+
 ## Unit testai
 
 ![alt text](images/unit-tests.png)
