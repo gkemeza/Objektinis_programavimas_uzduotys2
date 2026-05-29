@@ -6,6 +6,11 @@ using std::cout;
 using std::vector;
 
 int main() {
+
+  // Klaida: negalima sukurti Zmogus objekto, nes tai yra abstrakti klasė
+  // Zmogus zmogus;
+  // Zmogus *z = new Zmogus();
+
   StudentuKonteineris studentai;
   int input;
 
