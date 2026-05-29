@@ -6,7 +6,6 @@
 #include <sstream>
 #include <string>
 
-using std::cout;
 using std::fixed;
 using std::istream;
 using std::istringstream;
