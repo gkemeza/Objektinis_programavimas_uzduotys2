@@ -22,6 +22,22 @@ Debug\Darbas_su_studentais.exe
 **Linux/Mac paleidimas:**\
 ./Darbas_su_studentais
 
+# V1.3
+
+Prideta abstrakti klase Zmogus ir pakeista Studentas klase i isvestine.
+
+### Testai
+
+![alt text](images/testai1.png)
+
+![alt text](images/testai2.png)
+
+### Class (vector) veikimo laikai
+
+| Operacija      |   1 000 |  10 000 | 100 000 | 1 000 000 | 10 000 000 |
+| :------------- | ------: | ------: | ------: | --------: | ---------: |
+| Veikimo laikas | 0.002 s | 0.010 s | 0.083 s |   1.047 s |   19.873 s |
+
 # V1.2
 
 Prideti "Rule of five" metodai ir įvesties/išvesties operatoriai.
