@@ -1,0 +1,214 @@
+\chapter{Naudojimosi instrukcija }
+\hypertarget{md_README}{}\label{md_README}\index{Naudojimosi instrukcija@{Naudojimosi instrukcija}}
+\label{md_README_autotoc_md0}%
+\Hypertarget{md_README_autotoc_md0}%
+
+
+1 -\/ pilnas studento ivedimas (vardas, pavarde, pazymiai), išvestis į ekraną.\textbackslash{} 2 -\/ pusiau automatinis studento ivedimas (pazymiai susigeneruoja), išvestis į ekraną.\textbackslash{} 3 -\/ pilnai automatinis studento generavimas, išvestis į ekraną.\textbackslash{} 4 -\/ failo nuskaitymas, duomenu rusiavimas, išvestis į ekraną arba failą.\textbackslash{} 5 -\/ sugeneruoti pasirinkto dydzio faila, išvestis į failą.\textbackslash{} 6 -\/ testuoti failo sparta (failo kurimo testas -\/ išvestis į failą, duomenu apdorojimo testas -\/ išvestis į failą, "{}\+Rule of five"{} testas išvestis į ekraną)\textbackslash{} 7 -\/ isjungti programa\hypertarget{md_README_autotoc_md1}{}\doxysection{\texorpdfstring{Įdiegimo instrukcija}{Įdiegimo instrukcija}}\label{md_README_autotoc_md1}
+git clone --branch v1.\+2 \href{https://github.com/gkemeza/Objektinis_programavimas_uzduotys2.git}{\texttt{https:\+/\+/\+github.\+com/\+gkemeza/\+\+Objektinis\+\_\+programavimas\+\_\+uzduotys2.\+git}} \textbackslash{} cd Objektinis\+\_\+programavimas\+\_\+uzduotys2 \textbackslash{} mkdir build \&\& cd build \textbackslash{} cmake .. \textbackslash{} cmake --build .
+
+{\bfseries{Windows paleidimas:\+}}\textbackslash{} Debug\textbackslash{}\+Darbas\+\_\+su\+\_\+studentais.\+exe
+
+{\bfseries{Linux/\+\+Mac paleidimas:\+}}\textbackslash{} ./\+\+Darbas\+\_\+su\+\_\+studentais\hypertarget{md_README_autotoc_md2}{}\doxysection{\texorpdfstring{V1.\+5}{V1.\+5}}\label{md_README_autotoc_md2}
+Prideta abstrakti klase Zmogus ir pakeista Studentas klase i isvestine.\hypertarget{md_README_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{Testai}{Testai}}\label{md_README_autotoc_md3}
+
+
+\hypertarget{md_README_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{Class (vector) veikimo laikai}{Class (vector) veikimo laikai}}\label{md_README_autotoc_md4}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+002 s  &\SetCell{r}0.\+010 s  &\SetCell{r}0.\+083 s  &\SetCell{r}1.\+047 s  &\SetCell{r}19.\+873 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md5}{}\doxysection{\texorpdfstring{V1.\+2}{V1.\+2}}\label{md_README_autotoc_md5}
+Prideti "{}\+Rule of five"{} metodai ir įvesties/\+išvesties operatoriai.\hypertarget{md_README_autotoc_md6}{}\doxysubsubsection{\texorpdfstring{Testai}{Testai}}\label{md_README_autotoc_md6}
+
+
+\hypertarget{md_README_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{Testavimo sistemos parametrai}{Testavimo sistemos parametrai}}\label{md_README_autotoc_md7}
+{\bfseries{CPU:\+}} AMD Ryzen™ 5 PRO 7540U \textbackslash{} {\bfseries{SSD:\+}} Micron\+\_\+2400\+\_\+\+MTFDKBA1\+T0\+QFM \textbackslash{} {\bfseries{RAM:\+}} 16GB\hypertarget{md_README_autotoc_md8}{}\doxysubsubsection{\texorpdfstring{Class (vector) veikimo laikai}{Class (vector) veikimo laikai}}\label{md_README_autotoc_md8}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+001 s  &\SetCell{r}0.\+010 s  &\SetCell{r}0.\+077 s  &\SetCell{r}1.\+008 s  &\SetCell{r}12.\+678 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md9}{}\doxysection{\texorpdfstring{V1.\+1}{V1.\+1}}\label{md_README_autotoc_md9}
+\hypertarget{md_README_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Testavimo sistemos parametrai}{Testavimo sistemos parametrai}}\label{md_README_autotoc_md10}
+{\bfseries{CPU:\+}} AMD Ryzen™ 5 PRO 7540U \textbackslash{} {\bfseries{SSD:\+}} Micron\+\_\+2400\+\_\+\+MTFDKBA1\+T0\+QFM \textbackslash{} {\bfseries{RAM:\+}} 16GB\hypertarget{md_README_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{Palyginimas struct ir class naudojant vector ir 2 strategija}{Palyginimas struct ir class naudojant vector ir 2 strategija}}\label{md_README_autotoc_md11}
+\hypertarget{md_README_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{struct, be flag, exe dydis:\+ 148kb}{struct, be flag, exe dydis:\+ 148kb}}\label{md_README_autotoc_md12}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+055 s  &\SetCell{r}0.\+705 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md13}{}\doxysubsubsection{\texorpdfstring{struct, -\/O1 flag, exe dydis:\+ 110kb}{struct, -\/O1 flag, exe dydis:\+ 110kb}}\label{md_README_autotoc_md13}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+047 s  &\SetCell{r}0.\+648 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md14}{}\doxysubsubsection{\texorpdfstring{struct, -\/O2 flag, exe dydis:\+ 95kb}{struct, -\/O2 flag, exe dydis:\+ 95kb}}\label{md_README_autotoc_md14}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+054 s  &\SetCell{r}0.\+705 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md15}{}\doxysubsubsection{\texorpdfstring{struct, -\/O3 flag, exe dydis:\+ 148kb}{struct, -\/O3 flag, exe dydis:\+ 148kb}}\label{md_README_autotoc_md15}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+046 s  &\SetCell{r}0.\+660 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md16}{}\doxysubsubsection{\texorpdfstring{class, be flag, exe dydis:\+ 131 kb}{class, be flag, exe dydis:\+ 131 kb}}\label{md_README_autotoc_md16}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+064 s  &\SetCell{r}0.\+884 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md17}{}\doxysubsubsection{\texorpdfstring{Class, -\/O1 flag, exe dydis:\+ 100 kb}{Class, -\/O1 flag, exe dydis:\+ 100 kb}}\label{md_README_autotoc_md17}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+065 s  &\SetCell{r}0.\+954 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md18}{}\doxysubsubsection{\texorpdfstring{Class, -\/O2 flag, exe dydis:\+ 101 kb}{Class, -\/O2 flag, exe dydis:\+ 101 kb}}\label{md_README_autotoc_md18}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+065 s  &\SetCell{r}0.\+923 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md19}{}\doxysubsubsection{\texorpdfstring{Class, -\/O3 flag, exe dydis:\+ 131 kb}{Class, -\/O3 flag, exe dydis:\+ 131 kb}}\label{md_README_autotoc_md19}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  \\
+Veikimo laikas  &\SetCell{r}0.\+065 s  &\SetCell{r}0.\+871 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md20}{}\doxysection{\texorpdfstring{V1.\+0}{V1.\+0}}\label{md_README_autotoc_md20}
+Pridetas spartos testavimas su skirtingais konteineriais, 3 strategijos, README.\+md aprasymai prie kiekvieno release, naudojimosi instrukcija.\hypertarget{md_README_autotoc_md21}{}\doxysubsubsection{\texorpdfstring{Testavimo sistemos parametrai}{Testavimo sistemos parametrai}}\label{md_README_autotoc_md21}
+{\bfseries{CPU:\+}} Intel core i5-\/10210U \textbackslash{} {\bfseries{SSD:\+}} WDC PC SN520 \textbackslash{} {\bfseries{RAM:\+}} 8GB\hypertarget{md_README_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{Spartos testavimas su skirtingais konteineriais}{Spartos testavimas su skirtingais konteineriais}}\label{md_README_autotoc_md22}
+\hypertarget{md_README_autotoc_md23}{}\doxysubsubsection{\texorpdfstring{1 strategija (studentai konteinerio skaidymas į du naujus to paties tipo konteinerius)}{1 strategija (studentai konteinerio skaidymas į du naujus to paties tipo konteinerius)}}\label{md_README_autotoc_md23}
+\hypertarget{md_README_autotoc_md24}{}\doxysubsubsection{\texorpdfstring{std::\+vector}{std::\+vector}}\label{md_README_autotoc_md24}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Nuskaitymas is failo  &\SetCell{r}0.\+004 s  &\SetCell{r}0.\+027 s  &\SetCell{r}0.\+148 s  &\SetCell{r}1.\+181 s  &\SetCell{r}15.\+721 s  \\
+Rusiavimas (sort asc)  &\SetCell{r}0.\+005 s  &\SetCell{r}0.\+025 s  &\SetCell{r}0.\+345 s  &\SetCell{r}4.\+096 s  &\SetCell{r}55.\+102 s  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+002 s  &\SetCell{r}0.\+008 s  &\SetCell{r}0.\+064 s  &\SetCell{r}0.\+616 s  &\SetCell{r}9.\+542 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md25}{}\doxysubsubsection{\texorpdfstring{std::\+list}{std::\+list}}\label{md_README_autotoc_md25}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Nuskaitymas is failo  &\SetCell{r}0.\+007 s  &\SetCell{r}0.\+030 s  &\SetCell{r}0.\+161 s  &\SetCell{r}1.\+168 s  &\SetCell{r}12.\+997 s  \\
+Rusiavimas (sort asc)  &\SetCell{r}0.\+001 s  &\SetCell{r}0.\+005 s  &\SetCell{r}0.\+096 s  &\SetCell{r}1.\+256 s  &\SetCell{r}17.\+955 s  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+001 s  &\SetCell{r}0.\+005 s  &\SetCell{r}0.\+068 s  &\SetCell{r}0.\+702 s  &\SetCell{r}9.\+144 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md26}{}\doxysubsubsection{\texorpdfstring{std::\+deque}{std::\+deque}}\label{md_README_autotoc_md26}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Nuskaitymas is failo  &\SetCell{r}0.\+002 s  &\SetCell{r}0.\+014 s  &\SetCell{r}0.\+120 s  &\SetCell{r}0.\+993 s  &\SetCell{r}14.\+062 s  \\
+Rusiavimas (sort asc)  &\SetCell{r}0.\+003 s  &\SetCell{r}0.\+032 s  &\SetCell{r}0.\+340 s  &\SetCell{r}4.\+529 s  &\SetCell{r}61.\+390 s  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+001 s  &\SetCell{r}0.\+003 s  &\SetCell{r}0.\+036 s  &\SetCell{r}0.\+373 s  &\SetCell{r}6.\+825 s  \\
+\end{DoxyTable}
+
+
+1 strategijos skaidymas i du konteinerius greiciausiai veikia su deque konteineriu.\hypertarget{md_README_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{2 strategija (studentai konteinerio skirstymas panaudojant tik vieną naują konteinerį)}{2 strategija (studentai konteinerio skirstymas panaudojant tik vieną naują konteinerį)}}\label{md_README_autotoc_md27}
+\hypertarget{md_README_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{std::\+vector}{std::\+vector}}\label{md_README_autotoc_md28}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+072 s  &\SetCell{r}6.\+371 s  &\SetCell{r}725.\+941 s  &\SetCell{r}netestuota  &\SetCell{r}netestuota  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md29}{}\doxysubsubsection{\texorpdfstring{std::\+list}{std::\+list}}\label{md_README_autotoc_md29}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+001 s  &\SetCell{r}0.\+006 s  &\SetCell{r}0.\+037 s  &\SetCell{r}0.\+354 s  &\SetCell{r}4.\+514 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{std::\+deque}{std::\+deque}}\label{md_README_autotoc_md30}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+000 s  &\SetCell{r}0.\+003 s  &\SetCell{r}0.\+027 s  &\SetCell{r}0.\+307 s  &\SetCell{r}5.\+019 s  \\
+\end{DoxyTable}
+
+
+2 strategijoje pagreiteja sparta su list ir deque, bet stipriai suleteja vector.\hypertarget{md_README_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{3 strategija (skaidymas į du konteinerius, panaudojant stable\+\_\+partition(), copy() ir back\+\_\+inserter())}{3 strategija (skaidymas į du konteinerius, panaudojant stable\+\_\+partition(), copy() ir back\+\_\+inserter())}}\label{md_README_autotoc_md31}
+\hypertarget{md_README_autotoc_md32}{}\doxysubsubsection{\texorpdfstring{std::\+vector}{std::\+vector}}\label{md_README_autotoc_md32}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+002 s  &\SetCell{r}0.\+010 s  &\SetCell{r}0.\+116 s  &\SetCell{r}1.\+060 s  &\SetCell{r}12.\+980 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md33}{}\doxysubsubsection{\texorpdfstring{std::\+list}{std::\+list}}\label{md_README_autotoc_md33}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+002 s  &\SetCell{r}0.\+011 s  &\SetCell{r}0.\+128 s  &\SetCell{r}1.\+305 s  &\SetCell{r}15.\+276 s  \\
+\end{DoxyTable}
+\hypertarget{md_README_autotoc_md34}{}\doxysubsubsection{\texorpdfstring{std::\+deque}{std::\+deque}}\label{md_README_autotoc_md34}
+
+\begin{DoxyTable}{6}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Operacija  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}100 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}1 000 000  &\SetCell{r,bg=\tableheadbgcolor,font=\bfseries}10 000 000  \\
+Skirstymas i dvi grupes  &\SetCell{r}0.\+002 s  &\SetCell{r}0.\+007 s  &\SetCell{r}0.\+076 s  &\SetCell{r}0.\+849 s  &\SetCell{r}11.\+546 s  \\
+\end{DoxyTable}
+
+
+3 strategijos visu konteineriu sparta yra mazesne uz pirmos strategijos.\hypertarget{md_README_autotoc_md35}{}\doxysubsection{\texorpdfstring{V0.\+4}{V0.\+4}}\label{md_README_autotoc_md35}
+Pridetas failu generavimas, studentu skirstymas i dvi kategorijas, spartos tyrimai ir CMake failas
+
+\+[1 TYRIMAS]\+ Failo sukurimo vidurkiai (3 bandymai, 3 ND):\+
+
+1000 studentu -\/ 0.\+07 s
+
+
+
+10000 studentu -\/ 0.\+44 s
+
+
+
+100000 studentu -\/ 4.\+5 s
+
+
+
+1000000 studentu -\/ 46 s
+
+
+
+10000000 studentu -\/ 463 s
+
+
+
+\+[2 TYRIMAS]\+ Duomenu apdorojimo vidurkiai (3 bandymai, 3 ND):\+
+
+1000 studentu:\+ duomenu nuskaitymas is failo -\/ 0.\+01 s studentu rusiavimas i dvi grupes -\/ 0.\+00 s studentu isvedimas i du naujus failus -\/ 0.\+01 s viso testavimo veikimas -\/ 0.\+02 s
+
+
+
+10000 studentu:\+ duomenu nuskaitymas is failo -\/ 0.\+03 s studentu rusiavimas i dvi grupes -\/ 0.\+01 s studentu isvedimas i du naujus failus -\/ 0.\+03 s viso testavimo veikimas -\/ 0.\+07 s
+
+
+
+100000 studentu:\+ duomenu nuskaitymas is failo -\/ 0.\+13 s studentu rusiavimas i dvi grupes -\/ 0.\+05 s studentu isvedimas i du naujus failus -\/ 0.\+16 s viso testavimo veikimas -\/ 0.\+36 s
+
+
+
+1000000 studentu:\+ duomenu nuskaitymas is failo -\/ 1.\+12 s studentu rusiavimas i dvi grupes -\/ 0.\+49 s studentu isvedimas i du naujus failus -\/ 1.\+60 s viso testavimo veikimas -\/ 3.\+34 s
+
+
+
+10000000 studentu:\+ duomenu nuskaitymas is failo -\/ 14.\+5 s studentu rusiavimas i dvi grupes -\/ 5.\+8 s studentu isvedimas i du naujus failus -\/ 19.\+15 s viso testavimo veikimas -\/ 39.\+45 s
+
+\hypertarget{md_README_autotoc_md36}{}\doxysubsection{\texorpdfstring{V0.\+3}{V0.\+3}}\label{md_README_autotoc_md36}
+Atliktas programos refactoring\textquotesingle{}as:\+ prideti header failai ir isimciu gaudymas\hypertarget{md_README_autotoc_md37}{}\doxysubsection{\texorpdfstring{V0.\+2}{V0.\+2}}\label{md_README_autotoc_md37}
+Sioje versijoje atnaujinta tik vector versija ir pridetas failo nuskaitymas, duomenu rusiavimas
+
+Failu nuskaitymo vidurkiai (5 bandymai):\+
+
+
+\begin{DoxyEnumerate}
+\item \textquotesingle{}studentai.\+txt\textquotesingle{} -\/ 0.\+00 s
+\item \textquotesingle{}studentai10000.\+txt\textquotesingle{} -\/ 0.\+44 s
+\item \textquotesingle{}studentai100000.\+txt\textquotesingle{} -\/ 1.\+99 s
+\item \textquotesingle{}studentai1000000.\+txt\textquotesingle{} -\/ 16.\+52 s
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md38}{}\doxysubsection{\texorpdfstring{V0.\+1}{V0.\+1}}\label{md_README_autotoc_md38}
+Pradine programa su dviem versijom (C kalbos masyvu ir vector). 
