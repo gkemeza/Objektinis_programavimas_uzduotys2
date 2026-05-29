@@ -19,10 +19,10 @@ using std::string;
 using std::vector;
 
 ostream &operator<<(ostream &out, const Studentas &studentas) {
-  cout << left << fixed << setprecision(2);
-  cout << setw(20) << studentas.getVardas() << setw(20)
-       << studentas.getPavarde() << setw(20) << studentas.getGalutinisVidurkis()
-       << setw(20) << studentas.getGalutinisMediana();
+  out << left << fixed << setprecision(2);
+  out << setw(20) << studentas.getVardas() << setw(20) << studentas.getPavarde()
+      << setw(20) << studentas.getGalutinisVidurkis() << setw(20)
+      << studentas.getGalutinisMediana();
 
   return out;
 }
