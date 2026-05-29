@@ -2,6 +2,9 @@
 #pragma once
 #include <string>
 
+/**
+ * Abstrakti bazinė klasė, atstovaujanti žmogų.
+ */
 class Zmogus {
 protected:
   std::string vardas_;

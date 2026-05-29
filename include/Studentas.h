@@ -5,6 +5,24 @@
 #include <string>
 #include <vector>
 
+/**
+ * @file Studentas.h
+ * @brief Šiame faile yra aprašoma Studentas klasė, kuri paveldi iš abstrakčios
+ * Zmogus klasės. Studentas klasė turi papildomų laukų, tokių kaip pažymiai,
+ * namų darbai, egzamino balas, galutinis vidurkis ir mediana. Taip pat yra
+ * aprašomi penki taisyklių (Rule of Five) metodai: konstruktoriumi, kopijavimo
+ * konstruktorius, kopijavimo priskyrimo operatorius, perkėlimo konstruktorius
+ * ir perkėlimo priskyrimo operatorius. Be to, yra aprašomi perdengti įvedimo ir
+ * išvedimo operatoriai.
+ *
+ * Studentas klasė taip pat turi metodus galutiniam vidurkiui ir medianai
+ * apskaičiuoti, bei metodą surusiuotiPazymius, kuris rūšiuoja pažymius.
+ *
+ * Ši klasė yra skirta naudoti su įvairiais konteineriais, tokiais kaip vector,
+ * list ar deque, ir gali būti lengvai išplėsta su papildomais metodais ar
+ * laukais pagal poreikį.
+ *
+ */
 class Studentas : public Zmogus {
 private:
   std::vector<int> pazymiai_ = {};

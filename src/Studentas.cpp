@@ -18,6 +18,27 @@ using std::sort;
 using std::string;
 using std::vector;
 
+/**
+ * @brief Šiame faile yra įgyvendinami Studentas klasės metodai, įskaitant
+ * konstruktorius, priskyrimo operatorius, destruktorių, bei perdengtus
+ * įvedimo ir išvedimo operatorius. Taip pat yra metodai pažymių tvarkymui ir
+ * galutinių rezultatų skaičiavimui.
+ *
+ * Ši klasė paveldi iš abstrakčios Zmogus klasės, todėl turi įgyvendinti WhoamI
+ * metodą. Klasė taip pat turi savo specifinius duomenis, tokius kaip namų
+ * darbų skaičius, pažymiai, egzamino balas, galutinis vidurkis ir mediana.
+ *
+ * Konstruktoriai ir priskyrimo operatoriai užtikrina tinkamą resursų valdymą,
+ * o destruktorius užtikrina, kad visi resursai būtų tinkamai atlaisvinti.
+ *
+ * Perdengti įvedimo ir išvedimo operatoriai leidžia lengvai skaityti ir rašyti
+ * Studentas objektus naudojant standartinius srautus.
+ *
+ * Ši klasė yra testuojama naudojant Google Test framework'ą, siekiant
+ * užtikrinti, kad visi metodai veiktų teisingai įvairiais scenarijais.
+ *
+ */
+
 ostream &operator<<(ostream &out, const Studentas &studentas) {
   out << left << fixed << setprecision(2);
   out << setw(20) << studentas.getVardas() << setw(20) << studentas.getPavarde()

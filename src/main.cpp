@@ -5,6 +5,25 @@
 using std::cout;
 using std::vector;
 
+/**
+ * @brief Pagrindinė programos funkcija, kuri leidžia vartotojui pasirinkti
+ * įvairias operacijas su studentų duomenimis, įskaitant įvedimą, generavimą,
+ * failų skaitymą ir rašymą, bei greičio testavimą.
+ *
+ * Vartotojas gali pasirinkti:
+ * 1 - įvesti studento duomenis ranka,
+ * 2 - generuoti tik pažymius,
+ * 3 - generuoti studento vardus, pavardes ir pažymius,
+ * 4 - nuskaityti studentų duomenis iš failo,
+ * 5 - generuoti failą su studentų duomenimis,
+ * 6 - testuoti programos greitį,
+ * 7 - baigti darbą.
+ *
+ * Programa naudoja Studentas klasę, kuri paveldi iš abstrakčios Zmogus klasės,
+ * ir įvairias funkcijas duomenų apdorojimui bei failų operacijoms.
+ *
+ * @return int Programos pabaigos kodas (0 reiškia sėkmingą pabaigą).
+ */
 int main() {
 
   // Klaida: negalima sukurti Zmogus objekto, nes tai yra abstrakti klasė

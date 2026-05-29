@@ -1,7 +1,31 @@
 #include "Studentas.h"
 #include "functions.h"
 #include <gtest/gtest.h>
-
+/**
+ * @file tests.cpp
+ * @brief Šiame faile yra aprašomi testai, skirti patikrinti Studentas klasės
+ * funkcionalumą, įskaitant penkias taisykles (Rule of Five) ir papildomus
+ * loginius testus, susijusius su pažymių vidurkiu ir mediana.
+ *
+ * Testai apima:
+ * 1. Konstruktoriumi inicializuojančios laukus teisingai.
+ * 2. Numatinis konstruktorius inicializuoja tuščius laukus.
+ * 3. Kopijavimo konstruktorius sukuria nepriklausomą kopiją.
+ * 4. Kopijavimo priskyrimo operatorius sukuria nepriklausomą kopiją.
+ * 5. Perkelimo konstruktorius perkelia savininkystę.
+ * 6. Perkelimo priskyrimo operatorius perkelia savininkystę.
+ * 7. Destruktorius nesukelia klaidų.
+ * 8. Įvedimo operatorius teisingai skaito duomenis.
+ * 9. Išvedimo operatorius teisingai formatuoja duomenis.
+ * 10. Pažymių vidurkio skaičiavimas yra teisingas.
+ * 11. Pažymių medianos skaičiavimas yra teisingas.
+ * 12. Tuščių pažymių atveju vidurkis grąžina 0.
+ *
+ * Šie testai padeda užtikrinti, kad Studentas klasė veikia pagal numatytas
+ * taisykles ir logiką, bei kad jos metodai elgiasi teisingai įvairiais
+ * scenarijais.
+ *
+ */
 // 0. Constructor
 Studentas s1("Jonas", "Jonaitis", 3, {8, 9, 7}, 10);
 TEST(RuleOfFive, ConstructorInitializesFields) {

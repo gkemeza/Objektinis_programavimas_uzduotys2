@@ -27,6 +27,27 @@ using std::uniform_int_distribution;
 using std::vector;
 using std::filesystem::create_directories;
 
+/**
+ * @file functions.cpp
+ * @brief Šiame faile yra įgyvendintos įvairios funkcijos, skirtos studentų
+ * duomenų apdorojimui, įskaitant duomenų įvedimą, generavimą, failų skaitymą
+ * ir rašymą, bei greičio testavimą.
+ *
+ * Šios funkcijos apima:
+ * - Duomenų įvedimą ranka,
+ * - Atsitiktinių pažymių generavimą,
+ * - Studentų vardų, pavardžių ir pažymių generavimą,
+ * - Failų nuskaitymą ir duomenų apdorojimą,
+ * - Duomenų išvedimą į konsolę ir failus,
+ * - Studentų rūšiavimą pagal įvairius kriterijus,
+ * - Greičio testavimą naudojant Timer klasę.
+ *
+ * Šios funkcijos yra pagrindinės programos dalys, leidžiančios vartotojui
+ * efektyviai dirbti su studentų duomenimis ir atlikti įvairias operacijas su
+ * jais.
+ *
+ */
+
 void isvestis(const StudentuKonteineris &studentai, bool arMediana) {
   cout << left << fixed << setprecision(2);
   if (arMediana) {
