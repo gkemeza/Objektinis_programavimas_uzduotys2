@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  29 MAY 2026 10:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  29 MAY 2026 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -863,7 +863,19 @@ LaTeX Warning: Label `doc-constructors' multiply defined.
 LaTeX Warning: Label `doc-func-members' multiply defined.
 
 
+LaTeX Warning: Label `doc-related-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-constructors' multiply defined.
+
+
 LaTeX Warning: Label `doc-func-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-func-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-typedef-members' multiply defined.
 
 
 LaTeX Warning: Label `doc-func-members' multiply defined.
@@ -970,27 +982,28 @@ Package hyperref Info: Option `unicode' set `true' on input line 209.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 214.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 215.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 215.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 215
+(Font)              scaled to size 6.29996pt on input line 214.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 214
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 215
+LaTeX Font Info:    Trying to load font information for U+msb on input line 214
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 21
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-) [1
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 215.
+ [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
@@ -1012,7 +1025,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 223.
 
-[1] [2] [3] [4] [5] [6
+[1] [2] [3] [4] [5] [6] [7] [8
 
 ]
 Package hyperref Info: Option `pageanchor' set `true' on input line 226.
@@ -1070,7 +1083,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 ]
 Chapter 6.
 (./classStudentas.tex <./classStudentas.pdf>
-<classStudentas.pdf, id=988, 501.875pt x 535.33pt>
+<classStudentas.pdf, id=1449, 501.875pt x 535.33pt>
 File: classStudentas.pdf Graphic file (type pdf)
 <use classStudentas.pdf>
 Package pdftex.def Info: classStudentas.pdf  used on input line 10.
@@ -1091,47 +1104,79 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 115.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 115.
- [12] [13] [14]) (./classTimer.tex [15]) (./classZmogus.tex <./classZmogus.pdf>
-<classZmogus.pdf, id=1198, 501.875pt x 535.33pt>
+ [12] [13] [14]) (./classTimer.tex [15]) (./classVector.tex [16] [17]
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 276--279
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 class Input[]It, typenam
+e = typename std::[]enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 !std::[]is[]
+_[]integral$\OML/cmm/m/it/8 <$[]\T1/pcr/m/n/8 Input[]It$\OML/cmm/m/it/8 >$\T1/p
+cr/m/n/8 ::[]
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 339--342
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 class Input[]It, typenam
+e = typename std::[]enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 !std::[]is[]
+_[]integral$\OML/cmm/m/it/8 <$[]\T1/pcr/m/n/8 Input[]It$\OML/cmm/m/it/8 >$\T1/p
+cr/m/n/8 ::[]
+ []
+
+[21] [22] [23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 553--556
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 class Input[]It, typenam
+e = typename std::[]enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 !std::[]is[]
+_[]integral$\OML/cmm/m/it/8 <$[]\T1/pcr/m/n/8 Input[]It$\OML/cmm/m/it/8 >$\T1/p
+cr/m/n/8 ::[]
+ []
+
+[25] [26] [27] [28]) (./classZmogus.tex <./classZmogus.pdf>
+<classZmogus.pdf, id=2482, 501.875pt x 535.33pt>
 File: classZmogus.pdf Graphic file (type pdf)
 <use classZmogus.pdf>
 Package pdftex.def Info: classZmogus.pdf  used on input line 10.
 (pdftex.def)             Requested size: 53.34552pt x 56.9055pt.
- [16] [17]) [18]
+ [29] [30]) [31]
+[32
+
+]
 Chapter 7.
 (./functions_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--22
 
  []
 
-[19
-
-] [20] [21] [22] [23]) (./functions_8h_source.tex [24]) (./Studentas_8h.tex
+[33] [34] [35] [36] [37]) (./functions_8h_source.tex [38]) (./Studentas_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-[25]) (./Studentas_8h_source.tex [26] [27]) (./timer_8h.tex
+[39]) (./Studentas_8h_source.tex [40] [41]) (./timer_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[28]) (./timer_8h_source.tex) (./Zmogus_8h.tex
+[42]) (./timer_8h_source.tex) (./Vector_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--11
+
+ []
+
+) (./Vector_8h_source.tex [43] [44] [45] [46] [47] [48] [49] [50])
+(./Zmogus_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./Zmogus_8h_source.tex [29]) (./functions_8cpp.tex
+) (./Zmogus_8h_source.tex [51]) (./functions_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-[30] [31] [32] [33] [34]) (./main_8cpp.tex
+[52] [53] [54] [55] [56]) (./main_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-[35]
+[57]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 30.
 
@@ -1150,15 +1195,17 @@ Underfull \hbox (badness 2065) in paragraph at lines 30--31
  kon-struk-to-rius, prisky-rimo op-er-a-to-rius,
  []
 
-[36]) [37] [38
+[58]) [59] [60
 
 ] (./refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
- [39
+ [61
 
 
-] [40] [41]) (./refman.aux)
+] [62] [63] [64] [65
+
+]) (./refman.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -1168,30 +1215,33 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 9C025AD3E35A2D02C59D97FB6DD02BD8;34035.
+(rerunfilecheck)             Checksum: 87E31EC79E92A29885F11153D1DB8113;51269.
  ) 
 Here is how much of TeX's memory you used:
- 20883 strings out of 467356
- 370257 string characters out of 5418691
- 838771 words of memory out of 6000000
- 49215 multiletter control sequences out of 15000+600000
- 682457 words of font info for 109 fonts, out of 8000000 for 9000
+ 21290 strings out of 467356
+ 382666 string characters out of 5418691
+ 871212 words of memory out of 6000000
+ 49409 multiletter control sequences out of 15000+600000
+ 684221 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,16n,117p,1499b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,16n,117p,1499b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cou
-rier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (49 pages, 226075 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
+rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (75 pages, 325115 bytes).
 PDF statistics:
- 2619 PDF objects out of 2984 (max. 8388607)
- 2019 compressed objects within 21 object streams
- 375 named destinations out of 1000 (max. 500000)
- 1323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4648 PDF objects out of 5155 (max. 8388607)
+ 3400 compressed objects within 34 object streams
+ 579 named destinations out of 1000 (max. 500000)
+ 2027 words of extra memory for PDF output out of 10000 (max. 10000000)
 

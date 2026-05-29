@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['randomint_0',['randomInt',['../functions_8cpp.html#a2bfdea9260301d9292a7ab002eeb4645',1,'functions.cpp']]],
-  ['reset_1',['reset',['../classTimer.html#a9020542d73357a4eef512eefaf57524b',1,'Timer']]],
-  ['ruleoffivetestas_2',['ruleOfFiveTestas',['../functions_8cpp.html#a1eba64bc6e348b979a3c37cad72fde09',1,'ruleOfFiveTestas():&#160;functions.cpp'],['../functions_8h.html#a1eba64bc6e348b979a3c37cad72fde09',1,'ruleOfFiveTestas():&#160;functions.cpp']]],
-  ['rusiuotipagalmediana_3',['rusiuotiPagalMediana',['../functions_8cpp.html#a6ffa4482de219925881790716ce1c39f',1,'rusiuotiPagalMediana(const Studentas &amp;a, const Studentas &amp;b):&#160;functions.cpp'],['../functions_8h.html#a6ffa4482de219925881790716ce1c39f',1,'rusiuotiPagalMediana(const Studentas &amp;a, const Studentas &amp;b):&#160;functions.cpp']]],
-  ['rusiuotipagalpavarde_4',['rusiuotiPagalPavarde',['../functions_8cpp.html#aab4cf5e501e5ba9424a9bbf0bca975cb',1,'rusiuotiPagalPavarde(const Studentas &amp;a, const Studentas &amp;b):&#160;functions.cpp'],['../functions_8h.html#aab4cf5e501e5ba9424a9bbf0bca975cb',1,'rusiuotiPagalPavarde(const Studentas &amp;a, const Studentas &amp;b):&#160;functions.cpp']]],
-  ['rusiuotipagalvarda_5',['rusiuotiPagalVarda',['../functions_8cpp.html#a4eedd99bf78650f5bc982af590af66a8',1,'rusiuotiPagalVarda(const Studentas &amp;a, const Studentas &amp;b):&#160;functions.cpp'],['../functions_8h.html#a4eedd99bf78650f5bc982af590af66a8',1,'rusiuotiPagalVarda(const Studentas &amp;a, const Studentas &amp;b):&#160;functions.cpp']]],
-  ['rusiuotipagalvidurki_6',['rusiuotiPagalVidurki',['../functions_8cpp.html#a0c9321dfdd6c2a5055b141663e4c231c',1,'rusiuotiPagalVidurki(const Studentas &amp;a, const Studentas &amp;b):&#160;functions.cpp'],['../functions_8h.html#a0c9321dfdd6c2a5055b141663e4c231c',1,'rusiuotiPagalVidurki(const Studentas &amp;a, const Studentas &amp;b):&#160;functions.cpp']]],
-  ['rusiuotistudentus_7',['rusiuotiStudentus',['../functions_8cpp.html#ab7057021745afb8661ed275a6d233fc6',1,'rusiuotiStudentus(StudentuKonteineris &amp;studentai, int input):&#160;functions.cpp'],['../functions_8h.html#ab7057021745afb8661ed275a6d233fc6',1,'rusiuotiStudentus(StudentuKonteineris &amp;studentai, int input):&#160;functions.cpp']]]
+  ['pavarde_5f_0',['pavarde_',['../classZmogus.html#a85cd6103a5f887059263d15413a3f081',1,'Zmogus']]],
+  ['pop_5fback_1',['pop_back',['../classVector.html#adcba035109febbe55cba2a25f8483ba6',1,'Vector']]],
+  ['push_5fback_2',['push_back',['../classVector.html#a4415960a83615855ec32f8169f641786',1,'Vector::push_back(const T &amp;value)'],['../classVector.html#a7e9c3a4530e85fd3490d932846307683',1,'Vector::push_back(T &amp;&amp;value)']]]
 ];

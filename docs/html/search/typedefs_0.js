@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['comparator_0',['Comparator',['../Studentas_8h.html#a9cfc251cb8dde820d78183b679383948',1,'Studentas.h']]]
+  ['allocator_0',['Allocator',['../classVector.html#a007bcccb52557ff3c4a0a0e14900f283',1,'Vector']]]
 ];

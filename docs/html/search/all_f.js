@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['whoami_0',['WhoamI',['../classStudentas.html#a7d4d266af36437e1451597d19bab6a0e',1,'Studentas::WhoamI()'],['../classZmogus.html#a1130fa2e29db589814895c37fdc0a092',1,'Zmogus::WhoamI()']]]
+  ['vardas_5f_0',['vardas_',['../classZmogus.html#a80e72cd553492344884a264a72ce33d2',1,'Zmogus']]],
+  ['vector_1',['Vector',['../classVector.html',1,'Vector&lt; T &gt;'],['../classVector.html#a39d6069675db4ecfc1ab81d440da759a',1,'Vector::Vector()'],['../classVector.html#a59a099d06189fc2ee680b5c3aee4fa81',1,'Vector::Vector(size_type count)'],['../classVector.html#aa7369e608e7d03fed1872689bbf1973a',1,'Vector::Vector(size_type count, const T &amp;value)'],['../classVector.html#a2d8668ab0e1c739ea4ceaa29660a0d51',1,'Vector::Vector(InputIt first, InputIt last)'],['../classVector.html#a047b98fdb338c4c38942ed8ab65f51ce',1,'Vector::Vector(const Vector &amp;other, const Allocator &amp;alloc)'],['../classVector.html#a5ed9bb7852ccee071f8418d10182927f',1,'Vector::Vector(Vector &amp;&amp;other) noexcept'],['../classVector.html#a9be784bc6db87f9d1ad2dd4a43831490',1,'Vector::Vector(Vector &amp;&amp;other, const Allocator &amp;alloc)'],['../classVector.html#a940f94b7c4a1c15a65a1ab6e13859dfe',1,'Vector::Vector(const Vector &amp;other)'],['../classVector.html#ae7c5f5b5b66678b8bebd071bf2def2a4',1,'Vector::Vector(std::initializer_list&lt; T &gt; init, const Allocator &amp;alloc=Allocator())']]],
+  ['vector_2eh_2',['Vector.h',['../Vector_8h.html',1,'']]]
 ];

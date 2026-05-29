@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7estudentas_0',['~Studentas',['../classStudentas.html#a63e449e0f51a0b14340d02ee71b4be23',1,'Studentas']]],
-  ['_7ezmogus_1',['~Zmogus',['../classZmogus.html#ac5615bf607a8f2f1b303ffa04328d24d',1,'Zmogus']]]
+  ['zmogus_0',['Zmogus',['../classZmogus.html',1,'Zmogus'],['../classZmogus.html#aa7a8ba4d3c4778f9b35d59eef3e72574',1,'Zmogus::Zmogus()'],['../classZmogus.html#ae6bfb71e4c8fddf15f3a19b4bcd6fd26',1,'Zmogus::Zmogus(const std::string &amp;vardas, const std::string &amp;pavarde)']]],
+  ['zmogus_2eh_1',['Zmogus.h',['../Zmogus_8h.html',1,'']]]
 ];

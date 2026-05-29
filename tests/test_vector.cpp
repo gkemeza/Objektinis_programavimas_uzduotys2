@@ -3,6 +3,17 @@
 #include <string>
 #include <vector>
 
+/**
+ * @file test_vector.cpp
+ * @brief Šiame faile yra įgyvendinti vienetų testai, skirti patikrinti Vector
+ * klasės funkcionalumą. Testai apima konstruktorius, elementų prieigą,
+ * talpą, rezervavimą, modifikatorius ir kt.
+ *
+ * Šie testai yra svarbūs siekiant užtikrinti, kad Vector klasė veiktų
+ * tinkamai ir atitiktų lūkesčius įvairiose situacijose. Naudojant Google Test
+ * framework'ą, testai yra lengvai skaitomi ir palaikomi.
+ *
+ */
 // --- Constructor Tests ---
 
 TEST(VectorTest, DefaultConstructor) {

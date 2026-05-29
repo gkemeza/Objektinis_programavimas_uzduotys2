@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['duomenuapdorojimotestavimas_0',['duomenuApdorojimoTestavimas',['../functions_8cpp.html#a25284c1e294fd399377cb64e4e792022',1,'duomenuApdorojimoTestavimas():&#160;functions.cpp'],['../functions_8h.html#a25284c1e294fd399377cb64e4e792022',1,'duomenuApdorojimoTestavimas():&#160;functions.cpp']]]
+  ['back_0',['back',['../classVector.html#a8abc3f8273089dadf91fb8eaca0676e6',1,'Vector::back()'],['../classVector.html#a66ecda4d7c3a5d0260451be6f2e30d30',1,'Vector::back() const']]],
+  ['begin_1',['begin',['../classVector.html#a466e8c045ea10d62c28b689888e9fe5a',1,'Vector::begin()'],['../classVector.html#a514c5f6246f07f0012f1d00912838b19',1,'Vector::begin() const']]]
 ];
