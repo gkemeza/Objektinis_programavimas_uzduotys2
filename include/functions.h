@@ -1,5 +1,6 @@
 #pragma once
 #include "Studentas.h"
+#include "Vector.h"
 #include <algorithm>
 #include <cmath>
 #include <deque>
@@ -12,7 +13,6 @@
 #include <sstream>
 #include <stdexcept>
 #include <string>
-#include <vector>
 
 /**
  * @file functions.h
@@ -48,7 +48,7 @@ std::string nuskaitytiPavarde();
 bool suskaiciuotiGalutini(StudentuKonteineris &studentai);
 void suskaiciuotiStudentoGalutinius(Studentas &studentas);
 void suskaiciuotiGalutinius(StudentuKonteineris &studentai);
-std::vector<int> nuskaitytiPazymius(std::istream &is, int namuDarbai);
+Vector<int> nuskaitytiPazymius(std::istream &is, int namuDarbai);
 void nuskaitytiFaila(StudentuKonteineris &studentai,
                      const std::string &failoPavadinimas);
 bool rusiuotiPagalVarda(const Studentas &a, const Studentas &b);

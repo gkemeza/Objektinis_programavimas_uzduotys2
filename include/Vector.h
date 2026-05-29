@@ -19,6 +19,7 @@ private:
 
 public:
   using type = T;
+  using value_type = T;
   using size_type = std::size_t;
   using Allocator = std::allocator<T>;
 

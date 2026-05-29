@@ -3,7 +3,6 @@
 #include "timer.h"
 
 using std::cout;
-using std::vector;
 
 /**
  * @brief Pagrindinė programos funkcija, kuri leidžia vartotojui pasirinkti

@@ -1,5 +1,6 @@
 #include "functions.h"
 #include "Studentas.h"
+#include "Vector.h"
 #include "timer.h"
 #include <array>
 #include <iostream>
@@ -24,7 +25,7 @@ using std::setw;
 using std::string;
 using std::to_string;
 using std::uniform_int_distribution;
-using std::vector;
+// using std::vector;
 using std::filesystem::create_directories;
 
 /**
@@ -148,7 +149,7 @@ Studentas ivestisRanka() {
     int namuDarbai =
         skaitytiSkaiciu("Iveskite semestro pazymiu skaiciu: ", 1, 10);
 
-    vector<int> pazymiai;
+    Vector<int> pazymiai;
     for (int i = 0; i < namuDarbai; i++) {
       cout << "Iveskite " << i + 1 << " pazymi is " << namuDarbai << ": ";
       int pazymys = skaitytiSkaiciu("", 1, 10);
@@ -248,7 +249,7 @@ Studentas generuotiStudenta() {
   }
 
   int namuDarbai = 5;
-  vector<int> pazymiai;
+  Vector<int> pazymiai;
   pazymiai.reserve(namuDarbai);
 
   for (int i = 0; i < namuDarbai; i++) {
@@ -266,7 +267,7 @@ Studentas generuotiPazymius() {
     string pavarde = nuskaitytiPavarde();
 
     int namuDarbai = 5;
-    vector<int> pazymiai;
+    Vector<int> pazymiai;
     for (int i = 0; i < namuDarbai; i++) {
       int randPazymys = randomInt(1, 10);
       pazymiai.push_back(randPazymys);
@@ -282,8 +283,8 @@ Studentas generuotiPazymius() {
   }
 }
 
-vector<int> nuskaitytiPazymius(istream &is, int namuDarbai) {
-  vector<int> pazymiai;
+Vector<int> nuskaitytiPazymius(istream &is, int namuDarbai) {
+  Vector<int> pazymiai;
 
   for (int i = 0; i < namuDarbai; i++) {
 
@@ -458,12 +459,12 @@ void skaidytiStudentus2(StudentuKonteineris &studentai,
 void skaidytiStudentus3(StudentuKonteineris &studentai,
                         StudentuKonteineris &vargsiukai,
                         StudentuKonteineris &kietiakai) {
-  auto riba = stable_partition(
+  auto riba = std::stable_partition(
       studentai.begin(), studentai.end(),
       [](const Studentas &s) { return s.getGalutinisVidurkis() < 5; });
 
-  copy(studentai.begin(), riba, back_inserter(vargsiukai));
-  copy(riba, studentai.end(), back_inserter(kietiakai));
+  std::copy(studentai.begin(), riba, std::back_inserter(vargsiukai));
+  std::copy(riba, studentai.end(), std::back_inserter(kietiakai));
 }
 
 void failuGeneravimas() {
@@ -528,7 +529,7 @@ void failoKurimoTestavimas() {
 }
 
 void duomenuApdorojimoTestavimas() {
-  const vector<string> failai = {
+  const Vector<string> failai = {
       "archive/studentai1000.txt", "archive/studentai10000.txt",
       "archive/studentai100000.txt", "archive/studentai1000000.txt",
       "archive/studentai10000000.txt"};

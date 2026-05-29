@@ -1,4 +1,5 @@
 #include "Studentas.h"
+#include "Vector.h"
 #include <algorithm>
 #include <iomanip>
 #include <numeric>
@@ -15,7 +16,6 @@ using std::setprecision;
 using std::setw;
 using std::sort;
 using std::string;
-using std::vector;
 
 /**
  * @brief Šiame faile yra įgyvendinami Studentas klasės metodai, įskaitant
@@ -60,7 +60,7 @@ istream &operator>>(std::istream &in, Studentas &s) {
   s.setPavarde(pavarde);
 
   int temp;
-  vector<int> pazymiai;
+  Vector<int> pazymiai;
 
   while (ss >> temp) {
     pazymiai.push_back(temp);

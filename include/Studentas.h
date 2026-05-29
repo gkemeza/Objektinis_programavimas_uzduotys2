@@ -1,9 +1,9 @@
 #pragma once
+#include "Vector.h"
 #include "Zmogus.h"
 #include <iostream>
 #include <list>
 #include <string>
-#include <vector>
 
 /**
  * @file Studentas.h
@@ -25,7 +25,7 @@
  */
 class Studentas : public Zmogus {
 private:
-  std::vector<int> pazymiai_ = {};
+  Vector<int> pazymiai_ = {};
   int namuDarbai_ = 0;
   int egzaminoBalas_ = 0;
   double galutinisVidurkis_ = 0.0;
@@ -37,7 +37,7 @@ public:
         galutinisVidurkis_(0.0) {}
 
   Studentas(std::string vardas, std::string pavarde, int namuDarbai,
-            std::vector<int> pazymiai, int egzaminoBalas)
+            Vector<int> pazymiai, int egzaminoBalas)
       : Zmogus(vardas, pavarde), namuDarbai_(namuDarbai),
         pazymiai_(std::move(pazymiai)), egzaminoBalas_(egzaminoBalas) {}
 
@@ -128,7 +128,7 @@ public:
   int getEgzaminoBalas() const { return egzaminoBalas_; }
   double getGalutinisVidurkis() const { return galutinisVidurkis_; }
   double getGalutinisMediana() const { return galutinisMediana_; }
-  const std::vector<int> &getPazymiai() const { return pazymiai_; }
+  const Vector<int> &getPazymiai() const { return pazymiai_; }
 
   void setVardas(const std::string &vardas) { vardas_ = vardas; }
   void setPavarde(const std::string &pavarde) { pavarde_ = pavarde; }
@@ -140,9 +140,7 @@ public:
   void setGalutinisMediana(const double mediana) {
     galutinisMediana_ = mediana;
   }
-  void setPazymiai(std::vector<int> pazymiai) {
-    pazymiai_ = std::move(pazymiai);
-  }
+  void setPazymiai(Vector<int> pazymiai) { pazymiai_ = std::move(pazymiai); }
   void addPazymys(int pazymys) { pazymiai_.push_back(pazymys); }
 
   void surusiuotiPazymius();
@@ -150,7 +148,7 @@ public:
   double gautiVidurkiMediana() const;
 };
 
-using StudentuKonteineris = std::vector<Studentas>;
+using StudentuKonteineris = Vector<Studentas>;
 // using StudentuKonteineris = std::list<Studentas>;
 // using StudentuKonteineris = std::deque<Studentas>;
 
@@ -160,7 +158,7 @@ using Comparator = bool (*)(const Studentas &, const Studentas &);
 
 template <typename Konteineris>
 inline void surusiuotiStudentus(Konteineris &studentai, Comparator comparator) {
-  sort(studentai.begin(), studentai.end(), comparator);
+  std::sort(studentai.begin(), studentai.end(), comparator);
 }
 
 template <>
