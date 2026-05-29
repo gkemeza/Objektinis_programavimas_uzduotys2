@@ -22,7 +22,7 @@ Debug\Darbas_su_studentais.exe
 **Linux/Mac paleidimas:**\
 ./Darbas_su_studentais
 
-# V1.3
+# V1.5
 
 Prideta abstrakti klase Zmogus ir pakeista Studentas klase i isvestine.
 
