@@ -25,7 +25,6 @@ public:
 
   ~Studentas() {
     pazymiai_.clear();
-    pazymiai_.shrink_to_fit();
     namuDarbai_ = 0;
     egzaminoBalas_ = 0;
     galutinisVidurkis_ = 0.0;

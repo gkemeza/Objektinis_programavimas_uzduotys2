@@ -8,12 +8,15 @@ protected:
   std::string pavarde_;
 
 public:
-  Zmogus() : vardas_(""), pavarde_("") {};
+  Zmogus() : vardas_(""), pavarde_("") {}
 
   Zmogus(const std::string &vardas, const std::string &pavarde)
-      : vardas_(vardas), pavarde_(pavarde) {};
+      : vardas_(vardas), pavarde_(pavarde) {}
 
-  virtual ~Zmogus() = default;
+  virtual ~Zmogus() {
+    vardas_.clear();
+    pavarde_.clear();
+  }
 
   virtual void WhoamI() const = 0;
 
