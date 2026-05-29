@@ -10,6 +10,23 @@
 #include <type_traits>
 #include <utility>
 
+/**
+ * @file Vector.h
+ * @brief Šiame faile yra įgyvendinta paprasta vektoriaus klasė, kuri imituoja
+ * std::vector funkcionalumą. Ši klasė naudoja dinaminę atmintį ir turi
+ * pagrindinius metodus, tokius kaip push_back, pop_back, clear, size, capacity,
+ * operator[], ir kt.
+ *
+ * Vector klasė yra naudinga mokymosi tikslais, siekiant suprasti, kaip veikia
+ * dinaminė atmintis ir kaip galima įgyvendinti konteinerius C++ kalba. Ji taip
+ * pat gali būti naudojama vietoj std::vector tam tikrose situacijose, kur
+ * reikia paprastesnio ar labiau pritaikyto sprendimo.
+ *
+ * Ši klasė yra testuojama naudojant Google Test framework'ą, siekiant
+ * užtikrinti, kad visi metodai veiktų teisingai įvairiais scenarijais.
+ *
+ */
+
 template <typename T> class Vector {
 private:
   T *data;

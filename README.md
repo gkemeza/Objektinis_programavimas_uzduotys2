@@ -22,6 +22,31 @@ Debug\Darbas_su_studentais.exe
 **Linux/Mac paleidimas:**\
 ./Darbas_su_studentais
 
+# V3.0
+
+Pridetas Vector konteineris, kuris pakeite std::vector, nepakeistus logikos. Prideti Vector unit testai. Atnaujinta dokumentacija.
+
+## Unit testai
+
+![alt text](images/unit-tests2.png)
+
+### Class (vector) veikimo laikai
+
+| Operacija      |   1 000 |  10 000 | 100 000 | 1 000 000 | 10 000 000 |
+| :------------- | ------: | ------: | ------: | --------: | ---------: |
+| Veikimo laikas | 0.004 s | 0.036 s | 0.347 s |   4.347 s |   62.849 s |
+
+### Testai
+
+```bash
+cd build && ctest --output-on-failure
+```
+
+## Dokumentacija
+
+Dokumentacija prieinama `docs/html/index.html`.  
+PDF versija: `docs/latex/refman.pdf`
+
 # V2.0
 
 Prideta Doxygen dokumentacija ir unit testai (Google Test)
@@ -29,6 +54,12 @@ Prideta Doxygen dokumentacija ir unit testai (Google Test)
 ## Unit testai
 
 ![alt text](images/unit-tests.png)
+
+### Testavimo sistemos parametrai
+
+**CPU:** AMD Ryzen™ 5 PRO 7540U \
+**SSD:** Micron_2400_MTFDKBA1T0QFM \
+**RAM:** 16GB
 
 ### Class (vector) veikimo laikai
 
